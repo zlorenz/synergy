@@ -1,0 +1,7 @@
+#sequence ul.sequence-canvas > li {
+  left: 50%!important;
+}
+
+[data-uk-scrollspy*='uk-animation-'] {
+  opacity: 1;
+}

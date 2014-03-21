@@ -1,0 +1,2023 @@
+/*
+Theme created for use with Sequence.js (http://www.sequencejs.com/)
+
+Theme: Sliding Horizontal Parallax
+Version: 1.2
+Theme Author: Ian Lunn @IanLunn
+Author URL: http://www.ianlunn.co.uk/
+Theme URL: http://www.sequencejs.com/themes/sliding-horizontal-parallax/
+
+This is a FREE theme and is available under a MIT License:
+http://www.opensource.org/licenses/mit-license.php
+
+Sequence.js and its dependencies are (c) Ian Lunn Design 2012 - 2013 unless otherwise stated.
+*/
+/* prefix declarations */
+/* THEME STYLES */
+ul.sequence-canvas {
+  margin: 0;
+  padding: 0;
+}
+ul.sequence-canvas li {
+  list-style: none;
+}
+
+section.mainbanner-2 {
+  margin-bottom: 0;
+}
+
+.mainbanner-2 .container .row {
+  padding-bottom: 83%;
+  position: relative;
+}
+
+.mainbanner-2 .container .row .col,
+.mainbanner-2 .container .row .col #sequence-2,
+.mainbanner-2 .container .row .col #sequence-2 ul.sequence-canvas,
+.mainbanner-2 .container .row .col #sequence-2 ul.sequence-canvas li,
+.mainbanner-2 .container .row .col #sequence-2 ul.sequence-canvas li .device {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#sequence-2 {
+  position: relative;
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background: transparent;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  /* Element Layouting */
+  /* Background Image Animation */
+  /*
+  *	Frame 1
+  */
+  /*Device & Pins Container Animation*/
+  /*iPad*/
+  /* Pins Slide 1 */
+  /*Buttons Slide 1*/
+  /*
+  *	Frame 2
+  */
+  /* Bubble Krypton */
+  /* Text Frame 2 */
+  /* Text Animation*/
+  /* Buttons Frame 2 */
+  /*
+  *	Frame 3
+  */
+  /*Business Man*/
+  /*Text Frame 3*/
+  /* Text Frame 3 Animation */
+  /*Text 1*/
+  /*Text 2*/
+  /*Text 3*/
+  /*Text 4*/
+  /*Text 5*/
+  /* Buttons Frame 3*/
+}
+#sequence-2 > .sequence-canvas {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#sequence-2 > .sequence-canvas > li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#sequence-2 > .sequence-canvas li > * {
+  position: absolute;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+#sequence-2 > .sequence-canvas:after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 100%;
+}
+#sequence-2 .sequence-next,
+#sequence-2 .sequence-prev {
+  color: black;
+  cursor: pointer;
+  display: none;
+  font-size: 50px;
+  font-weight: 300;
+  position: absolute;
+  opacity: 0.9;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  height: 70px;
+  width: 70px;
+  z-index: 20;
+  line-height: 1.4;
+  text-align: center;
+}
+#sequence-2 .sequence-prev {
+  left: -20px;
+}
+#sequence-2 .sequence-next {
+  right: -20px;
+}
+#sequence-2 .sequence-next:hover,
+#sequence-2 .sequence-prev:hover {
+  opacity: 1;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+#sequence-2 .text, #sequence-2 .device {
+  z-index: 1;
+  position: absolute;
+}
+#sequence-2 .text {
+  right: 0;
+  z-index: 2;
+}
+#sequence-2 .device {
+  width: 75%;
+  top: 10% !important;
+}
+#sequence-2 .device img {
+  position: absolute;
+}
+#sequence-2 .slide-2-bg {
+  padding-bottom: 80%;
+  /*Proportionally Resize background*/
+  top: 0;
+  left: 0;
+  z-index: 0;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+}
+#sequence-2 .slide-2-bg-1 {
+  background: url(../images/main_slide_2/bg_frame_1.jpg);
+}
+#sequence-2 .slide-2-bg-2 {
+  background: url(../images/main_slide_2/bg_frame_2.jpg);
+  background-position: 100% 0;
+}
+#sequence-2 .slide-2-bg-3 {
+  background: url(../images/main_slide_2/bg_frame_3.jpg);
+  background-position: 0 100%;
+}
+#sequence-2 .slide-2-bg {
+  opacity: 0;
+  top: 0;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .animate-in .slide-2-bg {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .animate-out .slide-2-bg {
+  opacity: 0;
+  z-index: 2;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .device, #sequence-2 .pins {
+  opacity: 0;
+  top: 0;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .animate-in .device, #sequence-2 .animate-in .pins {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .animate-out .device, #sequence-2 .animate-out .pins {
+  opacity: 0;
+  z-index: 2;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .ipad {
+  left: -10%;
+  top: 15%;
+  z-index: 2;
+  opacity: 0;
+  width: 105%;
+  -webkit-transition-duration: 0.5s 0.5s;
+  -moz-transition-duration: 0.5s 0.5s;
+  -ms-transition-duration: 0.5s 0.5s;
+  -o-transition-duration: 0.5s 0.5s;
+  transition-duration: 0.5s 0.5s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0.6s;
+  -moz-transition-delay: 0.6s;
+  -ms-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+#sequence-2 .animate-in .ipad {
+  opacity: 1;
+  top: 11%;
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -ms-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0.7s;
+  -moz-transition-delay: 0.7s;
+  -ms-transition-delay: 0.7s;
+  -o-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .ipad {
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -ms-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .ipad-light {
+  left: 3.8%;
+  top: 34.5%;
+  z-index: 2;
+  opacity: 0;
+  width: 77%;
+  -webkit-transition-duration: 0.5s 0.5s;
+  -moz-transition-duration: 0.5s 0.5s;
+  -ms-transition-duration: 0.5s 0.5s;
+  -o-transition-duration: 0.5s 0.5s;
+  transition-duration: 0.5s 0.5s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0.6s;
+  -moz-transition-delay: 0.6s;
+  -ms-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+#sequence-2 .animate-in .ipad-light {
+  opacity: 1;
+  top: 33.5%;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .ipad-light {
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -ms-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .ipad-layer {
+  left: 11%;
+  top: 50%;
+  z-index: 2;
+  opacity: 0;
+  width: 65%;
+  -webkit-transition-duration: 0.5s 0.5s;
+  -moz-transition-duration: 0.5s 0.5s;
+  -ms-transition-duration: 0.5s 0.5s;
+  -o-transition-duration: 0.5s 0.5s;
+  transition-duration: 0.5s 0.5s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0.6s;
+  -moz-transition-delay: 0.6s;
+  -ms-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+#sequence-2 .animate-in .ipad-layer {
+  opacity: 1;
+  top: 40%;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 1.5s;
+  -moz-transition-delay: 1.5s;
+  -ms-transition-delay: 1.5s;
+  -o-transition-delay: 1.5s;
+  transition-delay: 1.5s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .ipad-layer {
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -ms-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .pin1 {
+  left: 9%;
+  top: 10%;
+  z-index: 2;
+  opacity: 0;
+  width: 18%;
+  -webkit-transition-duration: 0.5s 0.5s;
+  -moz-transition-duration: 0.5s 0.5s;
+  -ms-transition-duration: 0.5s 0.5s;
+  -o-transition-duration: 0.5s 0.5s;
+  transition-duration: 0.5s 0.5s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .animate-in .pin1 {
+  opacity: 1;
+  top: 33%;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 1.8s;
+  -moz-transition-delay: 1.8s;
+  -ms-transition-delay: 1.8s;
+  -o-transition-delay: 1.8s;
+  transition-delay: 1.8s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .pin1 {
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -ms-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .pin2 {
+  left: 25%;
+  top: 10%;
+  z-index: 2;
+  opacity: 0;
+  width: 15%;
+  -webkit-transition-duration: 0.5s 0.5s;
+  -moz-transition-duration: 0.5s 0.5s;
+  -ms-transition-duration: 0.5s 0.5s;
+  -o-transition-duration: 0.5s 0.5s;
+  transition-duration: 0.5s 0.5s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .animate-in .pin2 {
+  opacity: 1;
+  top: 39%;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 1.9s;
+  -moz-transition-delay: 1.9s;
+  -ms-transition-delay: 1.9s;
+  -o-transition-delay: 1.9s;
+  transition-delay: 1.9s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .pin2 {
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -ms-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .pin3 {
+  left: 35%;
+  top: 10%;
+  z-index: 2;
+  opacity: 0;
+  width: 14%;
+  -webkit-transition-duration: 0.5s 0.5s;
+  -moz-transition-duration: 0.5s 0.5s;
+  -ms-transition-duration: 0.5s 0.5s;
+  -o-transition-duration: 0.5s 0.5s;
+  transition-duration: 0.5s 0.5s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .animate-in .pin3 {
+  opacity: 1;
+  top: 20%;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 2s;
+  -moz-transition-delay: 2s;
+  -ms-transition-delay: 2s;
+  -o-transition-delay: 2s;
+  transition-delay: 2s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .pin3 {
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -ms-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .pin4 {
+  left: 50%;
+  top: 10%;
+  z-index: 2;
+  opacity: 0;
+  width: 18%;
+  -webkit-transition-duration: 0.5s 0.5s;
+  -moz-transition-duration: 0.5s 0.5s;
+  -ms-transition-duration: 0.5s 0.5s;
+  -o-transition-duration: 0.5s 0.5s;
+  transition-duration: 0.5s 0.5s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .animate-in .pin4 {
+  opacity: 1;
+  top: 23%;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 2.1s;
+  -moz-transition-delay: 2.1s;
+  -ms-transition-delay: 2.1s;
+  -o-transition-delay: 2.1s;
+  transition-delay: 2.1s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .pin4 {
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -ms-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .text {
+  text-align: right;
+  font-weight: 300;
+}
+#sequence-2 .text-1, #sequence-2 .text-2, #sequence-2 .text-3, #sequence-2 .text-4, #sequence-2 .text-5 {
+  float: right;
+}
+#sequence-2 .text-1 {
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+#sequence-2 .text-1 span {
+  font-weight: 800;
+}
+#sequence-2 .text-2 {
+  text-transform: uppercase;
+  font-size: 2.3em;
+  font-weight: 800;
+}
+#sequence-2 .text-3 {
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+#sequence-2 .text-3 span {
+  font-weight: 800;
+}
+#sequence-2 .text-4 {
+  font-size: 0.9em;
+  width: 70%;
+}
+#sequence-2 .text-5 {
+  font-size: 1.5em;
+  font-family: lora;
+  font-style: italic;
+}
+#sequence-2 .buttons-frame-1 {
+  position: absolute;
+}
+#sequence-2 .buttons-frame-1 .btn-cta {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: transparent;
+  margin-right: 30px;
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -ms-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#sequence-2 .buttons-frame-1 .btn-cta:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#sequence-2 .text {
+  top: 15%;
+  right: 0%;
+  z-index: 2;
+  opacity: 0;
+  width: 45%;
+  height: auto;
+  -webkit-transition-duration: 0.5s 0.5s;
+  -moz-transition-duration: 0.5s 0.5s;
+  -ms-transition-duration: 0.5s 0.5s;
+  -o-transition-duration: 0.5s 0.5s;
+  transition-duration: 0.5s 0.5s;
+  -webkit-transition-property: opacity right;
+  -moz-transition-property: opacity right;
+  -ms-transition-property: opacity right;
+  -o-transition-property: opacity right;
+  transition-property: opacity right;
+  -webkit-transition-delay: 2.4s;
+  -moz-transition-delay: 2.4s;
+  -ms-transition-delay: 2.4s;
+  -o-transition-delay: 2.4s;
+  transition-delay: 2.4s;
+}
+#sequence-2 .animate-in .text {
+  opacity: 1;
+  right: 5%;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: opacity right;
+  -moz-transition-property: opacity right;
+  -ms-transition-property: opacity right;
+  -o-transition-property: opacity right;
+  transition-property: opacity right;
+  -webkit-transition-delay: 2.4s;
+  -moz-transition-delay: 2.4s;
+  -ms-transition-delay: 2.4s;
+  -o-transition-delay: 2.4s;
+  transition-delay: 2.4s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .text {
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -ms-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-delay: 2.4s;
+  -moz-transition-delay: 2.4s;
+  -ms-transition-delay: 2.4s;
+  -o-transition-delay: 2.4s;
+  transition-delay: 2.4s;
+}
+#sequence-2 .buttons-frame-1 {
+  bottom: -30%;
+  z-index: 2;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  -webkit-transition-duration: 0.5s 0.5s;
+  -moz-transition-duration: 0.5s 0.5s;
+  -ms-transition-duration: 0.5s 0.5s;
+  -o-transition-duration: 0.5s 0.5s;
+  transition-duration: 0.5s 0.5s;
+  -webkit-transition-property: opacity bottom;
+  -moz-transition-property: opacity bottom;
+  -ms-transition-property: opacity bottom;
+  -o-transition-property: opacity bottom;
+  transition-property: opacity bottom;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .animate-in .buttons-frame-1 {
+  opacity: 1;
+  bottom: -10%;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: opacity bottom;
+  -moz-transition-property: opacity bottom;
+  -ms-transition-property: opacity bottom;
+  -o-transition-property: opacity bottom;
+  transition-property: opacity bottom;
+  -webkit-transition-delay: 2.8s;
+  -moz-transition-delay: 2.8s;
+  -ms-transition-delay: 2.8s;
+  -o-transition-delay: 2.8s;
+  transition-delay: 2.8s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .buttons-frame-1 {
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -ms-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .screenshot-1 {
+  top: 0%;
+  left: 12%;
+  z-index: 2;
+  opacity: 0;
+  width: 48%;
+  height: auto;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  -ms-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+#sequence-2 .animate-in .screenshot-1 {
+  top: 18%;
+  opacity: 1;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  -ms-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .screenshot-1 {
+  top: 18%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .screenshot-2 {
+  top: 0%;
+  left: 29%;
+  z-index: 2;
+  opacity: 0;
+  width: 48%;
+  height: auto;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0.6s;
+  -moz-transition-delay: 0.6s;
+  -ms-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+#sequence-2 .animate-in .screenshot-2 {
+  top: 13%;
+  opacity: 1;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0.6s;
+  -moz-transition-delay: 0.6s;
+  -ms-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .screenshot-2 {
+  top: 13%;
+  opacity: 0;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  z-index: 1;
+}
+#sequence-2 .screenshot-3 {
+  top: 0%;
+  left: 44%;
+  z-index: 2;
+  opacity: 0;
+  width: 48%;
+  height: auto;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -ms-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0.8s;
+  -moz-transition-delay: 0.8s;
+  -ms-transition-delay: 0.8s;
+  -o-transition-delay: 0.8s;
+  transition-delay: 0.8s;
+}
+#sequence-2 .animate-in .screenshot-3 {
+  top: 8%;
+  opacity: 1;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -ms-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0.8s;
+  -moz-transition-delay: 0.8s;
+  -ms-transition-delay: 0.8s;
+  -o-transition-delay: 0.8s;
+  transition-delay: 0.8s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .screenshot-3 {
+  top: 8%;
+  opacity: 0;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  z-index: 1;
+}
+#sequence-2 .pin-2-1 {
+  top: 0%;
+  left: 13%;
+  z-index: 2;
+  opacity: 0;
+  width: 12%;
+  height: auto;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+#sequence-2 .animate-in .pin-2-1 {
+  top: 15%;
+  opacity: 1;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .pin-2-1 {
+  top: 15%;
+  opacity: 0;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  z-index: 1;
+}
+#sequence-2 .pin-2-2 {
+  top: 0%;
+  left: 20%;
+  z-index: 2;
+  opacity: 0;
+  width: 17%;
+  height: auto;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 1.2s;
+  -moz-transition-delay: 1.2s;
+  -ms-transition-delay: 1.2s;
+  -o-transition-delay: 1.2s;
+  transition-delay: 1.2s;
+}
+#sequence-2 .animate-in .pin-2-2 {
+  top: 5%;
+  opacity: 1;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 1.2s;
+  -moz-transition-delay: 1.2s;
+  -ms-transition-delay: 1.2s;
+  -o-transition-delay: 1.2s;
+  transition-delay: 1.2s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .pin-2-2 {
+  top: 5%;
+  opacity: 0;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  z-index: 1;
+}
+#sequence-2 .pin-2-3 {
+  top: 0%;
+  left: 39%;
+  z-index: 2;
+  opacity: 0;
+  width: 7%;
+  height: auto;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 1.4s;
+  -moz-transition-delay: 1.4s;
+  -ms-transition-delay: 1.4s;
+  -o-transition-delay: 1.4s;
+  transition-delay: 1.4s;
+}
+#sequence-2 .animate-in .pin-2-3 {
+  top: 10%;
+  opacity: 1;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 1.4s;
+  -moz-transition-delay: 1.4s;
+  -ms-transition-delay: 1.4s;
+  -o-transition-delay: 1.4s;
+  transition-delay: 1.4s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .pin-2-3 {
+  top: 10%;
+  opacity: 0;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  z-index: 1;
+}
+#sequence-2 .pin-2-4 {
+  top: 0%;
+  left: 68%;
+  z-index: 2;
+  opacity: 0;
+  width: 12%;
+  height: auto;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 1.6s;
+  -moz-transition-delay: 1.6s;
+  -ms-transition-delay: 1.6s;
+  -o-transition-delay: 1.6s;
+  transition-delay: 1.6s;
+}
+#sequence-2 .animate-in .pin-2-4 {
+  top: 7%;
+  opacity: 1;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 1.6s;
+  -moz-transition-delay: 1.6s;
+  -ms-transition-delay: 1.6s;
+  -o-transition-delay: 1.6s;
+  transition-delay: 1.6s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .pin-2-4 {
+  top: 7%;
+  opacity: 0;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  z-index: 1;
+}
+#sequence-2 .bubble {
+  top: 15%;
+  left: 65%;
+  z-index: 2;
+  opacity: 0;
+  width: 12%;
+  height: auto;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: opacity top left;
+  -moz-transition-property: opacity top left;
+  -ms-transition-property: opacity top left;
+  -o-transition-property: opacity top left;
+  transition-property: opacity top left;
+  -webkit-transition-delay: 1.8s;
+  -moz-transition-delay: 1.8s;
+  -ms-transition-delay: 1.8s;
+  -o-transition-delay: 1.8s;
+  transition-delay: 1.8s;
+}
+#sequence-2 .animate-in .bubble {
+  top: 7%;
+  left: 55%;
+  opacity: 1;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: opacity top left;
+  -moz-transition-property: opacity top left;
+  -ms-transition-property: opacity top left;
+  -o-transition-property: opacity top left;
+  transition-property: opacity top left;
+  -webkit-transition-delay: 1.8s;
+  -moz-transition-delay: 1.8s;
+  -ms-transition-delay: 1.8s;
+  -o-transition-delay: 1.8s;
+  transition-delay: 1.8s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .bubble {
+  top: 7%;
+  left: 55%;
+  opacity: 0;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-property: opacity top left;
+  -moz-transition-property: opacity top left;
+  -ms-transition-property: opacity top left;
+  -o-transition-property: opacity top left;
+  transition-property: opacity top left;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  z-index: 1;
+}
+#sequence-2 .text-frame-2 {
+  z-index: 8;
+  width: 100%;
+  text-align: center;
+  bottom: 100px;
+  color: #363636;
+  font-weight: 300;
+  position: absolute;
+}
+#sequence-2 .text-frame-2 p {
+  margin: 0 auto;
+}
+#sequence-2 .text-2-1 {
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+#sequence-2 .text-2-1 span {
+  font-weight: 800;
+}
+#sequence-2 .text-2-2 {
+  text-transform: uppercase;
+  font-size: 2.3em;
+  font-weight: 800;
+}
+#sequence-2 .text-2-3 {
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+#sequence-2 .text-2-3 span {
+  font-weight: 800;
+  color: #1abc9c;
+}
+#sequence-2 .text-2-4 {
+  font-size: 0.9em;
+  width: 50%;
+  margin: 0 auto;
+}
+#sequence-2 .text-2-5 {
+  font-size: 1.5em;
+  font-family: lora;
+  font-style: italic;
+}
+#sequence-2 .buttons-frame-2 {
+  position: absolute;
+  left: 50%;
+  top: 110%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+#sequence-2 .buttons-frame-2 .btn-cta {
+  border: 1px solid #333;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: #666;
+  font-weight: 300;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: transparent;
+  margin-right: 30px;
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -ms-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#sequence-2 .buttons-frame-2 .btn-cta:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#sequence-2 .text-frame-2 {
+  left: 50%;
+  bottom: 12%;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: opacity bottom;
+  -moz-transition-property: opacity bottom;
+  -ms-transition-property: opacity bottom;
+  -o-transition-property: opacity bottom;
+  transition-property: opacity bottom;
+  -webkit-transition-delay: 2.5s;
+  -moz-transition-delay: 2.5s;
+  -ms-transition-delay: 2.5s;
+  -o-transition-delay: 2.5s;
+  transition-delay: 2.5s;
+}
+#sequence-2 .animate-in .text-frame-2 {
+  bottom: 15%;
+  opacity: 1;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: opacity bottom;
+  -moz-transition-property: opacity bottom;
+  -ms-transition-property: opacity bottom;
+  -o-transition-property: opacity bottom;
+  transition-property: opacity bottom;
+  -webkit-transition-delay: 2.5s;
+  -moz-transition-delay: 2.5s;
+  -ms-transition-delay: 2.5s;
+  -o-transition-delay: 2.5s;
+  transition-delay: 2.5s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .text-frame-2 {
+  bottom: 15%;
+  opacity: 0;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-property: opacity bottom;
+  -moz-transition-property: opacity bottom;
+  -ms-transition-property: opacity bottom;
+  -o-transition-property: opacity bottom;
+  transition-property: opacity bottom;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  z-index: 1;
+}
+#sequence-2 .buttons-frame-2 {
+  opacity: 0;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-delay: 3.5s;
+  -moz-transition-delay: 3.5s;
+  -ms-transition-delay: 3.5s;
+  -o-transition-delay: 3.5s;
+  transition-delay: 3.5s;
+}
+#sequence-2 .animate-in .buttons-frame-2 {
+  opacity: 1;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-delay: 3.5s;
+  -moz-transition-delay: 3.5s;
+  -ms-transition-delay: 3.5s;
+  -o-transition-delay: 3.5s;
+  transition-delay: 3.5s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .buttons-frame-2 {
+  opacity: 0;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  z-index: 1;
+}
+#sequence-2 .business-man {
+  width: 60%;
+  opacity: 0;
+  right: 2%;
+  bottom: 0%;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+#sequence-2 .animate-in .business-man {
+  opacity: 1;
+  -webkit-transition-duration: 1.2s;
+  -moz-transition-duration: 1.2s;
+  -ms-transition-duration: 1.2s;
+  -o-transition-duration: 1.2s;
+  transition-duration: 1.2s;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .business-man {
+  opacity: 0;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+#sequence-2 .text-3-1, #sequence-2 .text-3-2, #sequence-2 .text-3-3, #sequence-2 .text-3-4, #sequence-2 .text-3-5 {
+  position: absolute;
+  font-weight: 300;
+  color: #2a2929;
+  text-align: right;
+  width: 50%;
+  display: block;
+}
+#sequence-2 .text-3-1 {
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+#sequence-2 .text-3-1 span {
+  font-weight: 800;
+}
+#sequence-2 .text-3-2 {
+  text-transform: uppercase;
+  font-size: 2.3em;
+  font-weight: 800;
+}
+#sequence-2 .text-3-3 {
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+#sequence-2 .text-3-3 span {
+  font-weight: 800;
+}
+#sequence-2 .text-3-4 {
+  font-size: 0.9em;
+  margin: 0 auto;
+}
+#sequence-2 .text-3-5 {
+  font-size: 1.5em;
+  font-family: lora;
+  font-style: italic;
+  text-align: left;
+}
+#sequence-2 .buttons-frame-3 {
+  position: absolute;
+}
+#sequence-2 .buttons-frame-3 .btn-cta {
+  border: 1px solid #333;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: #666;
+  font-weight: 300;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: transparent;
+  margin-right: 30px;
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -ms-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#sequence-2 .buttons-frame-3 .btn-cta:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#sequence-2 .text-3-1 {
+  opacity: 0;
+  top: 15%;
+  right: 100%;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: 1.5s;
+  -moz-transition-property: 1.5s;
+  -ms-transition-property: 1.5s;
+  -o-transition-property: 1.5s;
+  transition-property: 1.5s;
+}
+#sequence-2 .animate-in .text-3-1 {
+  opacity: 1;
+  right: 50%;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: opacity right top;
+  -moz-transition-property: opacity right top;
+  -ms-transition-property: opacity right top;
+  -o-transition-property: opacity right top;
+  transition-property: opacity right top;
+  -webkit-transition-delay: 1.5s;
+  -moz-transition-delay: 1.5s;
+  -ms-transition-delay: 1.5s;
+  -o-transition-delay: 1.5s;
+  transition-delay: 1.5s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .text-3-1 {
+  opacity: 0;
+  right: 50%;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-property: opacity right top;
+  -moz-transition-property: opacity right top;
+  -ms-transition-property: opacity right top;
+  -o-transition-property: opacity right top;
+  transition-property: opacity right top;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  z-index: 1;
+  border: 1px solid red;
+}
+#sequence-2 .text-3-2 {
+  opacity: 0;
+  top: 20%;
+  right: 100%;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: 2s;
+  -moz-transition-property: 2s;
+  -ms-transition-property: 2s;
+  -o-transition-property: 2s;
+  transition-property: 2s;
+}
+#sequence-2 .animate-in .text-3-2 {
+  opacity: 1;
+  right: 50%;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: opacity right top;
+  -moz-transition-property: opacity right top;
+  -ms-transition-property: opacity right top;
+  -o-transition-property: opacity right top;
+  transition-property: opacity right top;
+  -webkit-transition-delay: 2s;
+  -moz-transition-delay: 2s;
+  -ms-transition-delay: 2s;
+  -o-transition-delay: 2s;
+  transition-delay: 2s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .text-3-2 {
+  opacity: 0;
+  right: 50%;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-property: opacity right top;
+  -moz-transition-property: opacity right top;
+  -ms-transition-property: opacity right top;
+  -o-transition-property: opacity right top;
+  transition-property: opacity right top;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  z-index: 1;
+}
+#sequence-2 .text-3-3 {
+  opacity: 0;
+  top: 28%;
+  right: 100%;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: 2.5s;
+  -moz-transition-property: 2.5s;
+  -ms-transition-property: 2.5s;
+  -o-transition-property: 2.5s;
+  transition-property: 2.5s;
+}
+#sequence-2 .animate-in .text-3-3 {
+  opacity: 1;
+  right: 50%;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: opacity right top;
+  -moz-transition-property: opacity right top;
+  -ms-transition-property: opacity right top;
+  -o-transition-property: opacity right top;
+  transition-property: opacity right top;
+  -webkit-transition-delay: 2.5s;
+  -moz-transition-delay: 2.5s;
+  -ms-transition-delay: 2.5s;
+  -o-transition-delay: 2.5s;
+  transition-delay: 2.5s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .text-3-3 {
+  opacity: 0;
+  right: 50%;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-property: opacity right top;
+  -moz-transition-property: opacity right top;
+  -ms-transition-property: opacity right top;
+  -o-transition-property: opacity right top;
+  transition-property: opacity right top;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  z-index: 1;
+}
+#sequence-2 .text-3-4 {
+  opacity: 0;
+  top: 35%;
+  right: 100%;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: 3s;
+  -moz-transition-property: 3s;
+  -ms-transition-property: 3s;
+  -o-transition-property: 3s;
+  transition-property: 3s;
+}
+#sequence-2 .animate-in .text-3-4 {
+  opacity: 1;
+  right: 50%;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: opacity right top;
+  -moz-transition-property: opacity right top;
+  -ms-transition-property: opacity right top;
+  -o-transition-property: opacity right top;
+  transition-property: opacity right top;
+  -webkit-transition-delay: 3s;
+  -moz-transition-delay: 3s;
+  -ms-transition-delay: 3s;
+  -o-transition-delay: 3s;
+  transition-delay: 3s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .text-3-4 {
+  opacity: 0;
+  right: 50%;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-property: opacity right top;
+  -moz-transition-property: opacity right top;
+  -ms-transition-property: opacity right top;
+  -o-transition-property: opacity right top;
+  transition-property: opacity right top;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  z-index: 1;
+}
+#sequence-2 .text-3-5 {
+  opacity: 0;
+  top: 45%;
+  right: 0%;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: 3.5s;
+  -moz-transition-property: 3.5s;
+  -ms-transition-property: 3.5s;
+  -o-transition-property: 3.5s;
+  transition-property: 3.5s;
+}
+#sequence-2 .animate-in .text-3-5 {
+  opacity: 1;
+  right: 45%;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: opacity right top;
+  -moz-transition-property: opacity right top;
+  -ms-transition-property: opacity right top;
+  -o-transition-property: opacity right top;
+  transition-property: opacity right top;
+  -webkit-transition-delay: 3.5s;
+  -moz-transition-delay: 3.5s;
+  -ms-transition-delay: 3.5s;
+  -o-transition-delay: 3.5s;
+  transition-delay: 3.5s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .text-3-5 {
+  opacity: 0;
+  right: 45%;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-property: opacity right top;
+  -moz-transition-property: opacity right top;
+  -ms-transition-property: opacity right top;
+  -o-transition-property: opacity right top;
+  transition-property: opacity right top;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  z-index: 1;
+}
+#sequence-2 .buttons-frame-3 {
+  top: 75%;
+  left: 5%;
+  opacity: 0;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 4s;
+  -moz-transition-delay: 4s;
+  -ms-transition-delay: 4s;
+  -o-transition-delay: 4s;
+  transition-delay: 4s;
+}
+#sequence-2 .animate-in .buttons-frame-3 {
+  top: 53%;
+  opacity: 1;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 4s;
+  -moz-transition-delay: 4s;
+  -ms-transition-delay: 4s;
+  -o-transition-delay: 4s;
+  transition-delay: 4s;
+  z-index: 1;
+}
+#sequence-2 .animate-out .buttons-frame-3 {
+  top: 53%;
+  opacity: 0;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-property: opacity top;
+  -moz-transition-property: opacity top;
+  -ms-transition-property: opacity top;
+  -o-transition-property: opacity top;
+  transition-property: opacity top;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  z-index: 1;
+}

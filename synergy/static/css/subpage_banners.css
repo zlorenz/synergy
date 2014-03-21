@@ -1,0 +1,15 @@
+.blog-classic-banner, .blog-fullwidth-banner {
+    background:url(../images/header_subpage_bg.jpg) no-repeat;
+}
+.portfolio-4-col-banner, .portfolio-5-col-banner {
+    background:url(../images/header_subpage_bg_2.jpg) no-repeat;
+}
+.contact-banner {
+    background:url(../images/contact_bg.jpg) no-repeat;    
+}
+.shop-detail-fullwidth-banner {
+	background:url(../images/shop/banner_detail_product.jpg) no-repeat;
+}
+.checkout-banner {
+    background:url(../images/bg_checkout.jpg) no-repeat;    
+}

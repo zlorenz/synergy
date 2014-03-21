@@ -1,1 +1,87 @@
 {% extends "base.html" %}
+{% load staticfiles i18n %}
+
+{% block title %}About | Synergy Financial{% endblock title %}
+
+{% block content %}
+<section class="about-main" data-type="background" data-speed="3">
+
+	<img class="full-width" src="{% static 'images/happy-family.jpg' %}" />
+
+	<div class= "container">
+		
+		<div class="col-sm-6">
+			<h2>The Company</h2>
+			<p>Nulla fringilla commodo eros, sed euismod erat facilisis non. Nunc a augue imperdiet, bibendum ligula eu, commodo felis. Suspendisse eget magna ut arcu ornare aliquet quis in elit. In tempus laoreet euismod. Pellentesque diam metus, mollis sit amet porta ac, dapibus et enim. Sed viverra tristique congue. Pellentesque justo urna, imperdiet sed lorem non, vestibulum gravida dui. Donec sollicitudin justo neque, eu posuere ipsum vulputate eu.</p>
+		</div>
+	
+		<div class="col-sm-6">
+			<h2>Our Mission</h2>
+			<p>Aenean sagittis nunc at nunc vehicula dapibus. Nulla porta massa in lorem lobortis, vel porttitor quam molestie. Maecenas dapibus est eu rutrum condimentum. Etiam tempor libero ac tellus porta tincidunt. Sed elementum quis magna elementum sollicitudin. Aliquam at scelerisque enim, sit amet posuere lorem.</p>
+		</div>
+
+	</div>	
+</section>
+
+<section class="profile_team">
+	<div class="container">
+		<div class="row">
+			<div class="section-head">
+				<header class="col col-sm-12 centered">
+					<section>
+						<h2>Meet Our Team</h2>
+						<p>Nulla fringilla commodo eros, sed euismod erat facilisis non. Nunc a augue imperdiet, bibendum ligula eu, commodo felis. Suspendisse eget magna ut arcu ornare aliquet quis in elit.</p>
+					</section>
+					<hr>
+				</header>
+			</div>	
+		</div>
+
+		<div class="row">
+
+			<div class="profile col-md-4 col-xs-12" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+				<figure>
+					<div class="top-image">
+						<img src="{% static 'images/team/juan-pantoja.jpg' %}" class="img-responsive" alt="how to create break fast food delicious"/>
+					</div>
+					<figcaption>
+						<h3><span class="profile-heading">JUAN C. PANTOJA</span></h3>
+						<span class="profile-subheading">Managing Director</span>
+						<p>Lorem ipsum dolor sit amet, consectetur. Pellentesque facilisis nunc sed sem dapibus malesuada. Praesent eu eros ut augue pretium mollis.</p>
+						<div class="figcap"></div>
+					</figcaption>
+				</figure>
+			</div>	
+
+			<div class="profile col-md-4 col-xs-12" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600}">
+				<figure>
+					<div class="top-image">
+						<img src="{% static 'images/team/robb-stark.jpg' %}" class="img-responsive" alt="how to create break fast food delicious"/>
+					</div>
+					<figcaption>
+						<h3><span class="profile-heading">ROBB STARK</span></h3>
+						<span class="profile-subheading">King of the North</span>
+						<p>Lorem ipsum dolor sit amet, consectetur. Pellentesque facilisis nunc sed sem dapibus malesuada. Praesent eu eros ut augue pretium mollis.</p>
+						<div class="figcap"></div>
+					</figcaption>
+				</figure>
+			</div>	
+
+			<div class="profile col-md-4 col-xs-12" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1200}">
+				<figure>
+					<div class="top-image">
+						<img src="{% static 'images/team/claire-matthews.jpg' %}" class="img-responsive" alt="how to create break fast food delicious"/>
+					</div>
+					<figcaption>
+						<h3><span class="profile-heading">Claire Matthews</span></h3>
+						<span class="profile-subheading">Witness Protection</span>
+						<p>Lorem ipsum dolor sit amet, consectetur. Pellentesque facilisis nunc sed sem dapibus malesuada. Praesent eu eros ut augue pretium mollis.</p>
+						<div class="figcap"></div>
+					</figcaption>
+				</figure>
+			</div>	
+		</div>
+	</div>
+</section>
+
+{% endblock content %}

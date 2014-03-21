@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% load staticfiles i18n %}
+
+{% block title %}About | Synergy Financial{% endblock title %}
+
+{% block content %}
+<section class="slider-main" data-type="background" data-speed="3">
+	<div class="content">
+		<div class= "container">
+			<h1>Synergy</h1>
+			<h2>Financial</h2>
+
+			<div class="col-sm-10 col-sm-offset-1">
+				<p>Nulla congue mollis eros a vehicula. Aliquam dignissim nunc eget nibh convallis suscipit. Phasellus in ultricies nibh. Cras gravida dolor metus, eu elementum nulla imperdiet ut.</p>
+			</div>
+
+			<a href="#consultation"><div class="btn btn-large btn-default">Get a Free Consultation!</div></a>
+		</div>
+	</div>	
+</section>	<!-- Bottom Section -->
+<div class="grid-icon-container scroll-target">
+	<script src="http://widgets.macroaxis.com/widgets/url.jsp?t=42"></script>
+	<section class="container grid-icon">
+		<div class="row">
+			<div class="col-sm-6 col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600}">
+				<a href="#"><span><i class="icon-shield"></i></span></a>
+				<h4>Insurance</h4>					
+				<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros sem commodo</p>
+			</div>
+			<div class="col-sm-6 col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:900}">
+				<a href="#"><span><i class="icon-chart"></i></span></a>
+				<h4>Investments</h4>
+				<p>Donec ullamcorper nulla non metus auctor fringilla Cursus justo amet</p>
+			</div>
+			<div class="col-sm-6 col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1300}">
+				<a href="#"><span><i class="icon-lightbulb-alt"></i></span></a>
+				<h4>Consulting</h4>
+				<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam sit vulputate risus</p>
+			</div>
+		</div>
+	</section>
+	<svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+		<path d="M0 0 L50 100 L100 0 Z" />
+	</svg>
+</div><!-- Grid Icon -->
+
+<section class="container" id="vertical_slider">
+	<div class="row section-head">
+		<header class="col col-sm-12 centered">
+			<section>
+				<h2>Say hello to our partners!</h2>
+			</section>
+			<hr>
+		</header>
+	</div>
+	<div class="companies row">
+		<div class="col-md-2">
+			<a href="https://www.genworth.com/"><img src="{% static 'images/partners/genworth.jpg' %}" /></a>
+		</div>
+		<div class="col-md-2">
+			<a href="http://www.newyorklife.com/"><img src="{% static 'images/partners/ny-life.jpg' %}" /></a>
+		</div>
+		<div class="col-md-2">
+			<a href="https://www.metlife.com/"><img src="{% static 'images/partners/metlife.jpg' %}" /></a>
+		</div>
+		<div class="col-md-2">
+			<a href="https://ingretirement.ingplans.com/"><img src="{% static 'images/partners/ing.jpg' %}" /></a>
+		</div>
+		<div class="col-md-2">
+			<a href="https://www.lgamerica.com/"><img src="{% static 'images/partners/banner-life.jpg' %}" /></a>
+		</div>
+		<div class="col-md-2">
+			<a href="http://www.transamerica.com/"><img src="{% static 'images/partners/transamerica.jpg' %}" /></a>
+		</div>
+	</div>
+</section><!-- Vertical Slider -->
+
+<section id="consultation" class="consultation">
+	<div class="container profile_team">
+		<div class="row">
+			<div class="section-head">
+				<header class="col col-sm-12 centered">
+					<section>
+						<h2>SIGNUP FOR A FREE CONSULTATION</h2>
+						<p>Nulla fringilla commodo eros, sed euismod erat facilisis non. Nunc a augue imperdiet, bibendum ligula eu, commodo felis. Suspendisse eget magna ut arcu ornare aliquet quis in elit.</p>
+					</section>
+					<hr>
+				</header>
+			</div>	
+		</div>
+
+		<div class="col-md-8 col-md-offset-2">
+			<form role="form">
+			  <div class="form-group">
+			  	<div class="col-sm-6">
+				    <label for="InputFirstName">First Name</label>
+				    <input type="text" class="form-control" id="InputFirstName" placeholder="John">
+				</div>
+			  </div>
+			  <div class="form-group">
+			  	<div class="col-sm-6">
+				    <label for="InputLastName">Last Name</label>
+				    <input type="text" class="form-control" id="Input Last Name" placeholder="Doe">
+				</div>
+			  </div>
+			  <div class="form-group">
+			  	<div class="col-sm-12">
+				    <label for="InputPhone">Phone Number</label>
+				    <input type="phone" class="form-control" id="InputPhone" placeholder="555-555-5555">
+				</div>
+			  </div>
+			  <div class="form-group">
+			  	<div class="col-sm-12">
+				    <label for="InputEmail">Email Address</label>
+				    <input type="email" class="form-control" id="InputEmail" placeholder="john@doe.com">
+				</div>
+			  </div>
+			  <!--<div class="form-group">
+				<div class="col-sm-12">
+					<div id="datetimepicker2" class="input-append">
+						<label>Preferred Date/Time</label>
+					    <input data-format="MM/dd/yyyy HH:mm:ss PP" class="form-control" type="text"></input>
+					    <span class="add-on">
+					      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+					      </i>
+					    </span>
+					</div>
+					<script type="text/javascript">
+					$(function() {
+					  $('#datetimepicker2').datetimepicker({
+					    language: 'en',
+					    pick12HourFormat: true
+					  });
+					});
+					</script>
+				</div>
+			  </div>-->
+			  <div class="form-group">
+			  	<div class="col-sm-12">
+				    <label>Send a Message</label>
+				    <textarea class="form-control" rows="3"></textarea>
+				</div>
+			  </div>
+			  <div class="form-group">
+			  	<div class="col-sm-12">
+				    <label for="InputFile">Upload Financial Statement</label>
+				    <input type="file" id="InputFile">
+				</div>
+			  </div>
+			  <div class="col-sm-8 col-sm-offset-2">
+			  	<button type="submit" class="btn btn-default btn-large btn-block">Submit</button>
+			  </div>
+			</form>
+		</div>
+	</div>
+</section>
+
+{% endblock content %}

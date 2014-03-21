@@ -1,0 +1,15 @@
+.shop-slider-bg-1 {
+    background:url(../images/shop/banners/main_banner_shop_1.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.shop-slider-bg-2 {
+    background:url(../images/shop/banners/main_banner_shop_2.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.shop-slider-bg-3 {
+    background:url(../images/shop/banners/main_banner_shop_3.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}

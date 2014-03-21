@@ -17,6 +17,12 @@ urlpatterns = patterns('',
     url(r'^about/$',
         TemplateView.as_view(template_name='pages/about.html'),
         name="about"),
+    url(r'^services/$',
+        TemplateView.as_view(template_name='pages/services.html'),
+        name="services"),
+    url(r'^clients/$',
+        TemplateView.as_view(template_name='pages/clients.html'),
+        name="clients"),
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
@@ -29,5 +35,6 @@ urlpatterns = patterns('',
     url(r'^avatar/', include('avatar.urls')),
 
     # Your stuff: custom urls go here
+    url(r'^pages/', include("nupages.urls", namespace="nupages")),
 
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

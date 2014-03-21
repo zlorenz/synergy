@@ -2,7 +2,7 @@
 <html lang="en" ng-app>
   <head>
     <meta charset="utf-8">
-    <title>{% block title %}synergy{% endblock title %}</title>
+    <title>{% block title %}Synergy Financial | Insurance, Investments & Consulting in Tucson, AZ{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -14,73 +14,247 @@
 
     {% block css %}
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
 
     <!-- Your stuff: Third-party css libraries go here -->
 
     <!-- This file store project specific CSS -->
     <link href="{% static 'css/project.css' %}" rel="stylesheet">
+
+    <!-- Krypton Theme CSS -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/fontello.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/mystyle.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/shop_slider.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/slider.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/slider_2.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/sub_slider.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/twitter_slider.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/slide_background.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/shop_slider_background.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/subpage_banners.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/jrating.jquery.css' %}" rel="stylesheet" media="screen">
+
+    <!-- Bootstrap Date-Time Picker CSS -->
+    <link href="{% static 'css/bootstrap-datetimepicker.min.css' %}" rel="stylesheet" media="screen">
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>  
+
+    <!-- Krypton Theme Javascript -->
+    <script type="text/javascript" src="{% static 'js/modernizr.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&amp;sensor=false"></script>
+    <script type="text/javascript" src="{% static 'js/google_map.js' %}"></script>
     {% endblock %}
 
     {% block angular %}
-      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
     {% endblock %}
 
   </head>
 
-  <body>
+  <body class="{% block body-class %}blog{% endblock body-class %}">
 
-    <div class="header navbar">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
-        <a class="navbar-brand" href="/">synergy</a>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="{% url 'home' %}">Home</a></li>
-          <li><a href="{% url 'about' %}">About</a></li>
+        <div class="row">
+          <div class="col col-sm-12">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bars"></span>
+                <span class="icon-bars"></span>
+                <span class="icon-bars"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="{% static 'images/krypton_logo.png' %}" alt="Logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <div class="left-cell">
+                <ul class="nav navbar-nav">
 
-          {% if request.user.is_authenticated %}
-            <li><a href="{% url 'users:detail' request.user.username  %}">{% trans "My Profile" %}</a></li>
-            <li><a href="{% url 'account_logout' %}">{% trans "Logout" %}</a></li>
-          {% else %}
-            <li><a href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a></li>
-            <li><a href="{% url 'account_login' %}">{% trans "Log In" %}</a></li>
-          {% endif %}
-        </ul>
+                  <li><a href="{% url 'home' %}">Home</a></li>
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li><a href="{% url 'services' %}">Services</a></li>
+                  <li><a href="{% url 'clients' %}">Client Center</a></li>
+
+                </ul>
+              </div>
+              <div class="right-cell">
+                <form class="navbar-form navbar-right">
+                  <ul>
+                    <li>
+                      <div class="popup_form hide-me-first">
+                        <input type="text" class="form-control" placeholder="Search">
+                      </div>
+                      <a class="search_btn"><i class="icon-search"></i></a>               
+                    </li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav><!-- Main Navigation -->
+
+    {% block content %}
+    <h1>Content goes here!</h1>
+    {% endblock content %}
+
+<section class="bottom_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 ">
+        <div class="row">
+          <div class="section-head">
+            <header class="col col-sm-12 centered">
+              <h2 style="color: rgb(238, 238, 238);">Live Market Data</h2>
+              <hr/>
+
+                    
+            </header>
+          </div>  
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 recent-portfolio">
+        <div class="row">
+          <div class="section-head">
+            <header class="col col-sm-12 centered">
+              <h2>Recent Portfolio</h2>
+              <hr>
+            </header>
+          </div>  
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <a href="portfolio_with_desc.html" class="thumbnail">
+                <img src="{% static 'images/portfolio_th_01.jpg' %}" alt="" />
+              </a>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+              <a href="portfolio_with_desc.html" class="thumbnail">
+                <img src="{% static 'images/portfolio_th_02.jpg' %}" alt="" />
+              </a>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+              <a href="portfolio_with_desc.html" class="thumbnail">
+                <img src="{% static 'images/portfolio_th_03.jpg' %}" alt="" />
+              </a>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+              <a href="portfolio_with_desc.html" class="thumbnail">
+                <img src="{% static 'images/portfolio_th_04.jpg' %}" alt="" />
+              </a>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+              <a href="portfolio_with_desc.html" class="thumbnail">
+                <img src="{% static 'images/portfolio_th_05.jpg' %}" alt="" />
+              </a>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+              <a href="portfolio_with_desc.html" class="thumbnail">
+                <img src="{% static 'images/portfolio_th_06.jpg' %}" alt="" />
+              </a>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+              <a href="portfolio_with_desc.html" class="thumbnail">
+                <img src="{% static 'images/portfolio_th_07.jpg' %}" alt="" />
+              </a>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+              <a href="portfolio_with_desc.html" class="thumbnail">
+                <img src="{% static 'images/portfolio_th_08.jpg' %}" alt="" />
+              </a>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+              <a href="portfolio_with_desc.html" class="thumbnail">
+                <img src="{% static 'images/portfolio_th_09.jpg' %}" alt="" />
+              </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-4 col-sm-4 about-us">
+        <div class="row">
+          <div class="section-head">
+            <header class="col col-sm-12 centered">
+              <h2>Contact Us</h2>
+              <hr>
+            </header>
+          </div>  
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+
+            <h4>SYNERGY FINANCIAL, LLC</h4>
+            <p><a href="tel:5204255718">(520) 425-5718</a><br>
+              <a href="mailto:info@financialsynergy.biz">info@financialsynergy.biz</a></p>
+
+            <p>2601 N. Campbell Ave. Suite #201<br>
+              Tucson, AZ 85719</p>
+
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+</section>  <footer>
+<section class="container footer-section">
+    <div class="col-lg-6 col-xs-12"><p>&copy; 2014 <a href="#">Synergy Financial, LLC</a>. All rights reserved. Designed by <a href="http://rabbitholestud.io">Rabbit Hole Studio</a>.</p></div>
+    <div class="col-lg-6 footer-menu">
+      <ul class="nav nav-pills">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'services' %}">Services</a></li>
+        <li><a href="{% url 'clients' %}">Client Center</a></li>
+      </ul>
+    </div>
+</section>
+<section class="ss-style-doublediagonal" data-type="background" data-speed="10"></section>
+</footer>
 
-    <div class="container">
-        
-      {% if messages %}
-          {% for message in messages %}
-              <div class="alert {% if message.tags %}alert-{{ message.tags }}"{% endif %}>{{ message }}</div>
-          {% endfor %}
-      {% endif %}
-
-      {% block content %}
-        <p>Use this document as a way to quick start any new project.</p>
-      {% endblock content %}
-
-    </div> <!-- /container -->
-    
-    {% block modal %}{% endblock modal %}
+<div class="md-overlay"></div>
+<div class="jquery-media-detect"></div>
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     {% block javascript %}
+
       <!-- Latest JQuery -->
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
       <!-- Latest compiled and minified JavaScript -->
-      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
       <!-- Your stuff: Third-party javascript libraries go here -->
 
       <!-- place project specific Javascript in this file -->
       <script src="{% static 'js/project.js' %}"></script>
+
+      <!-- More Krypton Theme Javascript -->
+      <script type="text/javascript" src="{% static 'js/jrating.jquery.js' %}"></script>
+      <script type="text/javascript" src="{% static 'js/myscript.js' %}"></script>
+      <script type="text/javascript" src="{% static 'js/modal_effects.js' %}"></script>
+      <script type="text/javascript" src="{% static 'js/smooth-scroll.js' %}"></script>
+
+
+      <!-- Bootstrap Date-Time Picker Javascript -->
+      <script type="text/javascript" src="{% static 'js/bootstrap-datetimepicker.min.js' %}"></script>
     {% endblock javascript %}
   </body>
 </html>
