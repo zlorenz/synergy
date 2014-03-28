@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% load staticfiles i18n %}
 
-{% block title %}About | Synergy Financial{% endblock title %}
+{% block title %}Client Center | Synergy Financial{% endblock title %}
 
 {% block content %}
 <section class="slider-main" data-type="background" data-speed="3">
-	<div class="content">
+	<div class="dark-overlay">
 		<div class= "container">
 			<h1>Synergy</h1>
 			<h2>Financial</h2>
@@ -14,27 +14,39 @@
 				<p>Nulla congue mollis eros a vehicula. Aliquam dignissim nunc eget nibh convallis suscipit. Phasellus in ultricies nibh. Cras gravida dolor metus, eu elementum nulla imperdiet ut.</p>
 			</div>
 
-			<a href="#consultation"><div class="btn btn-large btn-default">Get a Free Consultation!</div></a>
+			<a data-scroll href="#consultation"><div class="btn btn-large btn-default">Get a Free Consultation</div></a>
 		</div>
 	</div>	
-</section>	<!-- Bottom Section -->
-<div class="grid-icon-container scroll-target">
+</section>
+<div class="services grid-icon-container scroll-target">
 	<script src="http://widgets.macroaxis.com/widgets/url.jsp?t=42"></script>
 	<section class="container grid-icon">
 		<div class="row">
 			<div class="col-sm-6 col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600}">
-				<a href="#"><span><i class="icon-shield"></i></span></a>
-				<h4>Insurance</h4>					
+				<a href="{% url 'personal' %}">
+					<span>
+						<img src="http://www.anonymousproductionassistant.com/wp-content/uploads/2012/08/happy-family-on-the-floor.jpg" />
+					</span>
+				</a>
+				<h4>Personal</h4>					
 				<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros sem commodo</p>
 			</div>
 			<div class="col-sm-6 col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:900}">
-				<a href="#"><span><i class="icon-chart"></i></span></a>
-				<h4>Investments</h4>
+				<a href="{% url 'business' %}">
+					<span>
+						<img src="http://blogs-images.forbes.com/sage/files/2014/02/business-meeting1.jpg" />
+					</span>
+				</a>
+				<h4>Business</h4>
 				<p>Donec ullamcorper nulla non metus auctor fringilla Cursus justo amet</p>
 			</div>
 			<div class="col-sm-6 col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1300}">
-				<a href="#"><span><i class="icon-lightbulb-alt"></i></span></a>
-				<h4>Consulting</h4>
+				<a href="{% url 'professionals' %}">
+					<span>
+						<img src="http://muslimmatters.muslimmatters.netdna-cdn.com/wp-content/uploads/shaking-hands.jpg" />
+					</span>
+				</a>
+				<h4>Professionals</h4>
 				<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam sit vulputate risus</p>
 			</div>
 		</div>
@@ -75,8 +87,9 @@
 	</div>
 </section><!-- Vertical Slider -->
 
-<section id="consultation" class="consultation">
-	<div class="container profile_team">
+<section id="consultation" class="consultation" data-type="background" data-speed="3">
+	<div class="blue-overlay">
+	<div class="container">
 		<div class="row">
 			<div class="section-head">
 				<header class="col col-sm-12 centered">
@@ -143,7 +156,7 @@
 			  </div>
 			  <div class="form-group">
 			  	<div class="col-sm-12">
-				    <label for="InputFile">Upload Financial Statement</label>
+				    <label for="InputFile">Upload Financial Statements</label>
 				    <input type="file" id="InputFile">
 				</div>
 			  </div>
@@ -152,6 +165,7 @@
 			  </div>
 			</form>
 		</div>
+	</div>
 	</div>
 </section>
 

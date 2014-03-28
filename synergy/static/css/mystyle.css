@@ -9249,7 +9249,6 @@ img.full-width {
 }
 
 
-
 /* ------- Nav Menu ------- */
 
 @media (min-width: 768px) {
@@ -9257,8 +9256,9 @@ img.full-width {
     float: right;
   }
 
-#mynavbar .right-cell {
-  width: 40px;
+  #mynavbar .right-cell {
+    width: 40px;
+  }
 }
 
 /* ------- Welcome Block ------- */
@@ -9308,14 +9308,23 @@ img.full-width {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.grid-icon-container .grid-icon span {
-  border-radius: 25px;
-}
-
 /* ------- Services Block ------- */
 
 .grid-icon-container {
   padding: 0;
+}
+
+.grid-icon-container span img {
+  max-width: 260px;
+  border: 1px solid #666666;
+}
+
+.grid-icon-container .grid-icon span {
+  padding: 10px;
+  border-radius: 0;
+}
+.grid-icon-container .grid-icon span:hover img {
+  border: 1px solid #1abc9c;
 }
 
 #my_xss_magic {
@@ -9385,11 +9394,12 @@ section.consultation {
 
 .about-main {
   margin-bottom: 0;
-  padding: 0 0 100px;
+  padding: 0 0 80px;
+  background-color: #ecf0f1;
 }
 
 .about-main img.full-width {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .about-main p {
@@ -9421,6 +9431,246 @@ section.consultation {
 .profile_team .section-head p {
   line-height: 24px;
 }
+
+/* ------- Welcome Block ------- */
+
+.services-main {
+  margin-bottom: 0;
+  background: url(../images/parallax/pathway.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+
+.services-main .dark-overlay {
+  padding: 150px 0 0;
+}
+
+.services-main p, .services-main h1, .services-main h2, .services-main h5 {
+  color: white;
+}
+  .services-main p {
+    margin-bottom: 10px;
+    line-height: 28px;
+  }
+  .services-main h1 {
+    margin-top: 0;
+    margin-bottom: 0px;
+    letter-spacing: 15px;
+    font-size: 120px;
+  }
+  .services-main h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+    font-size: 80px;
+  }
+  .services-main h5 {
+    margin: 80px 0 -5px;
+  }
+
+  .services-main i {
+    color: #fff;
+    font-size: 50px;
+  }
+
+/* ------- Services Nav Menu ------- */
+
+
+section.services-nav {
+  margin-bottom: 0;
+}
+
+.services-nav {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(25,25,25,.25);
+  box-shadow: 0px 0px 10px 0px rgba(25,25,25,.25);
+}
+
+.services-nav li {
+  list-style: none;
+}
+.services-nav li a {
+  color: #2a2929;
+  text-transform: uppercase;
+  float: left;
+  padding: 20px 40px;
+  border-left: 1px solid #dcdcdc;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #efefef;
+}
+
+.services-nav li a.last-nav {
+  border-right: 1px solid #dcdcdc;
+}
+.services-nav .navbar {
+  margin-bottom: 0;
+}
+.services-nav.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  margin-bottom: -10px;
+}
+.services-nav.navbar .navbar-collapse {
+  text-align: center;
+}
+
+
+/* ------- Insurance Block ------- */
+
+.insurance {
+  margin-bottom: 0;
+  padding: 80px 0;
+}
+
+.insurance p {
+  line-height: 28px;
+}
+.insurance h1 {
+  font-size: 52px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.insurance h2 {
+  margin-top: 40px;
+}
+
+/* ------- Investments Block ------- */
+
+.investment {
+  padding: 80px;
+  margin-bottom: 0;
+  background-color: #ecf0f1;
+}
+
+.investment h1 {
+  margin-top: 0;
+  font-size: 52px;
+}
+.investment h3 {
+  margin-top: 0;
+}
+.investment p {
+  line-height: 28px;
+}
+
+.investment header {
+  margin-bottom: 80px;
+}
+
+/* ------- Succession Block ------- */
+
+.succession {
+  margin-bottom: 0;
+  padding: 80px 0;
+}
+
+.succession p {
+  line-height: 28px;
+}
+.succession h1 {
+  font-size: 52px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.succession h2 {
+  margin-top: 60px;
+}
+.succession h3 {
+  margin-top: 20px;
+}
+
+.succession-tabs {
+  margin: 40px 0 0;
+}
+.succession .nav-tabs.nav-justified {
+  background-color: #bdc3c7;
+  -webkit-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  background-clip: padding-box;
+}
+.succession .nav-tabs.nav-justified > li > a {
+  border: none;
+  background-color: #bdc3c7;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.succession .nav-tabs.nav-justified > .active {
+  background-color: #ffffff;
+  border: 1px solid #bdc3c7;
+  -webkit-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  background-clip: padding-box;
+  border-bottom: 0;
+}
+.succession .nav-tabs.nav-justified > .active > a {
+  border-bottom: 1px solid #ffffff;
+  background-color: #ffffff;
+  color: #999999;
+}
+.succession .nav-tabs.nav-justified > .active > a, .succession .nav-tabs.nav-justified > .active > a:hover, .succession .nav-tabs.nav-justified > .succession .active > a:focus {
+  border: none;
+}
+.succession-tabs .tab-pane {
+  border-left: 1px solid #bdc3c7;
+  border-bottom: 1px solid #bdc3c7;
+  border-right: 1px solid #bdc3c7;
+  padding: 20px;
+  -webkit-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  background-clip: padding-box;
+}
+
+/* ------- Employee Compensation Block ------- */
+
+.benefits {
+  padding: 80px;
+  margin-bottom: 0;
+  background-color: #ecf0f1;
+}
+
+.benefits h1 {
+  margin-top: 0;
+  font-size: 52px;
+}
+.benefits h2 {
+  margin-top: 40px;
+  font-size: 30px;
+}
+.benefits h3 {
+  margin-top: 0;
+}
+.benefits p {
+  line-height: 28px;
+}
+
+/* ------- Investments Block ------- */
+
+.biz-consulting {
+  padding: 80px;
+  margin-bottom: 0;
+}
+
+.biz-consulting h1 {
+  margin-top: 0;
+  font-size: 52px;
+}
+.biz-consulting h3 {
+  margin-top: 0;
+}
+.biz-consulting p {
+  line-height: 28px;
+}
+
+.biz-consulting header {
+  margin-bottom: 80px;
+}
+
+/* ------- Professionals Welcome Block ------- */
+
+.services-main.professionals .dark-overlay {
+  padding: 150px 0 80px;
+}
+
 
 /* ------- Footer Block ------- */
 

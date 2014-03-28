@@ -1,0 +1,216 @@
+{% extends "base.html" %}
+{% load staticfiles i18n %}
+
+{% block title %}Personal Services | Synergy Financial{% endblock title %}
+
+{% block content %}
+<section class="services-main" data-type="background" data-speed="3">
+	<div class="dark-overlay">
+		<div class= "container">
+			<h2>Personal Services</h2>
+
+			<div class="col-sm-10 col-sm-offset-1">
+				<p>Donec fringilla rutrum est eget dignissim. Donec dictum lectus in nisl congue adipiscing. Aenean nec lacus mauris. Suspendisse mi nisi, tincidunt vitae ipsum sit amet, aliquam placerat arcu. Nunc adipiscing velit sed tortor pharetra auctor. Donec id leo a leo pretium vestibulum eget eget lectus.</p>
+			</div>
+
+			<div class="col-xs-12">
+				<h5>Choose one of the options below to learn more</h5>
+				<i class="icon-down-circle"></i>
+			</div>
+		</div>
+	</div>	
+</section>
+
+<section class="services-nav">
+	<nav class="services-nav navbar navbar-default" role="navigation">
+	  <div class="collapse navbar-collapse navbar-ex1-collapse">
+	    <ul class="nav navbar-nav">
+	      <li><a data-scroll href="#insurance">Insurance</a></li>
+	      <li><a data-scroll href="#investment">Investments</a></li>
+	      <li><a data-scroll class="last-nav" href="#succession">Succession</a></li>
+	    </ul>
+	  </div>
+	</nav>
+</section>
+
+<section id="insurance" class="insurance">
+	<div class= "container">
+		<div class="row">
+			<div class="section-head">
+				<header class="col col-sm-12 centered">
+					<section>
+						<h1>Insurance</h1>
+					</section>
+					<p class="descriptionText">Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product or service</p>
+					<hr>
+				</header>
+			</div>
+		</div>
+		
+		<div class="col-sm-12" style="text-align: center;">
+			<h2>Life Insurance</h2>
+			<p>Nulla fringilla commodo eros, sed euismod erat facilisis non. Nunc a augue imperdiet, bibendum ligula eu, commodo felis. Suspendisse eget magna ut arcu ornare aliquet quis in elit. In tempus laoreet euismod. Pellentesque diam metus, mollis sit amet porta ac, dapibus et enim. Sed viverra tristique congue. Pellentesque justo urna, imperdiet sed lorem non, vestibulum gravida dui. Donec sollicitudin justo neque, eu posuere ipsum vulputate eu.</p>
+		</div>
+	
+		<div class="col-sm-6">
+			<h2>Long-Term Care</h2>
+			<p>Aenean sagittis nunc at nunc vehicula dapibus. Nulla porta massa in lorem lobortis, vel porttitor quam molestie. Maecenas dapibus est eu rutrum condimentum. Etiam tempor libero ac tellus porta tincidunt. Sed elementum quis magna elementum sollicitudin. Aliquam at scelerisque enim, sit amet posuere lorem.</p>
+		</div>
+
+		<div class="col-xs-6">
+			<h2>Disability Insurance</h2>
+			<p>Nulla fringilla commodo eros, sed euismod erat facilisis non. Nunc a augue imperdiet, bibendum ligula eu, commodo felis. Suspendisse eget magna ut arcu ornare aliquet quis in elit. In tempus laoreet euismod. Pellentesque diam metus, mollis sit amet porta ac, dapibus et enim. Sed viverra tristique congue. Pellentesque justo urna, imperdiet sed lorem non, vestibulum gravida dui. Donec sollicitudin justo neque, eu posuere ipsum vulputate eu.</p>
+		</div>
+
+	</div>	
+</section>
+
+<section class="investment" id="investment">
+	<div class="container">
+		<div class="row">
+			<div class="section-head">
+				<header class="col col-sm-12 centered">
+					<section>
+						<h1>Investments</h1>
+					</section>
+					<p class="descriptionText">Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product or service</p>
+					<hr>
+				</header>
+			</div>
+		</div>
+
+		<div class="cn_wrapper row">
+			<div id="cn_list" class="cn_list col col-xs-4" data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
+				<div class="cn_page" style="display:block;">
+					<div class="cn_item selected">
+						<div class="row">
+							<div class="col col-sm-2 vs_icon">
+								<i class="icon-rocket"></i>
+							</div>
+							<div class="col col-sm-10 vs_text">
+								<h2 class="vs_title">Retirement</h2>
+								<p class="vs_description">Adipiscing Purus</p>
+							</div>
+						</div>
+					</div>
+					<div class="cn_item">
+						<div class="row">
+							<div class="col col-sm-2 vs_icon">
+								<i class="icon-camera"></i>
+							</div>
+							<div class="col col-sm-10 vs_text">
+								<h2 class="vs_title">College</h2>
+								<p class="vs_description">Porta Venenatis</p>
+							</div>
+						</div>
+					</div>
+					<div class="cn_item">
+						<div class="row">
+							<div class="col col-sm-2 vs_icon">
+								<i class="icon-user-male"></i>
+							</div>
+							<div class="col col-sm-10 vs_text">
+								<h2 class="vs_title">Mutual Funds & Annuities</h2>
+								<p class="vs_description">Dapibus Ipsum</p>
+							</div>
+						</div>
+					</div>
+					<div class="cn_item">
+						<div class="row">
+							<div class="col col-sm-2 vs_icon">
+								<i class="icon-mobile-1"></i>
+							</div>
+							<div class="col col-sm-10 vs_text">
+								<h2 class="vs_title">Other</h2>
+								<p class="vs_description">Pellentesque Etiam</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="cn_preview" class="cn_preview col col-xs-8">
+				<div class="cn_content" style="top:0;" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:300}">
+					<div class="col-md-6">
+						<h3>Retirement</h4>
+						<p>Donec euismod ornare ipsum fringilla volutpat. Morbi iaculis eu eros eu aliquet. Vestibulum non arcu sollicitudin mi fermentum porttitor. Proin pretium condimentum euismod. Integer et justo sed dolor posuere consequat ut vel risus. Pellentesque id arcu a quam varius tincidunt.</p>
+					</div>
+					<div class="col-md-6">
+						<img class="img-responsive" src="http://amassis.files.wordpress.com/2013/06/old-people.jpeg" />
+					</div>
+				</div>
+				<div class="cn_content">
+					<div class="col-md-6">
+						<h3>College</h4>
+						<p>Donec euismod ornare ipsum fringilla volutpat. Morbi iaculis eu eros eu aliquet. Vestibulum non arcu sollicitudin mi fermentum porttitor. Proin pretium condimentum euismod. Integer et justo sed dolor posuere consequat ut vel risus. Pellentesque id arcu a quam varius tincidunt.</p>
+					</div>
+					<div class="col-md-6">
+						<img class="img-responsive" src="http://img.mylot.com/1042558.jpg" />
+					</div>
+				</div>
+				<div class="cn_content">
+					<div class="col-md-6">
+						<h3>Mutual Funds & Annuities</h4>
+						<p>Donec euismod ornare ipsum fringilla volutpat. Morbi iaculis eu eros eu aliquet. Vestibulum non arcu sollicitudin mi fermentum porttitor. Proin pretium condimentum euismod. Integer et justo sed dolor posuere consequat ut vel risus. Pellentesque id arcu a quam varius tincidunt.</p>
+					</div>
+					<div class="col-md-6">
+						<img class="img-responsive" src="http://www.moneyunder30.com/images/2013/09/2247354510_63e1747cce.jpg" />
+					</div>
+				</div>
+				<div class="cn_content">
+					<div class="col-md-6">
+						<h3>Other</h4>
+						<p>Donec euismod ornare ipsum fringilla volutpat. Morbi iaculis eu eros eu aliquet. Vestibulum non arcu sollicitudin mi fermentum porttitor. Proin pretium condimentum euismod. Integer et justo sed dolor posuere consequat ut vel risus. Pellentesque id arcu a quam varius tincidunt.</p>
+					</div>
+					<div class="col-md-6">
+						<img class="img-responsive" src="http://budgeting.thenest.com/DM-Resize/photos.demandstudios.com/getty/article/117/121/87626642.jpg?w=600&h=600&keep_ratio=1" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="succession" class="succession">
+	<div class= "container">
+		<div class="row">
+			<div class="section-head">
+				<header class="col col-sm-12 centered">
+					<section>
+						<h1>Succession</h1>
+					</section>
+					<p class="descriptionText">Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product or service</p>
+				</header>
+			</div>
+		</div>
+		
+		<div class="succession-tabs">
+				<ul class="nav nav-tabs nav-justified">
+				  <li class="active"><a href="#trusts" data-toggle="tab">Trusts</a></li>
+				  <li><a href="#estate" data-toggle="tab">Estate Planning</a></li>
+				  <li><a href="#other" data-toggle="tab">Something Else</a></li>
+				</ul><!-- Nav Tabs -->			
+				<div class="tab-content">
+				  	<div class="tab-pane fade in active" id="trusts">
+				  		<h3>Trusts</h3>
+						<p>Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+						<p>Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+				  	</div>
+				  	<div class="tab-pane fade" id="estate">
+						<h3>Estate Planning</h3>
+						<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+						<p>Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem malesuada magna mollis euismod.</p>
+						<p>Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+				  	</div>
+				  	<div class="tab-pane fade" id="other">
+						<h3>Something Else</h3>
+						<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+						<p>Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+						<p>Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+				  	</div>
+				</div><!-- Tab Panes -->			
+		</div><!-- Bottom Part -->
+
+	</div>	
+</section>
+
+{% endblock content %}

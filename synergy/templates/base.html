@@ -45,11 +45,9 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>  
 
-    <!-- Krypton Theme Javascript -->
-    <script type="text/javascript" src="{% static 'js/modernizr.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&amp;sensor=false"></script>
-    <script type="text/javascript" src="{% static 'js/google_map.js' %}"></script>
+    <!-- Smooth Scroll Javascript -->
+    <script type="text/javascript" src="{% static 'js/smooth-scroll.js' %}"></script>
+    
     {% endblock %}
 
     {% block angular %}
@@ -60,47 +58,53 @@
 
   <body class="{% block body-class %}blog{% endblock body-class %}">
 
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="row">
-          <div class="col col-sm-12">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bars"></span>
-                <span class="icon-bars"></span>
-                <span class="icon-bars"></span>
-              </button>
-              <a class="navbar-brand" href="#"><img src="{% static 'images/krypton_logo.png' %}" alt="Logo"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="mynavbar">
-              <div class="left-cell">
-                <ul class="nav navbar-nav">
-
-                  <li><a href="{% url 'home' %}">Home</a></li>
-                  <li><a href="{% url 'about' %}">About</a></li>
-                  <li><a href="{% url 'services' %}">Services</a></li>
-                  <li><a href="{% url 'clients' %}">Client Center</a></li>
-
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="row">
+      <div class="col col-sm-12">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bars"></span>
+            <span class="icon-bars"></span>
+            <span class="icon-bars"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="{% static 'images/krypton_logo.png' %}" alt="Logo"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <div class="left-cell">
+            <ul class="nav navbar-nav">
+              <li><a href="{% url 'home' %}">Home</a></li>
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">Services</a>
+                <ul class="dropdown-menu">
+                  <li><h5 class="menuTitle">Services</h5></li>
+                  <li><a href="{% url 'personal' %}">Personal</a></li>
+                  <li><a href="{% url 'business' %}">Business</a></li>
+                  <li><a href="{% url 'professionals' %}">Professionals</a></li>
                 </ul>
-              </div>
-              <div class="right-cell">
-                <form class="navbar-form navbar-right">
-                  <ul>
-                    <li>
-                      <div class="popup_form hide-me-first">
-                        <input type="text" class="form-control" placeholder="Search">
-                      </div>
-                      <a class="search_btn"><i class="icon-search"></i></a>               
-                    </li>
-                  </ul>
-                </form>
-              </div>
-            </div>
+              </li>
+              <li><a href="{% url 'clients' %}">Client Center</a></li>
+            </ul>
+          </div>
+          <div class="right-cell">
+            <form class="navbar-form navbar-right">
+              <ul>
+                <li>
+                  <div class="popup_form hide-me-first">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <a class="search_btn"><i class="icon-search"></i></a>               
+                </li>
+              </ul>
+            </form>
           </div>
         </div>
       </div>
-    </nav><!-- Main Navigation -->
+    </div>
+  </div>
+</nav><!-- Main Navigation -->
 
     {% block content %}
     <h1>Content goes here!</h1>
@@ -115,8 +119,6 @@
             <header class="col col-sm-12 centered">
               <h2 style="color: rgb(238, 238, 238);">Live Market Data</h2>
               <hr/>
-
-                    
             </header>
           </div>  
         </div>
@@ -219,13 +221,26 @@
       <ul class="nav nav-pills">
         <li><a href="{% url 'home' %}">Home</a></li>
         <li><a href="{% url 'about' %}">About</a></li>
-        <li><a href="{% url 'services' %}">Services</a></li>
+        <li><a href="{% url 'personal' %}">Personal</a></li>
+        <li><a href="{% url 'business' %}">Business</a></li>
+        <li><a href="{% url 'professionals' %}">Professionals</a></li>
         <li><a href="{% url 'clients' %}">Client Center</a></li>
       </ul>
     </div>
 </section>
 <section class="ss-style-doublediagonal" data-type="background" data-speed="10"></section>
 </footer>
+
+<script>
+  smoothScroll.init({
+      speed: 500, // Integer. How fast to complete the scroll in milliseconds
+      easing: 'easeInOutQuart', // Easing pattern to use
+      updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+      offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+      callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
+      callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
+  });
+</script>
 
 <div class="md-overlay"></div>
 <div class="jquery-media-detect"></div>
@@ -246,15 +261,15 @@
       <!-- place project specific Javascript in this file -->
       <script src="{% static 'js/project.js' %}"></script>
 
-      <!-- More Krypton Theme Javascript -->
+      <!-- Krypton Theme Javascript -->
+      <script type="text/javascript" src="{% static 'js/modernizr.js' %}"></script>
+      <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&amp;sensor=false"></script>
+      <script type="text/javascript" src="{% static 'js/google_map.js' %}"></script>
       <script type="text/javascript" src="{% static 'js/jrating.jquery.js' %}"></script>
       <script type="text/javascript" src="{% static 'js/myscript.js' %}"></script>
       <script type="text/javascript" src="{% static 'js/modal_effects.js' %}"></script>
-      <script type="text/javascript" src="{% static 'js/smooth-scroll.js' %}"></script>
 
-
-      <!-- Bootstrap Date-Time Picker Javascript -->
-      <script type="text/javascript" src="{% static 'js/bootstrap-datetimepicker.min.js' %}"></script>
     {% endblock javascript %}
   </body>
 </html>

@@ -666,7 +666,7 @@ $('#dt-contact-form').submit(function(e){
 });*/
 
   // modified Isotope methods for gutters in masonry
-  $.Isotope.prototype._getMasonryGutterColumns = function() {
+ $.Isotope.prototype._getMasonryGutterColumns = function() {
     var gutter = this.options.masonry && this.options.masonry.gutterWidth || 0;
         containerWidth = this.element.width();
   

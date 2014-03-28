@@ -48,7 +48,7 @@ class Common(Configuration):
         'south',  # Database migration helpers:
         'crispy_forms',  # Form layouts
         'avatar',  # for user avatars
-        'nupages',
+        #'nupages',
     )
 
     # Apps specific for this project go here.
