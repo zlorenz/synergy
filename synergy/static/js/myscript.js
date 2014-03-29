@@ -341,8 +341,8 @@ $(function() { //When the document loads
 
 (function(iniframe){
 	'use strict';
-	document.writeln('<script type="text/javascript" src="/js/core.js"></script>');
-	document.writeln('<script type="text/javascript" src="/js/scrollspy.js"></script>');
+	document.writeln('<script type="text/javascript" src="https://synergy-financial.s3.amazonaws.com/js/core.js"></script>');
+	document.writeln('<script type="text/javascript" src="https://synergy-financial.s3.amazonaws.com/js/scrollspy.js"></script>');
 	//document.writeln('<script type="text/javascript" src="/static/js/core.js"></script>');
 	//document.writeln('<script type="text/javascript" src="/static/js/scrollspy.js"></script>');
 })(window !== window.parent);
