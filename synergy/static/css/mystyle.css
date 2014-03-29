@@ -9287,13 +9287,13 @@ img.full-width {
     margin-top: 0;
     margin-bottom: 0px;
     letter-spacing: 15px;
-    font-size: 120px;
+    font-size: 56px;
   }
   .slider-main h2 {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     letter-spacing: 10px;
-    font-size: 80px;
+    font-size: 44px;
   }
 
 .slider-main .btn-default {
@@ -9308,11 +9308,17 @@ img.full-width {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* ------- Services Block ------- */
-
-.grid-icon-container {
-  padding: 0;
+@media (min-width: 768px) {
+  .slider-main h1 {
+    font-size: 120px;
+  }
+  .slider-main h2 {
+    font-size: 80px;
+    margin-bottom: 50px;
+  }
 }
+
+/* ------- Services Block ------- */
 
 .grid-icon-container span img {
   max-width: 260px;
@@ -9348,7 +9354,7 @@ img.full-width {
   color: #fff;
 }
 .consultation h2 {
-  font-size: 52px;
+  font-size: 36px;
 }
 .consultation p {
   line-height: 26px;
@@ -9360,7 +9366,7 @@ section.consultation {
 }
 
 .consultation label {
-  margin-top: 15px;
+  margin-top: 5px;
   margin-bottom: 0;
   font-weight: 400;
   color: #fff;
@@ -9388,6 +9394,16 @@ section.consultation {
 .blue-overlay {
   padding: 90px 0;
   background-color: rgba(49,162,202,0.5);
+}
+
+@media (min-width: 768px) {
+  .consultation h2 {
+    font-size: 52px;
+  }
+
+  .consultation label {
+    margin-top: 15px;
+  }
 }
 
 /* ------- About Block ------- */
