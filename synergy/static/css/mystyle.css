@@ -9251,13 +9251,32 @@ img.full-width {
 
 /* ------- Nav Menu ------- */
 
+#mynavbar .left-cell {
+  padding-top: 17px;
+}
+
+.navbar-brand img {
+  width: 226px;
+}
+
 @media (min-width: 768px) {
   .navbar-default .navbar-nav {
     float: right;
   }
 
-  #mynavbar .right-cell {
-    width: 40px;
+  #mynavbar {
+    width: auto;
+    float: right;
+  }
+}
+
+@media (min-width: 992px) {
+  #mynavbar .left-cell {
+    padding-top: 20px;
+  }
+
+  .navbar-brand img {
+    width: 263px;
   }
 }
 
@@ -9636,7 +9655,78 @@ section.services-nav {
   background-clip: padding-box;
 }
 
-/* ------- Employee Compensation Block ------- */
+/* ------- Risk Management Block ------- */
+
+.risk-icon-container {
+  margin-bottom: 180px;
+  padding: 80px 0 0 0;
+  position: relative;
+}
+
+.risk-icon-container .risk-icon h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.risk-icon-container .risk-icon div p {
+  text-align: center;
+  font-size: 14px;
+  color: #999999;
+}
+
+.risk-icon-container .risk-icon {
+  text-align: center;
+  color: #666666;
+}
+
+.risk-icon-container .risk-icon span {
+  padding: 10px;
+  border-radius: 0;
+}
+
+.risk-icon-container .risk-icon span {
+  text-align: center;
+  font-size: 3.5em;
+  color: #666666;
+  border: 1px solid #666666;
+  padding: 3px 15px;
+  display: inline-block;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-clip: padding-box;
+  position: relative;
+  margin-bottom: 30px;
+  background-color: #ecf0f1;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.risk-icon-container .risk-icon span:before {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #666666;
+  border-width: 11px;
+  margin-left: -11px;
+}
+
+.risk-icon-container .risk-icon span:after, .risk-icon-container .risk-icon span:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* ------- Employee Benefits Block ------- */
 
 .benefits {
   padding: 80px;
@@ -9659,7 +9749,7 @@ section.services-nav {
   line-height: 28px;
 }
 
-/* ------- Investments Block ------- */
+/* ------- Business Consulting Block ------- */
 
 .biz-consulting {
   padding: 80px;
