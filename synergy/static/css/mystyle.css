@@ -9248,6 +9248,16 @@ img.full-width {
   width: 100%;
 }
 
+.btn-info {
+  color: #ffffff;
+  background-color: #17222d;
+  border-color: #1F3142;
+}
+
+.btn-info:hover {
+  background-color: #213040;
+}
+
 
 /* ------- Nav Menu ------- */
 
@@ -9467,13 +9477,16 @@ section.consultation {
   line-height: 24px;
 }
 
-/* ------- Welcome Block ------- */
+/* ------- Personal Welcome Block ------- */
 
 .services-main {
   margin-bottom: 0;
-  background: url(../images/parallax/pathway.jpg) no-repeat center center;
   background-size: cover;
   text-align: center;
+}
+
+.services-main.personal {
+  background: url(../images/parallax/neighborhood.jpg) no-repeat center center;
 }
 
 .services-main .dark-overlay {
@@ -9509,7 +9522,6 @@ section.consultation {
   }
 
 /* ------- Services Nav Menu ------- */
-
 
 section.services-nav {
   margin-bottom: 0;
@@ -9572,7 +9584,7 @@ section.services-nav {
 /* ------- Investments Block ------- */
 
 .investment {
-  padding: 80px;
+  padding: 80px 0;
   margin-bottom: 0;
   background-color: #ecf0f1;
 }
@@ -9655,6 +9667,54 @@ section.services-nav {
   background-clip: padding-box;
 }
 
+/* ------- Consulting CTA Block ------- */
+
+.consulting-cta {
+  padding: 80px 0;
+  margin-bottom: 0;
+  background-color: #1abc9c;
+  text-align: center;
+}
+
+.consulting-cta h2 {
+  margin-top: 0;
+  color: #fff;
+  font-size: 36px;
+}
+.consulting-cta p {
+  color: #fff;
+  line-height: 28px;
+}
+.consulting-cta .section-head p.descriptionText {
+  color: #fff;
+}
+
+.consulting-cta .btn {
+  margin-top: 40px;
+}
+
+@media (min-width: 992px) {
+  .consulting-cta {
+    text-align: left;
+  }
+
+  .consulting-cta .btn {
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: 768px) {
+  .consulting-cta h2 {
+    font-size: 44px;
+  }
+}
+
+/* ------- Business Welcome Block ------- */
+
+.services-main.business {
+  background: url(../images/parallax/city.jpg) no-repeat center center;
+}
+
 /* ------- Risk Management Block ------- */
 
 .risk-icon-container {
@@ -9728,7 +9788,7 @@ section.services-nav {
 /* ------- Employee Benefits Block ------- */
 
 .benefits {
-  padding: 80px;
+  padding: 80px 0;
   margin-bottom: 0;
   background-color: #ecf0f1;
 }
@@ -9751,7 +9811,7 @@ section.services-nav {
 /* ------- Business Consulting Block ------- */
 
 .biz-consulting {
-  padding: 80px;
+  padding: 80px 0;
   margin-bottom: 0;
 }
 
@@ -9771,6 +9831,10 @@ section.services-nav {
 }
 
 /* ------- Professionals Welcome Block ------- */
+
+.services-main.professionals {
+  background: url(../images/parallax/meeting.jpg) no-repeat center center;
+}
 
 .services-main.professionals .dark-overlay {
   padding: 150px 0 80px;
