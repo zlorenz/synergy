@@ -9370,6 +9370,7 @@ img.full-width {
 
 .companies img {
   width: 100%;
+  margin-bottom: 30px;
 }
 
 /* ------- Consultation Form Block ------- */
@@ -9838,6 +9839,79 @@ section.services-nav {
 
 .services-main.professionals .dark-overlay {
   padding: 150px 0 80px;
+}
+
+/* ------- Service Commitment Block ------- */
+
+.commitment {
+  padding: 80px 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.commitment h1 {
+  margin-top: 0;
+  font-size: 52px;
+}
+.commitment h2 {
+  margin-top: 10px;
+}
+.commitment p {
+  line-height: 28px;
+}
+
+.commitment header {
+  margin-bottom: 80px;
+}
+
+@media (min-width: 992px) {
+  .commitment {
+    padding: 110px 0;
+    text-align: right;
+  }
+}
+
+/* ------- Synergy Partnerships Block ------- */
+
+.partnerships {
+  margin-bottom: 0;
+  padding: 80px 0;
+  background-color: #ecf0f1;
+}
+
+.partnerships p {
+  line-height: 28px;
+}
+.partnerships h1 {
+  font-size: 52px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.partnerships h2 {
+  margin-top: 40px;
+}
+
+/* ------- Partner Comment Block ------- */
+
+.partner-comment {
+  padding: 40px 0;
+  margin-bottom: 0;
+  background-color: #1abc9c;
+  text-align: center;
+}
+
+.partner-comment h2 {
+  margin-top: 0;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 300;
+  text-transform: none;
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 768px) {
 }
 
 
