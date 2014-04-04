@@ -9915,6 +9915,33 @@ section.services-nav {
 }
 
 
+/* ------- Client Login Block ------- */
+
+.client-login {
+  padding: 80px 0 90px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.client-login h1 {
+  margin-top: 0;
+  font-size: 52px;
+}
+.client-login p {
+  line-height: 28px;
+}
+
+.client-login header {
+  margin-bottom: 48px;
+}
+
+@media (min-width: 992px) {
+  .client-login {
+    padding: 100px 0 110px;
+  }
+}
+
+
 /* ------- Footer Block ------- */
 
 .bottom_section p {
@@ -9922,4 +9949,26 @@ section.services-nav {
 }
 .bottom_section h4 {
   color: #fff;
+}
+
+table.gadget > tbody > tr > td > div, table.gadget > tbody > tr > td > a > img {
+  margin-left: 50px;
+}
+
+@media (min-width: 768px) {
+  table.gadget > tbody > tr > td > div, table.gadget > tbody > tr > td > a > img {
+    margin-left: 251px;
+  }
+}
+
+@media (min-width: 992px) {
+  table.gadget > tbody > tr > td > div, table.gadget > tbody > tr > td > a > img {
+    margin-left: 35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  table.gadget > tbody > tr > td > div, table.gadget > tbody > tr > td > a > img {
+    margin-left: 75px;
+  }
 }
