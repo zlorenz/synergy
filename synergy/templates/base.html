@@ -66,6 +66,14 @@
   </head>
 
   <body class="{% block body-class %}blog{% endblock body-class %}">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1411556859108186";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -122,6 +130,7 @@
 <section class="bottom_section">
   <div class="container">
     <div class="row">
+
       <div class="col-lg-4 col-md-4">
         <div class="row">
           <div class="section-head">
@@ -129,69 +138,75 @@
               <h2 style="color: rgb(238, 238, 238);">Live Market Data</h2>
               <hr/>
             </header>
-              <script src="//www.gmodules.com/ig/ifr?url=http://edulifeline.com/includes/stocks_widget/widget.xml&amp;synd=open&amp;w=249&amp;h=320&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js"></script>
-          </div>  
+          </div>
+        </div>
+          
+        <div class="row">  
+          <div class="stock-widget">
+            <script src="//www.gmodules.com/ig/ifr?url=http://edulifeline.com/includes/stocks_widget/widget.xml&amp;synd=open&amp;w=249&amp;h=320&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js"></script>
+          </div>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-4 recent-portfolio">
+      <div class="col-lg-4 col-md-4">
         <div class="row">
           <div class="section-head">
             <header class="col col-sm-12 centered">
               <h2>Business News from <a href="http://online.wsj.com/">WSJ</a></h2>
               <hr>
             </header>
-          </div>  
-        </div>
-        <div class="row">
-
-          <!-- start feedwind code -->
-          <script type="text/javascript">
-            <!--
-            rssmikle_url="http://online.wsj.com/xml/rss/3_7014.xml";
-            rssmikle_frame_width="390";
-            rssmikle_frame_height="303";
-            rssmikle_target="_blank";
-            rssmikle_font="'Open Sans', sans-serif"; ;
-            rssmikle_font_size="14";
-            rssmikle_border="on";
-            responsive="off";
-            rssmikle_css_url="";
-            text_align="left";
-            corner="off";
-            autoscroll="off";
-            scrolldirection="up";
-            scrollstep="3";
-            mcspeed="20";
-            sort="New";
-            rssmikle_title="off";
-            rssmikle_title_sentence="Wall Street Journal: U.S. Business";
-            rssmikle_title_link="";
-            rssmikle_title_bgcolor="#ffffff";
-            rssmikle_title_color="#ffffff";
-            rssmikle_title_bgimage="http://";
-            rssmikle_item_bgcolor="#eeeeee";
-            rssmikle_item_bgimage="http://";
-            rssmikle_item_title_length="55";
-            rssmikle_item_title_color="#1abc9c";
-            rssmikle_item_border_bottom="on";
-            rssmikle_item_description="off";
-            rssmikle_item_description_length="150";
-            rssmikle_item_description_color="#666666";
-            rssmikle_item_date="gl1";
-            rssmikle_timezone="Etc/GMT";
-            datetime_format="%b %e, %Y %l:%M:%S %p";
-            rssmikle_item_description_tag="off";
-            rssmikle_item_podcast="off";
-            //-->
-          </script>
-          <script type="text/javascript" src="http://widget.feed.mikle.com/js/rssmikle.js"></script>
-          <div style="font-size:10px; text-align:center; width:390;">
-            <a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;">RSS Feed Widget</a>
-            <!--Please display the above link in your web page according to Terms of Service.-->
           </div>
-          <!-- end feedwind code -->
+        </div>
 
+        <div class="row">
+          <div class="wsj-widget">
+            <!-- start feedwind code -->
+              <script type="text/javascript">
+                <!--
+                rssmikle_url="http://online.wsj.com/xml/rss/3_7014.xml";
+                rssmikle_frame_width="280";
+                rssmikle_frame_height="303";
+                rssmikle_target="_blank";
+                rssmikle_font="'Open Sans', sans-serif"; ;
+                rssmikle_font_size="14";
+                rssmikle_border="on";
+                responsive="off";
+                rssmikle_css_url="";
+                text_align="left";
+                corner="off";
+                autoscroll="off";
+                scrolldirection="up";
+                scrollstep="3";
+                mcspeed="20";
+                sort="New";
+                rssmikle_title="off";
+                rssmikle_title_sentence="Wall Street Journal: U.S. Business";
+                rssmikle_title_link="";
+                rssmikle_title_bgcolor="#ffffff";
+                rssmikle_title_color="#ffffff";
+                rssmikle_title_bgimage="http://";
+                rssmikle_item_bgcolor="#eeeeee";
+                rssmikle_item_bgimage="http://";
+                rssmikle_item_title_length="55";
+                rssmikle_item_title_color="#1abc9c";
+                rssmikle_item_border_bottom="on";
+                rssmikle_item_description="off";
+                rssmikle_item_description_length="150";
+                rssmikle_item_description_color="#666666";
+                rssmikle_item_date="gl1";
+                rssmikle_timezone="Etc/GMT";
+                datetime_format="%b %e, %Y %l:%M:%S %p";
+                rssmikle_item_description_tag="off";
+                rssmikle_item_podcast="off";
+                //-->
+              </script>
+              <script type="text/javascript" src="http://widget.feed.mikle.com/js/rssmikle.js"></script>
+              <div style="font-size:10px; text-align:center; width:390;">
+                <a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;">RSS Feed Widget</a>
+                <!--Please display the above link in your web page according to Terms of Service.-->
+              </div>
+            <!-- end feedwind code -->
+          </div>
         </div>
       </div>
       
@@ -202,24 +217,25 @@
               <h2>Contact Us</h2>
               <hr>
             </header>
-          </div>  
+          </div>
         </div>
-        <div class="row">
-          <div class="col-lg-12">
 
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-4 col-md-12 col-md-offset-0">
             <h4>SYNERGY FINANCIAL, LLC</h4>
             <p><a href="tel:5204255718">(520) 425-5718</a><br>
               <a href="mailto:info@financialsynergy.biz">info@financialsynergy.biz</a></p>
-
             <p>2601 N. Campbell Ave. Suite #201<br>
               Tucson, AZ 85719</p>
-
           </div>
         </div>
       </div>
     </div>
+
   </div>
-</section>  <footer>
+</section>
+
+<footer>
 <section class="container footer-section">
     <div class="col-lg-6 col-xs-12"><p>&copy; 2014 <a href="#">Synergy Financial, LLC</a>. All rights reserved. Designed by <a href="http://rabbitholestud.io">Rabbit Hole Studio</a>.</p></div>
     <div class="col-lg-6 footer-menu">
