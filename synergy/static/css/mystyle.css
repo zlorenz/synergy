@@ -9269,6 +9269,24 @@ h2.services-title {
   font-size: 48px;
 }
 
+section.profile_team,
+section.insurance,
+section.investment,
+section.succession,
+section.benefits,
+section.biz-consulting,
+section.partnerships,
+section.client-login,
+section.referral {
+  margin-bottom: 0;
+  padding: 50px 0;
+}
+
+h1.section-title {
+  margin-top: 0;
+  font-size: 36px;
+}
+
 @media (min-width: 768px) {
   .section-head {
     margin-bottom: 40px;
@@ -9277,6 +9295,22 @@ h2.services-title {
   h2.services-title {
     margin-bottom: 50px;
     font-size: 80px;
+  }
+
+  section.profile_team,
+  section.insurance,
+  section.investment,
+  section.succession,
+  section.benefits,
+  section.biz-consulting,
+  section.partnerships,
+  section.client-login,
+  section.referral {
+    padding: 80px 0;
+  }
+
+  h1.section-title {
+    font-size: 52px;
   }
 }
   
@@ -9503,12 +9537,12 @@ section.consultation {
 
 .about-main {
   margin-bottom: 0;
-  padding: 62px 0 50px;
+  padding: 62px 0 30px;
   background-color: #ecf0f1;
 }
 
 .about-main img.full-width {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .about-main p {
@@ -9518,6 +9552,9 @@ section.consultation {
   font-size: 72px;
   margin-bottom: 30px;
 }
+.about-main h2 {
+  font-size: 28px;
+}
 
 @media (min-width: 768px) {
   .about-main {
@@ -9526,48 +9563,59 @@ section.consultation {
   .about-main img.full-width {
     margin-bottom: 60px;
   }
+  .about-main h2 {
+    font-size: 34px;
+  }
 }
 
 /* ------- Our Team Block ------- */
 
-.profile_team {
-  padding: 60px 0 0;
-}
-
 .profile_team .section-head p {
   line-height: 24px;
 }
-.profile_team h2 {
-  font-size: 36px;
-  padding-bottom: 20px;
-}
 .profile_team .profile {
   max-width: none;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 .profile_team .profile p {
-  display: none;
+  display: block;
   margin-top: 5px;
   font-size: 11px;
   line-height: 18px;
 }
 .profile_team .profile h3 {
-  margin-bottom: 10px;
+  margin: 0;
 }
 .profile_team .profile .profile-subheading {
+    margin-top: 15px;
     display: block;
     line-height: 20px;
 }
 
 @media (min-width: 768px) {
-  .profile_team {
-    padding: 90px 0 0;
+  .profile_team h2 {
+    font-size: 52px;
+  }
+}
+
+@media (min-width: 992px) {
+  .profile_team .profile {
+    margin-bottom: 40px;
+  }
+
+  .profile_team .profile p {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .profile_team .profile {
+    margin-bottom: 40px;
   }
 
   .profile_team .profile p {
     display: block;
-  }
-  .profile_team h2 {
-    font-size: 52px;
   }
 }
 
@@ -9577,6 +9625,10 @@ section.consultation {
   margin-bottom: 0;
   background-size: cover;
   text-align: center;
+}
+
+.choose {
+  display: none;
 }
 
 .services-main.personal {
@@ -9605,10 +9657,18 @@ section.consultation {
     font-size: 50px;
   }
 
+@media (min-width: 768px) {
+  .choose {
+    display: block;
+  }
+}
+
+
 /* ------- Services Nav Menu ------- */
 
 section.services-nav {
   margin-bottom: 0;
+  display: none;
 }
 
 .services-nav {
@@ -9645,20 +9705,18 @@ section.services-nav {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  section.services-nav {
+    display: block;
+  }
+}
 
 /* ------- Insurance Block ------- */
-
-.insurance {
-  margin-bottom: 0;
-  padding: 80px 0;
-}
 
 .insurance p {
   line-height: 28px;
 }
 .insurance h1 {
-  font-size: 52px;
-  margin-bottom: 30px;
   margin-top: 0;
 }
 .insurance h2 {
@@ -9668,15 +9726,9 @@ section.services-nav {
 /* ------- Investments Block ------- */
 
 .investment {
-  padding: 80px 0;
-  margin-bottom: 0;
   background-color: #ecf0f1;
 }
 
-.investment h1 {
-  margin-top: 0;
-  font-size: 52px;
-}
 .investment h3 {
   margin-top: 0;
 }
@@ -9690,21 +9742,8 @@ section.services-nav {
 
 /* ------- Succession Block ------- */
 
-.succession {
-  margin-bottom: 0;
-  padding: 80px 0;
-}
-
 .succession p {
   line-height: 28px;
-}
-.succession h1 {
-  font-size: 52px;
-  margin-bottom: 30px;
-  margin-top: 0;
-}
-.succession h2 {
-  margin-top: 60px;
 }
 .succession h3 {
   margin-top: 20px;
@@ -9872,21 +9911,12 @@ section.services-nav {
 /* ------- Employee Benefits Block ------- */
 
 .benefits {
-  padding: 80px 0;
-  margin-bottom: 0;
   background-color: #ecf0f1;
 }
 
-.benefits h1 {
-  margin-top: 0;
-  font-size: 52px;
-}
 .benefits h2 {
   margin-top: 40px;
   font-size: 30px;
-}
-.benefits h3 {
-  margin-top: 0;
 }
 .benefits p {
   line-height: 28px;
@@ -9894,15 +9924,6 @@ section.services-nav {
 
 /* ------- Business Consulting Block ------- */
 
-.biz-consulting {
-  padding: 80px 0;
-  margin-bottom: 0;
-}
-
-.biz-consulting h1 {
-  margin-top: 0;
-  font-size: 52px;
-}
 .biz-consulting h3 {
   margin-top: 0;
 }
@@ -9922,6 +9943,16 @@ section.services-nav {
 
 .services-main.professionals .dark-overlay {
   padding: 150px 0 80px;
+}
+
+.professionals h2.services-title {
+  font-size: 38px;
+}
+
+@media (min-width: 768px) {
+  .professionals h2.services-title {
+    font-size: 80px;
+  }
 }
 
 /* ------- Service Commitment Block ------- */
@@ -9957,18 +9988,11 @@ section.services-nav {
 /* ------- Synergy Partnerships Block ------- */
 
 .partnerships {
-  margin-bottom: 0;
-  padding: 80px 0;
   background-color: #ecf0f1;
 }
 
 .partnerships p {
   line-height: 28px;
-}
-.partnerships h1 {
-  font-size: 52px;
-  margin-bottom: 30px;
-  margin-top: 0;
 }
 .partnerships h2 {
   margin-top: 40px;
@@ -9986,7 +10010,8 @@ section.services-nav {
 .partner-comment h2 {
   margin: 0 0 6px;
   color: #fff;
-  font-size: 28px;
+  font-size: 24px;
+  line-height: 32px;
   font-weight: 300;
   text-transform: none;
 }
@@ -9995,21 +10020,19 @@ section.services-nav {
 }
 
 @media (min-width: 768px) {
+  .partner-comment h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 
 
 /* ------- Client Login Block ------- */
 
 .client-login {
-  padding: 80px 0 90px;
-  margin-bottom: 0;
   text-align: left;
 }
 
-.client-login h1 {
-  margin-top: 0;
-  font-size: 52px;
-}
 .client-login p {
   line-height: 28px;
 }
@@ -10018,27 +10041,25 @@ section.services-nav {
   margin-bottom: 48px;
 }
 
+.client-login .btn {
+  margin-top: 30px;
+}
+
 @media (min-width: 992px) {
-  .client-login {
-    padding: 100px 0 110px;
+  .client-login .btn {
+    margin-top: 0;
   }
 }
 
 /* ------- Refer a Friend Block ------- */
 
 .referral {
-  margin-bottom: 0;
-  padding: 80px 0;
   background-color: #ecf0f1;
   text-align: center;
 }
 
 .referral p {
   line-height: 28px;
-}
-.referral h1 {
-  font-size: 52px;
-  margin-top: 0;
 }
 .referral h2 {
   margin-top: 40px;
@@ -10054,6 +10075,7 @@ section.services-nav {
 
 footer {
   padding-bottom: 50px;
+  text-align: center;
 }
 
 .bottom_section p {
@@ -10067,15 +10089,12 @@ footer {
 }
 
 .bottom_section {
-    padding: 30px 0px 80px;
+    padding: 0 0 80px;
+    text-align: center;
 }
 
 .stock-widget {
   padding-left: 10%;
-}
-
-.wsj-widget {
-  padding-left: 6%;
 }
 
 @media (min-width: 768px) {
@@ -10086,12 +10105,8 @@ footer {
     padding-left: 251px;
   }
 
-  .wsj-widget {
-    padding-left: 240px;
-  }
-
   .bottom_section {
-      padding: 30px 0px 35px;
+      padding: 30px 0 35px;
   }
   .bottom_section h2 {
     font-size: 24px;
@@ -10107,12 +10122,20 @@ footer {
     padding-left: 22px;
   }
 
+  .bottom_section {
+      text-align: left;
+  }
+
   .bottom_section h2 {
     font-size: 22px;
   }
 }
 
 @media (min-width: 1200px) {
+  footer {
+    text-align: left;
+  }
+
   .stock-widget {
     padding-left: 75px;
   }
