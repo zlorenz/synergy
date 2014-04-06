@@ -9273,6 +9273,7 @@ section.profile_team,
 section.insurance,
 section.investment,
 section.succession,
+section.risk-mgmt,
 section.benefits,
 section.biz-consulting,
 section.partnerships,
@@ -9301,6 +9302,7 @@ h1.section-title {
   section.insurance,
   section.investment,
   section.succession,
+  section.risk-mgmt,
   section.benefits,
   section.biz-consulting,
   section.partnerships,
@@ -9325,6 +9327,11 @@ h1.section-title {
   width: 175px;
 }
 
+.navbar-default .navbar-nav > li > a:hover,
+.services-nav.navbar-default .navbar-nav > li > a:hover {
+  background-color: #efefef;
+}
+
 @media (min-width: 768px) {
   .navbar-default .navbar-nav {
     float: right;
@@ -9333,6 +9340,10 @@ h1.section-title {
   #mynavbar {
     width: auto;
     float: right;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover {
+    background-color: transparent;
   }
 }
 
@@ -9587,6 +9598,10 @@ section.consultation {
 .profile_team .profile h3 {
   margin: 0;
 }
+.profile_team .profile .profile-heading {
+  font-size: 22px;
+  line-height: 24px;
+}
 .profile_team .profile .profile-subheading {
     margin-top: 15px;
     display: block;
@@ -9596,6 +9611,10 @@ section.consultation {
 @media (min-width: 768px) {
   .profile_team h2 {
     font-size: 52px;
+  }
+  .profile_team .profile .profile-heading {
+    font-size: 28px;
+    line-height: 1.1;
   }
 }
 
@@ -9639,7 +9658,7 @@ section.consultation {
   color: white;
 }
   .services-main p {
-    margin-bottom: 10px;
+    margin-bottom: 0;
     line-height: 28px;
   }
   .services-main h1 {
@@ -9657,9 +9676,17 @@ section.consultation {
     font-size: 50px;
   }
 
+.services-main .dark-overlay {
+  padding-bottom: 50px;
+}
+
 @media (min-width: 768px) {
   .choose {
     display: block;
+  }
+
+  .services-main .dark-overlay {
+    padding-bottom: 0;
   }
 }
 
@@ -9686,9 +9713,6 @@ section.services-nav {
   padding: 20px 40px;
   border-left: 1px solid #dcdcdc;
 }
-.navbar-default .navbar-nav > li > a:hover {
-  background-color: #efefef;
-}
 
 .services-nav li a.last-nav {
   border-right: 1px solid #dcdcdc;
@@ -9713,6 +9737,10 @@ section.services-nav {
 
 /* ------- Insurance Block ------- */
 
+.insurance {
+  text-align: center;
+}
+
 .insurance p {
   line-height: 28px;
 }
@@ -9720,7 +9748,19 @@ section.services-nav {
   margin-top: 0;
 }
 .insurance h2 {
-  margin-top: 40px;
+  margin-top: 30px;
+  font-size: 28px;
+}
+
+@media (min-width: 768px) {
+  .insurance {
+    text-align: left;
+  }
+
+  .insurance h2 {
+    margin-top: 40px;
+    font-size: 34px;
+  }
 }
 
 /* ------- Investments Block ------- */
@@ -9730,27 +9770,66 @@ section.services-nav {
 }
 
 .investment h3 {
+  font-size: 24px;
   margin-top: 0;
+  margin-bottom: 10px;
 }
 .investment p {
   line-height: 28px;
 }
+.investment .cn_content p {
+  line-height: 20px;
+  font-size: 12px;
+}
 
 .investment header {
-  margin-bottom: 80px;
+  margin-bottom: 30px;
+}
+
+.investment .cn_item {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .investment header {
+    margin-bottom: 40px;
+  }
+
+  .investment h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .investment .cn_content p {
+    line-height: 28px;
+    font-size: 16px;
+  }
+
+  .investment .cn_item {
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .investment header {
+    margin-bottom: 50px;
+  }
 }
 
 /* ------- Succession Block ------- */
+
+.succession {
+  text-align: center;
+}
 
 .succession p {
   line-height: 28px;
 }
 .succession h3 {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .succession-tabs {
-  margin: 40px 0 0;
+  margin: 5px 0 0;
 }
 .succession .nav-tabs.nav-justified {
   background-color: #bdc3c7;
@@ -9790,10 +9869,24 @@ section.services-nav {
   background-clip: padding-box;
 }
 
+@media (min-width: 768px) {
+  .succession {
+    text-align: left;
+  }
+
+  .succession h3 {
+    margin-top: 20px;
+  }
+
+  .succession-tabs {
+    margin: 40px 0 0;
+  }
+}
+
 /* ------- Consulting CTA Block ------- */
 
 .consulting-cta {
-  padding: 80px 0;
+  padding: 50px 0;
   margin-bottom: 0;
   background-color: #1abc9c;
   text-align: center;
@@ -9802,7 +9895,7 @@ section.services-nav {
 .consulting-cta h2 {
   margin-top: 0;
   color: #fff;
-  font-size: 36px;
+  font-size: 32px;
 }
 .consulting-cta p {
   color: #fff;
@@ -9813,22 +9906,31 @@ section.services-nav {
 }
 
 .consulting-cta .btn {
-  margin-top: 40px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .consulting-cta {
+    padding: 50px 0;
+  }
+
+  .consulting-cta h2 {
+    font-size: 44px;
+  }
+
+  .consulting-cta .btn {
+    margin-top: 40px;
+  }
 }
 
 @media (min-width: 992px) {
   .consulting-cta {
+    padding: 80px 0;
     text-align: left;
   }
 
   .consulting-cta .btn {
     margin-top: 45px;
-  }
-}
-
-@media (min-width: 768px) {
-  .consulting-cta h2 {
-    font-size: 44px;
   }
 }
 
@@ -9840,8 +9942,27 @@ section.services-nav {
 
 /* ------- Risk Management Block ------- */
 
+.risk-mgmt {
+  text-align: center;
+}
+
+.risk-mgmt p {
+  line-height: 28px;
+}
+.risk-mgmt h1 {
+  margin-top: 0;
+}
+.risk-mgmt h2 {
+  margin-top: 30px;
+  font-size: 28px;
+}
+
+.risk-mgmt .section-head {
+  margin-bottom: -10px;
+}
+
 .risk-icon-container {
-  padding-top: 40px;
+  padding-top: 0;
   position: relative;
 }
 
@@ -9861,11 +9982,6 @@ section.services-nav {
 }
 
 .risk-icon-container .risk-icon span {
-  padding: 10px;
-  border-radius: 0;
-}
-
-.risk-icon-container .risk-icon span {
   text-align: center;
   font-size: 3.5em;
   color: #666666;
@@ -9876,7 +9992,7 @@ section.services-nav {
   border-radius: 60px;
   background-clip: padding-box;
   position: relative;
-  margin-bottom: 30px;
+  margin: 20px 0 15px;
   background-color: transparent;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -9908,19 +10024,64 @@ section.services-nav {
   transition: all 0.4s;
 }
 
+@media (min-width: 768px) {
+  .risk-mgmt {
+    text-align: left;
+  }
+
+  .risk-icon-container {
+    padding-top: 20px;
+  }
+
+  .risk-mgmt h2 {
+    margin-top: 40px;
+    font-size: 34px;
+  }
+  .risk-mgmt .section-head {
+    margin-bottom: 20px;
+  }
+
+  .risk-icon-container .risk-icon span {
+    margin: 20px 0 30px;
+  }
+}
+
 /* ------- Employee Benefits Block ------- */
 
 .benefits {
   background-color: #ecf0f1;
+  text-align: center;
+}
+
+.benefits .section-head {
+  margin-bottom: -20px;
 }
 
 .benefits h2 {
-  margin-top: 40px;
-  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 26px;
 }
 .benefits p {
   line-height: 28px;
 }
+
+@media (min-width: 768px) {
+  .benefits {
+    text-align: left;
+  }
+
+  .benefits .section-head {
+    margin-bottom: 20px;
+  }
+
+  .benefits h2 {
+    margin-top: 40px;
+    margin-bottom: 16px;
+    font-size: 30px;
+  }
+}
+
 
 /* ------- Business Consulting Block ------- */
 
@@ -9942,7 +10103,7 @@ section.services-nav {
 }
 
 .services-main.professionals .dark-overlay {
-  padding: 150px 0 80px;
+  padding: 110px 0 50px;
 }
 
 .professionals h2.services-title {
@@ -9953,12 +10114,16 @@ section.services-nav {
   .professionals h2.services-title {
     font-size: 80px;
   }
+
+  .services-main.professionals .dark-overlay {
+    padding: 150px 0 80px;
+  }
 }
 
 /* ------- Service Commitment Block ------- */
 
 .commitment {
-  padding: 80px 0;
+  padding: 50px 0;
   margin-bottom: 0;
   text-align: center;
 }
@@ -9972,6 +10137,7 @@ section.services-nav {
 }
 .commitment p {
   line-height: 28px;
+  margin-bottom: 0;
 }
 
 .commitment header {
@@ -9983,19 +10149,44 @@ section.services-nav {
     padding: 110px 0;
     text-align: right;
   }
+
+  .commitment p {
+    margin-bottom: 16px;
+  }  
 }
 
 /* ------- Synergy Partnerships Block ------- */
 
 .partnerships {
   background-color: #ecf0f1;
+  text-align: center;
+}
+
+.partnerships .section-head {
+  margin-bottom: -25px;
 }
 
 .partnerships p {
   line-height: 28px;
 }
-.partnerships h2 {
-  margin-top: 40px;
+.partnerships h3 {
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .partnerships h3 {
+    font-size: 28px;
+  }
+
+  .partnerships .section-head {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .partnerships {
+    text-align: left;
+  }
 }
 
 /* ------- Partner Comment Block ------- */
@@ -10014,9 +10205,6 @@ section.services-nav {
   line-height: 32px;
   font-weight: 300;
   text-transform: none;
-}
-
-@media (min-width: 992px) {
 }
 
 @media (min-width: 768px) {
@@ -10058,6 +10246,10 @@ section.services-nav {
   text-align: center;
 }
 
+.referral .section-head {
+  margin-bottom: -30px;
+}
+
 .referral p {
   line-height: 28px;
 }
@@ -10066,10 +10258,19 @@ section.services-nav {
 }
 
 .referral i {
-  font-size: 90px;
+  font-size: 80px;
   display: block;
 }
 
+@media (min-width: 768px) {
+  .referral .section-head {
+    margin-bottom: 20px;
+  }
+
+  .referral i {
+    font-size: 90px;
+  }
+}
 
 /* ------- Footer Block ------- */
 
