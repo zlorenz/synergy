@@ -9367,7 +9367,7 @@ h1.section-title {
 }
 
 .dark-overlay {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.15);
   padding: 100px 0px 50px;
 }
 
@@ -9470,6 +9470,10 @@ h1.section-title {
   padding-bottom: 20px;
 }
 
+.partner-companies .section-head {
+  margin-bottom: 20px;
+}
+
 .companies img {
   width: 100%;
   margin-bottom: 30px;
@@ -9485,7 +9489,7 @@ h1.section-title {
 
 .consultation {
   margin-bottom: 0;
-  background: url(../images/main_slide/home_banner3.jpg) no-repeat center center;
+  background: url(../images/parallax/city.jpg) no-repeat center center;
   background-size: cover;
   padding: 0;
 }
@@ -9527,7 +9531,7 @@ section.consultation {
 
 .blue-overlay {
   padding: 60px 0;
-  background-color: rgba(49,162,202,0.5);
+  background-color: rgba(26,188,156,0.5);
 }
 
 @media (min-width: 768px) {
@@ -9651,7 +9655,7 @@ section.consultation {
 }
 
 .services-main.personal {
-  background: url(../images/parallax/neighborhood.jpg) no-repeat center center;
+  background: url(../images/parallax/city.jpg) no-repeat center center;
 }
 
 .services-main p, .services-main h1, .services-main h2, .services-main h5 {
