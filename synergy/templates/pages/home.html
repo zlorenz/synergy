@@ -22,7 +22,7 @@
 			<div class="col-sm-6 col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600}">
 				<a href="{% url 'personal' %}">
 					<span>
-						<img src="http://www.anonymousproductionassistant.com/wp-content/uploads/2012/08/happy-family-on-the-floor.jpg" />
+						<img src="{% static 'images/personal.jpg' %}" />
 					</span>
 				</a>
 				<h4>Personal Services</h4>
@@ -30,7 +30,7 @@
 			<div class="col-sm-6 col-md-4 col-md-offset-0" data-uk-scrollspy="{cls:'uk-animation-fade', delay:900}">
 				<a href="{% url 'business' %}">
 					<span>
-						<img src="http://blogs-images.forbes.com/sage/files/2014/02/business-meeting1.jpg" />
+						<img src="{% static 'images/business.jpg' %}" />
 					</span>
 				</a>
 				<h4>Business Services</h4>
@@ -38,7 +38,7 @@
 			<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1300}">
 				<a href="{% url 'professionals' %}">
 					<span>
-						<img src="http://muslimmatters.muslimmatters.netdna-cdn.com/wp-content/uploads/shaking-hands.jpg" />
+						<img src="{% static 'images/professionals.jpg' %}" />
 					</span>
 				</a>
 				<h4>Financial Professionals</h4>
@@ -112,7 +112,7 @@
 				<div class="section-head">
 					<header class="col col-sm-12 centered">
 						<section>
-							<h2>Your Free Needs Analysis Request</h2>
+							<h2>Your <strong>Free</strong> Needs Analysis Request</h2>
 						</section>
 						<hr>
 					</header>
@@ -146,15 +146,32 @@
 					</div>
 				  </div>
 				  <div class="form-group">
-				  	<div class="col-md-8 col-md-offset-2">
-					    <label>Send a Message</label>
-					    <textarea class="form-control" rows="3"></textarea>
+				  	<div class="col-sm-6 col-md-4 col-md-offset-2">
+				  		<label for="Action">I'd like to learn more about...</label>
+						<select id="Action" class="form-control">
+						  <option>Select Option</option>
+						  <option>Personal Services</option>
+						  <option>Business Services</option>
+						  <option>Opportunities for Financial Professionals</option>
+						</select>
+					</div>
+				  </div>
+				  <div class="form-group">
+				  	<div class="col-sm-6 col-md-4">
+				  		<label for="Topics">I'm interested in...</label>
+						<select id="Topics" class="form-control">
+						  <option>Select Option</option>
+						  <option>Personal Needs Analysis</option>
+						  <option>Business Needs Analysis</option>
+						  <option>Opportunities for Financial Professionals</option>
+						  <option>Other (please explain in message)</option>
+						</select>
 					</div>
 				  </div>
 				  <div class="form-group">
 				  	<div class="col-md-8 col-md-offset-2">
-					    <label for="InputFile">Upload Financial Statements</label>
-					    <input type="file" id="InputFile">
+					    <label>Send a Message</label>
+					    <textarea class="form-control" rows="3"></textarea>
 					</div>
 				  </div>
 				  <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
@@ -165,6 +182,55 @@
 			
 		</div>
 	</div>
+</section>
+
+<section class="referral" style="padding: 25px 0 65px;">
+	<div class= "container">
+		
+		<div class="col-xs-6 col-sm-3">
+			<i class="icon-facebook-squared"></i>
+			<!-- Facebook Like/Share Buttons -->
+				<div class="fb-like" data-href="{% url 'home' %}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+			<!--/ Facebook Like/Share Buttons -->
+		</div>
+	
+		<div class="col-xs-6 col-sm-3">
+			<i class="icon-twitter"></i>
+			<!-- Twitter Share Button -->
+				<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+					</script>
+			<!--/ Twitter Share Button -->
+		</div>
+
+		<div class="col-xs-6 col-sm-3">
+			<i class="icon-linkedin-squared"></i>
+			<!-- LinkedIn Share Button -->
+				<script src="//platform.linkedin.com/in.js" type="text/javascript">
+				  lang: en_US
+				</script>
+				<script type="IN/Share" data-counter="right"></script>
+			<!--/ LinkedIn Share Button -->
+		</div>
+
+		<div class="col-xs-6 col-sm-3">
+			<i class="icon-gplus-squared"></i>
+			<!-- Google Plus +1 Button -->
+				<div class="g-plusone"></div>
+			<!--/ Google Plus +1 Button -->
+			<!-- Google Plus Share Button -->
+				<div class="g-plus" data-action="share" data-annotation="bubble"></div>
+					<script type="text/javascript">
+					  (function() {
+					    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+					    po.src = 'https://apis.google.com/js/platform.js';
+					    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+					  })();
+					</script>
+			<!--/ Google Plus Share Button -->
+		</div>
+
+	</div>	
 </section>
 
 {% endblock content %}
