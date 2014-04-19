@@ -2,11 +2,12 @@
 {% load staticfiles i18n %}
 
 {% block title %}About | Synergy Financial{% endblock title %}
+{% block description %} {% endblock description %}
 
 {% block content %}
 <section class="about-main">
 
-	<img class="full-width" src="{% static 'images/happy-family.jpg' %}" />
+	<img class="full-width" src="{% static 'images/grand-canyon.jpg' %}" title="Grand Canyon, Arizona" alt="Tucson, Arizona is the home of Synergy Financial" />
 
 	<div class= "container">
 		
@@ -39,43 +40,53 @@
 
 		<div class="row">
 
-			<div class="profile col-xs-12 col-sm-6 col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+			<div class="profile col-sm-6 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-0" data-uk-scrollspy="{cls:'uk-animation-fade'}">
 				<figure>
 					<div class="top-image">
-						<img src="{% static 'images/team/juan-pantoja.jpg' %}" class="img-responsive" alt="how to create break fast food delicious"/>
+						<img src="{% static 'images/team/juan-pantoja.jpg' %}" class="img-responsive" title="Juan Carlos Pantoja" alt="Juan C. Pantoja, Managing Director at Synergy Financial"/>
 					</div>
 					<figcaption>
 						<h3><span class="profile-heading">JUAN C. PANTOJA</span></h3>
 						<span class="profile-subheading">Managing Director</span>
-						<p>Lorem ipsum dolor sit amet, consectetur. Pellentesque facilisis nunc sed sem dapibus malesuada. Praesent eu eros ut augue pretium mollis.</p>
 						<div class="figcap"></div>
 					</figcaption>
 				</figure>
 			</div>	
 
-			<div class="profile col-xs-12 col-sm-6 col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600}">
+			<div class="profile col-sm-6 col-md-4 col-lg-3 col-lg-offset-0" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600}">
 				<figure>
 					<div class="top-image">
-						<img src="{% static 'images/team/robb-stark.jpg' %}" class="img-responsive" alt="how to create break fast food delicious"/>
+						<img src="{% static 'images/team/paul-perez.jpg' %}" class="img-responsive" title="Paul C. Perez" alt="Paul C. Perez, Financial Representative at Synergy Financial"/>
 					</div>
 					<figcaption>
-						<h3><span class="profile-heading">ROBB STARK</span></h3>
-						<span class="profile-subheading">King of the North</span>
-						<p>Lorem ipsum dolor sit amet, consectetur. Pellentesque facilisis nunc sed sem dapibus malesuada. Praesent eu eros ut augue pretium mollis.</p>
+						<h3><span class="profile-heading">PAUL C. PEREZ</span></h3>
+						<span class="profile-subheading">Financial Representative</span>
 						<div class="figcap"></div>
 					</figcaption>
 				</figure>
 			</div>	
 
-			<div class="profile col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1200}">
+			<div class="profile col-sm-6 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-0" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1200}">
 				<figure>
 					<div class="top-image">
-						<img src="{% static 'images/team/claire-matthews.jpg' %}" class="img-responsive" alt="how to create break fast food delicious"/>
+						<img src="{% static 'images/team/claire-matthews.jpg' %}" class="img-responsive" title="Britney Churchill" alt="Britney Churchill, Marketing Director at Synergy Financial"/>
 					</div>
 					<figcaption>
-						<h3><span class="profile-heading">Claire Matthews</span></h3>
-						<span class="profile-subheading">Witness Protection</span>
-						<p>Lorem ipsum dolor sit amet, consectetur. Pellentesque facilisis nunc sed sem dapibus malesuada. Praesent eu eros ut augue pretium mollis.</p>
+						<h3><span class="profile-heading">Britney Churchill</span></h3>
+						<span class="profile-subheading">Marketing Director</span>
+						<div class="figcap"></div>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="profile col-sm-6 col-md-4 col-lg-3 col-lg-offset-0" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1200}">
+				<figure>
+					<div class="top-image">
+						<img src="{% static 'images/team/robb-stark.jpg' %}" class="img-responsive" title="Tony Sharpe" alt="Tony Sharpe, Operations Specialist at Synergy Financial"/>
+					</div>
+					<figcaption>
+						<h3><span class="profile-heading">Tony Sharpe</span></h3>
+						<span class="profile-subheading">Operations Specialist</span>
 						<div class="figcap"></div>
 					</figcaption>
 				</figure>

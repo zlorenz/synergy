@@ -2,6 +2,7 @@
 {% load staticfiles i18n %}
 
 {% block title %}Business Services | Synergy Financial{% endblock title %}
+{% block description %} {% endblock description %}
 
 {% block content %}
 <section class="services-main business" data-type="background" data-speed="3">
@@ -25,81 +26,16 @@
 	<nav class="services-nav navbar navbar-default" role="navigation">
 	  <div class="collapse navbar-collapse navbar-ex1-collapse">
 	    <ul class="nav navbar-nav">
-	      <li><a data-scroll href="#risk-mgmt">Risk Management</a></li>
-	      <li><a data-scroll href="#benefits">Employee Benefits</a></li>
-	      <li><a data-scroll class="last-nav" href="#biz-consulting">Consulting</a></li>
+	      <li><a data-scroll class="last-nav" href="#biz-consulting" title="Business Consulting services from Synergy Financial">Consulting</a></li>
+	      <li><a data-scroll href="#benefits" title="Employee Benefits services from Synergy Financial">Employee Benefits</a></li>
+	      <li><a data-scroll href="#risk-mgmt" title="Risk Management services from Synergy Financial">Risk Management</a></li>
 	    </ul>
 	  </div>
 	</nav>
 </section>
 
-<section id="risk-mgmt" class="risk-mgmt">
-	<div class= "container">
-		<div class="row">
-			<div class="section-head">
-				<header class="col col-sm-12 centered">
-					<section>
-						<h1 class="section-title">Risk Management</h1>
-					</section>
-					<p class="descriptionText">Maecenas dapibus est eu rutrum condimentum. Etiam tempor libero ac tellus porta tincidunt. Sed elementum quis magna elementum sollicitudin.</p>
-					<hr>
-				</header>
-			</div>
-		</div>
-		<div class="risk-icon-container scroll-target">
-			<div class="container risk-icon">
-				<div class="row">
-					<div class="col-sm-6 col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600}">
-						<span><i class="icon-mobile-1"></i></span>
-						<h4>Option One</h4>				
-						<p>Proin pretium condimentum euismod. Integer et justo sed dolor posuere consequat ut vel risus. Pellentesque id arcu a quam varius tincidunt.</p>
-					</div>
-					<div class="col-sm-6 col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:900}">
-						<span><i class="icon-paper-plane"></i></span>
-						<h4>Option Two</h4>
-						<p>Proin pretium condimentum euismod. Integer et justo sed dolor posuere consequat ut vel risus. Pellentesque id arcu a quam varius tincidunt.</p>
-					</div>
-					<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1300}">
-						<span><i class="icon-cog"></i></span>
-						<h4>Option Three</h4>
-						<p>Proin pretium condimentum euismod. Integer et justo sed dolor posuere consequat ut vel risus. Pellentesque id arcu a quam varius tincidunt.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>	
-</section>
-
-<section class="benefits" id="benefits">
-	<div class="container">
-		<div class="row">
-			<div class="section-head">
-				<header class="col col-sm-12 centered">
-					<section>
-						<h1 class="section-title">Employee Benefits</h1>
-					</section>
-					<p class="descriptionText">Maecenas dapibus est eu rutrum condimentum. Etiam tempor libero ac tellus porta tincidunt. Sed elementum quis magna elementum sollicitudin.</p>
-					<hr>
-				</header>
-			</div>
-		</div>
-
-		<div class="col-sm-6">
-			<h2>Executive Compensation</h2>
-			<p>Nulla fringilla commodo eros, sed euismod erat facilisis non. Nunc a augue imperdiet, bibendum ligula eu, commodo felis. Suspendisse eget magna ut arcu ornare aliquet quis in elit. In tempus laoreet euismod. Pellentesque diam metus, mollis sit amet porta ac, dapibus et enim. Sed viverra tristique congue. Pellentesque justo urna, imperdiet sed lorem non, vestibulum gravida dui. Donec sollicitudin justo neque, eu posuere ipsum vulputate eu.</p>
-		</div>
-	
-		<div class="col-sm-6">
-			<h2>Employee Compensation</h2>
-			<p style="margin-bottom: 0px;">Aenean sagittis nunc at nunc vehicula dapibus. Nulla porta massa in lorem lobortis, vel porttitor quam molestie. Maecenas dapibus est eu rutrum condimentum. Etiam tempor libero ac tellus porta tincidunt. Sed elementum quis magna elementum sollicitudin. Aliquam at scelerisque enim, sit amet posuere lorem.</p>
-		</div>
-
-	</div>
-</section>
-
 <section id="biz-consulting" class="biz-consulting">
-<div class="container">
+	<div class="container">
 		<div class="row">
 			<div class="section-head">
 				<header class="col col-sm-12 centered">
@@ -168,7 +104,7 @@
 						<p>Donec euismod ornare ipsum fringilla volutpat. Morbi iaculis eu eros eu aliquet. Vestibulum non arcu sollicitudin mi fermentum porttitor. Proin pretium condimentum euismod. Integer et justo sed dolor posuere consequat ut vel risus. Pellentesque id arcu a quam varius tincidunt.</p>
 					</div>
 					<div class="col-md-6">
-						<img class="img-responsive" src="http://www.bb-voice.com/WPimages/Management-Team.jpg" />
+						<img class="img-responsive" src="http://www.bb-voice.com/WPimages/Management-Team.jpg" title="Management Services" alt="Management services for businesses from Synergy Financial"/>
 					</div>
 				</div>
 				<div class="cn_content">
@@ -177,7 +113,7 @@
 						<p>Donec euismod ornare ipsum fringilla volutpat. Morbi iaculis eu eros eu aliquet. Vestibulum non arcu sollicitudin mi fermentum porttitor. Proin pretium condimentum euismod. Integer et justo sed dolor posuere consequat ut vel risus. Pellentesque id arcu a quam varius tincidunt.</p>
 					</div>
 					<div class="col-md-6">
-						<img class="img-responsive" src="http://reedwritemarket.com/wp-content/uploads/2014/02/Building-a-Bridge-Between-sales-and-marketing.jpg" />
+						<img class="img-responsive" src="{% static 'images/vertical-slider/marketing+sales.png' %}" title="Marketing and Sales Services" alt="Marketing and Sales services for businesses from Synergy Financial"/>
 					</div>		
 				</div>
 				<div class="cn_content">
@@ -186,7 +122,7 @@
 						<p>Donec euismod ornare ipsum fringilla volutpat. Morbi iaculis eu eros eu aliquet. Vestibulum non arcu sollicitudin mi fermentum porttitor. Proin pretium condimentum euismod. Integer et justo sed dolor posuere consequat ut vel risus. Pellentesque id arcu a quam varius tincidunt.</p>
 					</div>
 					<div class="col-md-6">
-						<img class="img-responsive" src="http://blogs-images.forbes.com/glennllopis/files/2011/07/humancapitalstrategy.jpg" />
+						<img class="img-responsive" src="http://blogs-images.forbes.com/glennllopis/files/2011/07/humancapitalstrategy.jpg" title="Human Capital Services" alt="Human Capital services for businesses from Synergy Financial"/>
 					</div>				
 				</div>
 				<div class="cn_content">
@@ -195,12 +131,76 @@
 						<p>Donec euismod ornare ipsum fringilla volutpat. Morbi iaculis eu eros eu aliquet. Vestibulum non arcu sollicitudin mi fermentum porttitor. Proin pretium condimentum euismod. Integer et justo sed dolor posuere consequat ut vel risus. Pellentesque id arcu a quam varius tincidunt.</p>
 					</div>
 					<div class="col-md-6">
-						<img class="img-responsive" src="http://americantypefounders.net/wp-content/uploads/2013/11/Corporate-Finance.jpg" />
+						<img class="img-responsive" src="http://americantypefounders.net/wp-content/uploads/2013/11/Corporate-Finance.jpg" title="Corporate Finance Services" alt="Corporate Finance services for businesses from Synergy Financial"/>
 					</div>			
 				</div>
 			</div>
 		</div>
 	</div>
+</section>
+
+<section class="benefits" id="benefits">
+	<div class="container">
+		<div class="row">
+			<div class="section-head">
+				<header class="col col-sm-12 centered">
+					<section>
+						<h1 class="section-title">Employee Benefits</h1>
+					</section>
+					<p class="descriptionText">Maecenas dapibus est eu rutrum condimentum. Etiam tempor libero ac tellus porta tincidunt. Sed elementum quis magna elementum sollicitudin.</p>
+					<hr>
+				</header>
+			</div>
+		</div>
+
+		<div class="col-sm-6">
+			<h2>Executive Compensation</h2>
+			<p>Nulla fringilla commodo eros, sed euismod erat facilisis non. Nunc a augue imperdiet, bibendum ligula eu, commodo felis. Suspendisse eget magna ut arcu ornare aliquet quis in elit. In tempus laoreet euismod. Pellentesque diam metus, mollis sit amet porta ac, dapibus et enim. Sed viverra tristique congue. Pellentesque justo urna, imperdiet sed lorem non, vestibulum gravida dui. Donec sollicitudin justo neque, eu posuere ipsum vulputate eu.</p>
+		</div>
+	
+		<div class="col-sm-6">
+			<h2>Employee Compensation</h2>
+			<p style="margin-bottom: 0px;">Aenean sagittis nunc at nunc vehicula dapibus. Nulla porta massa in lorem lobortis, vel porttitor quam molestie. Maecenas dapibus est eu rutrum condimentum. Etiam tempor libero ac tellus porta tincidunt. Sed elementum quis magna elementum sollicitudin. Aliquam at scelerisque enim, sit amet posuere lorem.</p>
+		</div>
+
+	</div>
+</section>
+
+<section id="risk-mgmt" class="risk-mgmt">
+	<div class= "container">
+		<div class="row">
+			<div class="section-head">
+				<header class="col col-sm-12 centered">
+					<section>
+						<h1 class="section-title">Risk Management</h1>
+					</section>
+					<hr>
+				</header>
+			</div>
+		</div>
+		<div class="risk-icon-container scroll-target">
+			<div class="container risk-icon">
+				<div class="row">
+					<div class="col-sm-6 col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600}">
+						<span><i class="icon-dollar"></i></span>
+						<h4>Buy-Sell</h4>				
+						<p>Proin pretium condimentum euismod. Integer et justo sed dolor posuere consequat ut vel risus. Pellentesque id arcu a quam varius tincidunt.</p>
+					</div>
+					<div class="col-sm-6 col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:900}">
+						<span><i class="icon-user-1"></i></span>
+						<h4>Key Person</h4>
+						<p>Proin pretium condimentum euismod. Integer et justo sed dolor posuere consequat ut vel risus. Pellentesque id arcu a quam varius tincidunt.</p>
+					</div>
+					<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1300}">
+						<span><i class="icon-lock"></i></span>
+						<h4>Asset Protection</h4>
+						<p>Proin pretium condimentum euismod. Integer et justo sed dolor posuere consequat ut vel risus. Pellentesque id arcu a quam varius tincidunt.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>	
 </section>
 
 <section class="consulting-cta">

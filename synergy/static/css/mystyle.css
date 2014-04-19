@@ -9489,7 +9489,7 @@ h1.section-title {
 
 .consultation {
   margin-bottom: 0;
-  background: url(../images/parallax/city.jpg) no-repeat center center;
+  background: url(../images/parallax/office.jpg) no-repeat center center;
   background-size: cover;
   padding: 0;
 }
@@ -9512,7 +9512,7 @@ section.consultation {
 .consultation label {
   margin-top: 5px;
   margin-bottom: 0;
-  font-weight: 400;
+  font-weight: 300;
   color: #fff;
 }
 
@@ -9531,7 +9531,7 @@ section.consultation {
 
 .blue-overlay {
   padding: 60px 0;
-  background-color: rgba(26,188,156,0.5);
+  background-color: rgba(26,188,156,0.6);
 }
 
 @media (min-width: 768px) {
@@ -9617,7 +9617,7 @@ section.consultation {
     font-size: 52px;
   }
   .profile_team .profile .profile-heading {
-    font-size: 28px;
+    font-size: 22px;
     line-height: 1.1;
   }
 }
@@ -9640,6 +9640,14 @@ section.consultation {
   .profile_team .profile p {
     display: block;
   }
+
+  .profile_team .profile .profile-heading {
+    font-size: 20px;
+    line-height: 1.0;
+  }
+  .profile_team .profile .profile-subheading {
+    font-size: 14px;
+  }
 }
 
 /* ------- Personal Welcome Block ------- */
@@ -9655,7 +9663,7 @@ section.consultation {
 }
 
 .services-main.personal {
-  background: url(../images/parallax/pathway2.jpg) no-repeat center center;
+  background: url(../images/parallax/family.jpg) no-repeat center center;
 }
 
 .services-main p, .services-main h1, .services-main h2, .services-main h5 {
@@ -9941,7 +9949,11 @@ section.services-nav {
 /* ------- Business Welcome Block ------- */
 
 .services-main.business {
-  background: url(../images/parallax/city.jpg) no-repeat center center;
+  background: url(../images/parallax/meeting.jpg) no-repeat center center;
+}
+
+.services-main.business .dark-overlay {
+  background-color: rgba(0,0,0,0.35);
 }
 
 /* ------- Risk Management Block ------- */
@@ -10103,10 +10115,11 @@ section.services-nav {
 /* ------- Professionals Welcome Block ------- */
 
 .services-main.professionals {
-  background: url(../images/parallax/meeting.jpg) no-repeat center center;
+  background: url(../images/parallax/calculator.jpg) no-repeat center center;
 }
 
 .services-main.professionals .dark-overlay {
+  background-color: rgba(0,0,0,0.35);
   padding: 110px 0 50px;
 }
 
@@ -10215,6 +10228,30 @@ section.services-nav {
   .partner-comment h2 {
     font-size: 28px;
     line-height: 36px;
+  }
+}
+
+/* ------- Client Center Welcome Block ------- */
+
+.services-main.client-center {
+  background: url(../images/parallax/pathway.jpg) no-repeat center center;
+}
+
+.services-main.client-center .dark-overlay {
+  padding: 120px 0 60px;
+}
+
+.client-center h2.services-title {
+  font-size: 38px;
+}
+
+@media (min-width: 768px) {
+  .client-center h2.services-title {
+    font-size: 80px;
+  }
+
+  .services-main.client-center .dark-overlay {
+    padding: 150px 0 80px;
   }
 }
 

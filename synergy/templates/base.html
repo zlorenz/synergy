@@ -2,10 +2,10 @@
 <html lang="en" ng-app>
   <head>
     <meta charset="utf-8">
-    <title>{% block title %}Synergy Financial | Insurance, Investments & Consulting in Tucson, AZ{% endblock title %}</title>
+    <title>{% block title %}Synergy Financial | Financial Services for Businesses and Individuals in Tucson, AZ{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="{% block description %}Synergy Financial, LLC provides financial services to businesses and indivudials in Tucson, Arizona.{% endblock description %}">
+    <meta name="author" content="Zacharia Lorenz, Web Designer at Rabbit Hole Studio">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -84,35 +84,25 @@
             <span class="icon-bars"></span>
             <span class="icon-bars"></span>
           </button>
-          <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/synergy-logo.png' %}" alt="Logo"></a>
+          <a class="navbar-brand" href="{% url 'home' %}" title="Synergy Financial | Financial Services for Businesses and Individuals in Tucson, AZ"><img src="{% static 'images/synergy-logo.png' %}" alt="Synergy Financial company logo"></a>
         </div>
         <div class="collapse navbar-collapse" id="mynavbar">
           <div class="left-cell">
             <ul class="nav navbar-nav">
-              <li><a href="{% url 'home' %}">Home</a></li>
-              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'home' %}" title="Synergy Financial | Financial Services for Businesses and Individuals in Tucson, AZ">Home</a></li>
+              <li><a href="{% url 'about' %}" title="About | Synergy Financial">About</a></li>
               <li class="dropdown">
                 <a href="" class="dropdown-toggle" data-toggle="dropdown">Services</a>
                 <ul class="dropdown-menu">
                   <li><h5 class="menuTitle">Services</h5></li>
-                  <li><a href="{% url 'personal' %}">Personal</a></li>
-                  <li><a href="{% url 'business' %}">Business</a></li>
-                  <li><a href="{% url 'professionals' %}">Professionals</a></li>
+                  <li><a href="{% url 'personal' %}" title="Personal Services | Synergy Financial">Personal</a></li>
+                  <li><a href="{% url 'business' %}" title="Business Services | Synergy Financial">Business</a></li>
+                  <li><a href="{% url 'professionals' %}" title="Professionals | Synergy Financial">Professionals</a></li>
                 </ul>
               </li>
-              <li><a href="{% url 'clients' %}">Client Center</a></li>
+              <li><a href="{% url 'clients' %}" title="Client Center | Synergy Financial">Client Center</a></li>
             </ul>
           </div>
-          <!--<div class="right-cell">
-            <form class="navbar-form navbar-right">
-              <ul>
-                <li>
-                  <div class="popup_form hide-me-first">
-                    <input type="text" class="form-control" placeholder="Search">
-                  </div>
-                  <a class="search_btn"><i class="icon-search"></i></a>               
-                </li>
-              </ul>-->
             </form>
           </div>
         </div>
@@ -150,7 +140,7 @@
         <div class="row">
           <div class="section-head">
             <header class="col col-sm-12 centered">
-              <h2>Business News from <a href="http://online.wsj.com/">WSJ</a></h2>
+              <h2>Business News from <a href="http://online.wsj.com/" title="The Wall Street Journal">WSJ</a></h2>
               <hr>
             </header>
           </div>
@@ -220,11 +210,13 @@
 
         <div class="row">
           <div class="col-xs-12">
-            <h4>SYNERGY FINANCIAL, LLC</h4>
-            <p><a href="tel:5204255718">(520) 425-5718</a><br>
-              <a href="mailto:info@financialsynergy.biz">info@financialsynergy.biz</a></p>
-            <p>2601 N. Campbell Ave. Suite #201<br>
-              Tucson, AZ 85719</p>
+            <address>
+              <h4>SYNERGY FINANCIAL, LLC</h4>
+              <p><a href="tel:5204255718" title="Call us at Synergy Financial">(520) 425-5718</a><br>
+                <a href="mailto:info@financialsynergy.biz" title="Email us at Synergy Financial">info@financialsynergy.biz</a></p>
+              <p>2601 N. Campbell Ave. Suite #201<br>
+                Tucson, AZ 85719</p>
+            </address>
           </div>
         </div>
       </div>
@@ -235,15 +227,15 @@
 
 <footer>
 <section class="container footer-section">
-    <div class="col-lg-6 col-xs-12"><p>&copy; 2014 <a href="#">Synergy Financial, LLC</a>. All rights reserved. Designed by <a href="http://rabbitholestud.io">Rabbit Hole Studio</a>.</p></div>
+    <div class="col-lg-6 col-xs-12"><p>&copy; 2014 <a href="{% url 'home' %}" title="Synergy Financial | Financial Services for Businesses and Individuals in Tucson, AZ">Synergy Financial, LLC</a>. All rights reserved. Designed by <a href="http://rabbitholestud.io" title="Rabbit Hole Studio | Forward-Thinking Web Design in Tucson, AZ">Rabbit Hole Studio</a>.</p></div>
     <div class="col-lg-6 footer-menu">
       <ul class="nav nav-pills">
-        <li><a href="{% url 'home' %}">Home</a></li>
-        <li><a href="{% url 'about' %}">About</a></li>
-        <li><a href="{% url 'personal' %}">Personal</a></li>
-        <li><a href="{% url 'business' %}">Business</a></li>
-        <li><a href="{% url 'professionals' %}">Professionals</a></li>
-        <li><a href="{% url 'clients' %}">Client Center</a></li>
+        <li><a href="{% url 'home' %}" title="Synergy Financial | Financial Services for Businesses and Individuals in Tucson, AZ">Home</a></li>
+        <li><a href="{% url 'about' %}" title="About | Synergy Financial">About</a></li>
+        <li><a href="{% url 'personal' %}" title="Personal Services | Synergy Financial">Personal</a></li>
+        <li><a href="{% url 'business' %}" title="Business Services | Synergy Financial">Business</a></li>
+        <li><a href="{% url 'professionals' %}" title="Professionals | Synergy Financial">Professionals</a></li>
+        <li><a href="{% url 'clients' %}" title="Client Center | Synergy Financial">Client Center</a></li>
       </ul>
     </div>
 </section>

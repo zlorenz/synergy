@@ -2,6 +2,7 @@
 {% load staticfiles i18n %}
 
 {% block title %}Personal Services | Synergy Financial{% endblock title %}
+{% block description %} {% endblock description %}
 
 {% block content %}
 <section class="services-main personal" data-type="background" data-speed="3">
@@ -25,9 +26,9 @@
 	<nav class="services-nav navbar navbar-default" role="navigation">
 	  <div class="collapse navbar-collapse navbar-ex1-collapse">
 	    <ul class="nav navbar-nav">
-	      <li><a data-scroll href="#insurance">Insurance</a></li>
-	      <li><a data-scroll href="#investment">Investments</a></li>
-	      <li><a data-scroll class="last-nav" href="#succession">Succession</a></li>
+	      <li><a data-scroll href="#insurance" title="Life Insurance services from Synergy Financial">Life Insurance</a></li>
+	      <li><a data-scroll href="#investment" title="Personal Investment services from Synergy Financial">Investments</a></li>
+	      <li><a data-scroll class="last-nav" href="#succession" title="Succession Planning services from Synergy Financial">Succession</a></li>
 	    </ul>
 	  </div>
 	</nav>
@@ -39,26 +40,25 @@
 			<div class="section-head">
 				<header class="col col-sm-12 centered">
 					<section>
-						<h1 class="section-title">Insurance</h1>
+						<h1 class="section-title">Life Insurance</h1>
 					</section>
-					<p class="descriptionText">Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product or service</p>
 					<hr>
 				</header>
 			</div>
 		</div>
 		
 		<div class="col-sm-12" style="text-align: center;">
-			<h2 style="margin-top: 20px;">Life Insurance</h2>
+			<h2 style="margin-top: 20px;">Whole Life</h2>
 			<p>Nulla fringilla commodo eros, sed euismod erat facilisis non. Nunc a augue imperdiet, bibendum ligula eu, commodo felis. Suspendisse eget magna ut arcu ornare aliquet quis in elit. In tempus laoreet euismod. Pellentesque diam metus, mollis sit amet porta ac, dapibus et enim. Sed viverra tristique congue. Pellentesque justo urna, imperdiet sed lorem non, vestibulum gravida dui. Donec sollicitudin justo neque, eu posuere ipsum vulputate eu.</p>
 		</div>
 	
 		<div class="col-sm-6">
-			<h2>Long-Term Care</h2>
+			<h2>Term Life</h2>
 			<p>Aenean sagittis nunc at nunc vehicula dapibus. Nulla porta massa in lorem lobortis, vel porttitor quam molestie. Maecenas dapibus est eu rutrum condimentum. Etiam tempor libero ac tellus porta tincidunt. Sed elementum quis magna elementum sollicitudin. Aliquam at scelerisque enim, sit amet posuere lorem.</p>
 		</div>
 
 		<div class="col-sm-6">
-			<h2>Disability Insurance</h2>
+			<h2>Universal Life</h2>
 			<p style="margin-bottom: 0;">Nulla fringilla commodo eros, sed euismod erat facilisis non. Nunc a augue imperdiet, bibendum ligula eu, commodo felis. Suspendisse eget magna ut arcu ornare aliquet quis in elit. In tempus laoreet euismod. Pellentesque diam metus, mollis sit amet porta ac, dapibus et enim. Sed viverra tristique congue. Pellentesque justo urna, imperdiet sed lorem non, vestibulum gravida dui. Donec sollicitudin justo neque, eu posuere ipsum vulputate eu.</p>
 		</div>
 
@@ -124,7 +124,7 @@
 						<p>Donec euismod ornare ipsum fringilla volutpat. Morbi iaculis eu eros eu aliquet. Vestibulum non arcu sollicitudin mi fermentum porttitor. Proin pretium condimentum euismod. Integer et justo sed dolor posuere consequat ut vel risus. Pellentesque id arcu a quam varius tincidunt.</p>
 					</div>
 					<div class="col-md-6">
-						<img class="img-responsive" src="http://amassis.files.wordpress.com/2013/06/old-people.jpeg" />
+						<img class="img-responsive" src="http://amassis.files.wordpress.com/2013/06/old-people.jpeg" title="Retirement Planning Services" alt="Retirement Planning services for individuals from Synergy Financial"/>
 					</div>
 				</div>
 				<div class="cn_content">
@@ -133,7 +133,7 @@
 						<p>Donec euismod ornare ipsum fringilla volutpat. Morbi iaculis eu eros eu aliquet. Vestibulum non arcu sollicitudin mi fermentum porttitor. Proin pretium condimentum euismod. Integer et justo sed dolor posuere consequat ut vel risus. Pellentesque id arcu a quam varius tincidunt.</p>
 					</div>
 					<div class="col-md-6">
-						<img class="img-responsive" src="http://img.mylot.com/1042558.jpg" />
+						<img class="img-responsive" src="http://img.mylot.com/1042558.jpg" title="College Financing Services" alt="College Financing services for individuals from Synergy Financial"/>
 					</div>
 				</div>
 				<div class="cn_content">
@@ -142,7 +142,7 @@
 						<p>Donec euismod ornare ipsum fringilla volutpat. Morbi iaculis eu eros eu aliquet. Vestibulum non arcu sollicitudin mi fermentum porttitor. Proin pretium condimentum euismod. Integer et justo sed dolor posuere consequat ut vel risus. Pellentesque id arcu a quam varius tincidunt.</p>
 					</div>
 					<div class="col-md-6">
-						<img class="img-responsive" src="http://www.moneyunder30.com/images/2013/09/2247354510_63e1747cce.jpg" />
+						<img class="img-responsive" src="http://www.moneyunder30.com/images/2013/09/2247354510_63e1747cce.jpg" title="Mutual Funds and Annuities" alt="Mutual Funds and Annuities for individuals from Synergy Financial"/>
 					</div>
 				</div>
 			</div>
@@ -165,9 +165,9 @@
 		
 		<div class="succession-tabs">
 				<ul class="nav nav-tabs nav-justified">
-				  <li class="active"><a href="#trusts" data-toggle="tab">Trusts</a></li>
-				  <li><a href="#estate" data-toggle="tab">Estate Planning</a></li>
-				  <li><a href="#other" data-toggle="tab">Something Else</a></li>
+				  <li class="active"><a href="#trusts" data-toggle="tab" title="Wills & Trust Preparation from Synergy Financial">Trusts</a></li>
+				  <li><a href="#estate" data-toggle="tab" title="Estate Planning services from Synergy Financial">Estate Planning</a></li>
+				  <li><a href="#other" data-toggle="tab" title="[SOMETHING ELSE] from Synergy Financial">Something Else</a></li>
 				</ul><!-- Nav Tabs -->			
 				<div class="tab-content">
 				  	<div class="tab-pane fade in active" id="trusts">
