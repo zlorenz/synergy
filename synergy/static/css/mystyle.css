@@ -9375,7 +9375,7 @@ h1.section-title {
   color: white;
 }
   .slider-main p {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     line-height: 28px;
   }
   .slider-main h1 {
@@ -9386,9 +9386,16 @@ h1.section-title {
   }
   .slider-main h2 {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     letter-spacing: 10px;
     font-size: 32px;
+  }
+  .slider-main h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: none;
   }
 
 .slider-main .btn-default {
@@ -9409,6 +9416,10 @@ h1.section-title {
   }
   .slider-main h2 {
     font-size: 80px;
+    margin-bottom: 10px;
+  }
+  .slider-main h4 {
+    font-size: 24px;
     margin-bottom: 50px;
   }
 
