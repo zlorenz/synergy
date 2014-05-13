@@ -23,53 +23,36 @@
     </script>
 
     {% block css %}
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+      <!-- This file store project specific CSS -->
+      <link href="{% static 'css/project.css' %}" rel="stylesheet">
 
-    <!-- Your stuff: Third-party css libraries go here -->
+      <!-- Krypton Theme CSS -->
+      <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" media="screen">
+      <link href="{% static 'css/fontello.css' %}" rel="stylesheet" media="screen">
+      <link href="{% static 'css/mystyle.css' %}" rel="stylesheet" media="screen">
 
-    <!-- This file store project specific CSS -->
-    <link href="{% static 'css/project.css' %}" rel="stylesheet">
+      <!-- Hover.css CSS -->
+      <link rel="stylesheet" href="{% static 'css/hover-min.css' %}">
 
-    <!-- Krypton Theme CSS -->
-    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" media="screen">
-    <link href="{% static 'css/fontello.css' %}" rel="stylesheet" media="screen">
-    <link href="{% static 'css/mystyle.css' %}" rel="stylesheet" media="screen">
-    <link href="{% static 'css/shop_slider.css' %}" rel="stylesheet" media="screen">
-    <link href="{% static 'css/slider.css' %}" rel="stylesheet" media="screen">
-    <link href="{% static 'css/slider_2.css' %}" rel="stylesheet" media="screen">
-    <link href="{% static 'css/sub_slider.css' %}" rel="stylesheet" media="screen">
-    <link href="{% static 'css/twitter_slider.css' %}" rel="stylesheet" media="screen">
-    <link href="{% static 'css/slide_background.css' %}" rel="stylesheet" media="screen">
-    <link href="{% static 'css/shop_slider_background.css' %}" rel="stylesheet" media="screen">
-    <link href="{% static 'css/subpage_banners.css' %}" rel="stylesheet" media="screen">
-    <link href="{% static 'css/jrating.jquery.css' %}" rel="stylesheet" media="screen">
+      <!-- Google Fonts -->
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>  
 
-    <!-- Hover.css CSS -->
-    <link rel="stylesheet" href="{% static 'css/hover-min.css' %}">
+      <!-- Krypton Theme Javascript -->
+      <script type="text/javascript" src="{% static 'js/modernizr.js' %}"></script>
+      <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+      <script type="text/javascript" src="{% static 'js/myscript.js' %}"></script>
 
-    <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>  
-
-    <!-- Krypton Theme Javascript -->
-    <script type="text/javascript" src="{% static 'js/modernizr.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/jrating.jquery.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/myscript.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/modal_effects.js' %}"></script>
-
-    <!-- Smooth Scroll Javascript -->
-    <script type="text/javascript" src="{% static 'js/smooth-scroll.js' %}"></script>
-    
-    {% endblock %}
+      <!-- Smooth Scroll Javascript -->
+      <script type="text/javascript" src="{% static 'js/smooth-scroll.js' %}"></script>
+    {% endblock css %}
 
     {% block angular %}
       <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
-    {% endblock %}
+    {% endblock angular %}
 
   </head>
 
@@ -110,7 +93,7 @@
                   <li><a href="{% url 'professionals' %}" title="Professionals | Synergy Financial">Professionals</a></li>
                 </ul>
               </li>
-              <li><a href="{% url 'clients' %}" title="Client Center | Synergy Financial">Client Center</a></li>
+              <li><a href="{% url 'clients' %}" title="Client Center | Synergy Financial" target="_blank">Client Center</a></li>
             </ul>
           </div>
             </form>
@@ -245,7 +228,7 @@
         <li><a href="{% url 'personal' %}" title="Personal Services | Synergy Financial">Personal</a></li>
         <li><a href="{% url 'business' %}" title="Business Services | Synergy Financial">Business</a></li>
         <li><a href="{% url 'professionals' %}" title="Professionals | Synergy Financial">Professionals</a></li>
-        <li><a href="{% url 'clients' %}" title="Client Center | Synergy Financial">Client Center</a></li>
+        <li><a href="{% url 'clients' %}" title="Client Center | Synergy Financial" target="_blank">Client Center</a></li>
       </ul>
     </div>
 </section>
@@ -277,19 +260,14 @@
       <!-- Latest compiled and minified JavaScript -->
       <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
-      <!-- Your stuff: Third-party javascript libraries go here -->
-
       <!-- place project specific Javascript in this file -->
       <script src="{% static 'js/project.js' %}"></script>
 
       <!-- Krypton Theme Javascript -->
       <script type="text/javascript" src="{% static 'js/modernizr.js' %}"></script>
       <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
-      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&amp;sensor=false"></script>
-      <script type="text/javascript" src="{% static 'js/google_map.js' %}"></script>
       <script type="text/javascript" src="{% static 'js/jrating.jquery.js' %}"></script>
       <script type="text/javascript" src="{% static 'js/myscript.js' %}"></script>
-      <script type="text/javascript" src="{% static 'js/modal_effects.js' %}"></script>
 
     {% endblock javascript %}
   </body>
