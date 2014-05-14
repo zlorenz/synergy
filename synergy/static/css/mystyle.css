@@ -9315,6 +9315,14 @@ h1.section-title {
     font-size: 52px;
   }
 }
+
+/* ---- Vertical Slider Buttons ---- */
+h2.vs_title {
+  padding-top: 10px;
+}
+p.vs_description {
+  line-height: 5px;
+}
   
 
 /* ------- Nav Menu ------- */
@@ -9796,9 +9804,6 @@ section.services-nav {
   margin-top: 0;
   margin-bottom: 10px;
 }
-.investment p {
-  line-height: 28px;
-}
 .investment .cn_content p {
   line-height: 20px;
   font-size: 12px;
@@ -10113,9 +10118,6 @@ section.services-nav {
 
 .biz-consulting h3 {
   margin-top: 0;
-}
-.biz-consulting p {
-  line-height: 28px;
 }
 
 .biz-consulting header {
