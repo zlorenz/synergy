@@ -9235,6 +9235,10 @@ a.md-trigger {
 
 /* ------- General Styles ------- */
 
+body {
+  color: #555555;
+}
+
 a, .btn {
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
