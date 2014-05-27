@@ -9235,6 +9235,10 @@ a.md-trigger {
 
 /* ------- General Styles ------- */
 
+body {
+  color: #555;
+}
+
 a, .btn {
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
@@ -9246,6 +9250,10 @@ a, .btn {
 
 .section-head header.centered section p {
   font-weight: 100;
+}
+
+.section-head p.descriptionText {
+  color: #555;
 }
 
 img.full-width {
