@@ -109,7 +109,8 @@ class Common(Configuration):
     ########## MANAGER CONFIGURATION
     # See: https://docs.djangoproject.com/en/dev/ref/settings/#admins
     ADMINS = (
-        ('Zacharia Lorenz', 'zlorenz@rabbit-hole-studios.com'),
+        #('Zacharia Lorenz', 'zlorenz@rabbit-hole-studios.com'),
+        ('Juan Pentoa', 'financialsynergy90@gmail.com'),
     )
 
     # See: https://docs.djangoproject.com/en/dev/ref/settings/#managers
