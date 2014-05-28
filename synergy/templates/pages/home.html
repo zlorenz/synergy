@@ -105,6 +105,18 @@
 		</div>
 	</div>
 </section><!-- Vertical Slider -->
+    {% block messages %}
+    <div class="container">
+      {% if messages %}
+          {% for message in messages %}
+              <div class="alert {% if message.tags %}alert-{{ message.tags }}"{% endif %}>
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                {{ message }}
+              </div>
+          {% endfor %}
+      {% endif %}
+    </div>
+    {% endblock messages %}
 
 <section id="consultation" class="consultation" data-type="background" data-speed="3">
 	<div class="blue-overlay">
