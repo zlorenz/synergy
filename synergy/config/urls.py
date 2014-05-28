@@ -12,7 +12,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$',
-        TemplateView.as_view(template_name='pages/home.html'),
+        'users.views.contact',
         name="home"),
     url(r'^about/$',
         TemplateView.as_view(template_name='pages/about.html'),

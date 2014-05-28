@@ -121,35 +121,36 @@
 			</div>
 			
 			<div class="row">
-				<form role="form" style="opacity: 0.85;">
+				<form role="form" style="opacity: 0.85;" action="/" method="POST">
+					{% csrf_token %}
 				  <div class="form-group">
 				  	<div class="col-sm-6 col-md-4 col-md-offset-2">
 					    <label for="InputFirstName">First Name</label>
-					    <input type="text" class="form-control" id="InputFirstName" placeholder="John">
+					    <input type="text" class="form-control" id="InputFirstName" placeholder="John" name="first_name">
 					</div>
 				  </div>
 				  <div class="form-group">
 				  	<div class="col-sm-6 col-md-4">
 					    <label for="InputLastName">Last Name</label>
-					    <input type="text" class="form-control" id="Input Last Name" placeholder="Doe">
+					    <input type="text" class="form-control" id="Input Last Name" placeholder="Doe" name="last_name">
 					</div>
 				  </div>
 				  <div class="form-group">
 				  	<div class="col-md-8 col-md-offset-2">
 					    <label for="InputPhone">Phone Number</label>
-					    <input type="phone" class="form-control" id="InputPhone" placeholder="555-555-5555">
+					    <input type="phone" class="form-control" id="InputPhone" placeholder="555-555-5555" name="phone">
 					</div>
 				  </div>
 				  <div class="form-group">
 				  	<div class="col-md-8 col-md-offset-2">
 					    <label for="InputEmail">Email Address</label>
-					    <input type="email" class="form-control" id="InputEmail" placeholder="john@doe.com">
+					    <input type="email" class="form-control" id="InputEmail" placeholder="john@doe.com" name="email">
 					</div>
 				  </div>
 				  <div class="form-group">
 				  	<div class="col-sm-6 col-md-4 col-md-offset-2">
 				  		<label for="Action">I'd like to learn more about...</label>
-						<select id="Action" class="form-control">
+						<select id="Action" class="form-control" name="learn">
 						  <option>Select Option</option>
 						  <option>Personal Services</option>
 						  <option>Business Services</option>
@@ -160,7 +161,7 @@
 				  <div class="form-group">
 				  	<div class="col-sm-6 col-md-4">
 				  		<label for="Topics">How do you take your coffee?</label>
-						<select id="Topics" class="form-control">
+						<select id="Topics" class="form-control" name="topic">
 						  <option>Black</option>
 						  <option>Cream</option>
 						  <option>Cream & Sugar</option>
@@ -171,11 +172,11 @@
 				  <div class="form-group">
 				  	<div class="col-md-8 col-md-offset-2">
 					    <label>Send a Message</label>
-					    <textarea class="form-control" rows="3"></textarea>
+					    <textarea class="form-control" rows="3" name="message"></textarea>
 					</div>
 				  </div>
 				  <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-				  	<button type="submit" class="btn btn-default btn-large btn-block">Submit</button>
+				  	<input type="submit" class="btn btn-default btn-large btn-block" value="Submit" name="submit">
 				  </div>
 				</form>
 			</div>
