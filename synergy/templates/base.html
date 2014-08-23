@@ -28,29 +28,33 @@
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 
-      <!-- This file store project specific CSS -->
+      <!-- Theme CSS -->
+      <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+      <link href="{% static 'css/fontello.css' %}" rel="stylesheet">
+      <link href="{% static 'css/krypton.css' %}" rel="stylesheet">
+
+      <!-- Custom Styles (Theme Override) -->
       <link href="{% static 'css/project.css' %}" rel="stylesheet">
+      <link href="{% static 'css/custom.css' %}" rel="stylesheet">
 
-      <!-- Krypton Theme CSS -->
-      <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" media="screen">
-      <link href="{% static 'css/fontello.css' %}" rel="stylesheet" media="screen">
-      <link href="{% static 'css/mystyle.css' %}" rel="stylesheet" media="screen">
-
-      <!-- Hover.css CSS -->
+      <!-- Hover.css -->
       <link rel="stylesheet" href="{% static 'css/hover-min.css' %}">
 
       <!-- Google Fonts -->
-      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-      <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>  
+      <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,400italic,900,500italic' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'> 
+    {% endblock css %}
 
-      <!-- Krypton Theme Javascript -->
+    {% block js %}
+      <!-- Theme Javascript -->
       <script type="text/javascript" src="{% static 'js/modernizr.js' %}"></script>
       <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
       <script type="text/javascript" src="{% static 'js/myscript.js' %}"></script>
 
       <!-- Smooth Scroll Javascript -->
       <script type="text/javascript" src="{% static 'js/smooth-scroll.js' %}"></script>
-    {% endblock css %}
+    {% endblock js %}
 
     {% block angular %}
       <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
@@ -68,188 +72,159 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="row">
-      <div class="col col-sm-12">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bars"></span>
-            <span class="icon-bars"></span>
-            <span class="icon-bars"></span>
-          </button>
-          <a class="navbar-brand" href="{% url 'home' %}" title="Synergy Financial | Financial Services for Businesses and Individuals in Tucson, AZ"><img src="{% static 'images/synergy-logo.png' %}" alt="Synergy Financial company logo"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="mynavbar">
-          <div class="left-cell">
-            <ul class="nav navbar-nav">
-              <li><a href="{% url 'home' %}" title="Synergy Financial | Financial Services for Businesses and Individuals in Tucson, AZ">Home</a></li>
-              <li><a href="{% url 'about' %}" title="About | Synergy Financial">About</a></li>
-              <li class="dropdown">
-                <a href="" class="dropdown-toggle" data-toggle="dropdown">Services</a>
-                <ul class="dropdown-menu">
-                  <li><h5 class="menuTitle">Services</h5></li>
-                  <li><a href="{% url 'personal' %}" title="Personal Services | Synergy Financial">Personal</a></li>
-                  <li><a href="{% url 'business' %}" title="Business Services | Synergy Financial">Business</a></li>
-                  <li><a href="{% url 'professionals' %}" title="Professionals | Synergy Financial">Professionals</a></li>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bars"></span>
+                <span class="icon-bars"></span>
+                <span class="icon-bars"></span>
+              </button>
+              <a class="navbar-brand" href="{% url 'home' %}" title="Synergy Financial | Financial Services for Businesses and Individuals in Tucson, AZ"><img src="{% static 'images/az-medicare-helpers-logo.png' %}" alt="Synergy Financial company logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <div class="left-cell">
+                <ul class="nav navbar-nav">
+                  {% include 'menus/nav-marketing.html' %}
                 </ul>
-              </li>
-              <li><a href="{% url 'clients' %}" title="Client Center | Synergy Financial" target="_blank">Client Center</a></li>
-            </ul>
-          </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav><!-- Main Navigation -->
+              </div>
+                </form>
+              </div>
+            </div>
+    </nav><!-- Main Navigation -->
 
     {% block content %}
     <h1>Content goes here!</h1>
     {% endblock content %}
 
-<section class="bottom_section">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-lg-4 col-md-4">
+    <section class="bottom_section">
+      <div class="container">
         <div class="row">
-          <div class="section-head">
-            <header class="col col-sm-12 centered">
-              <h2 style="color: rgb(238, 238, 238);">Live Market Data</h2>
-              <hr/>
-            </header>
-          </div>
-        </div>
-          
-        <div class="row">  
-          <div class="stock-widget">
-            <script src="//www.gmodules.com/ig/ifr?url=http://edulifeline.com/includes/stocks_widget/widget.xml&amp;synd=open&amp;w=249&amp;h=320&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js"></script>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-4">
-        <div class="row">
-          <div class="section-head">
-            <header class="col col-sm-12 centered">
-              <h2>Business News from <a href="http://online.wsj.com/" title="The Wall Street Journal">WSJ</a></h2>
-              <hr>
-            </header>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="wsj-widget">
-            <!-- start feedwind code -->
-              <script type="text/javascript">
-                <!--
-                rssmikle_url="http://online.wsj.com/xml/rss/3_7014.xml";
-                rssmikle_frame_width="280";
-                rssmikle_frame_height="303";
-                rssmikle_target="_blank";
-                rssmikle_font="'Open Sans', sans-serif"; ;
-                rssmikle_font_size="14";
-                rssmikle_border="on";
-                responsive="off";
-                rssmikle_css_url="";
-                text_align="left";
-                corner="off";
-                autoscroll="off";
-                scrolldirection="up";
-                scrollstep="3";
-                mcspeed="20";
-                sort="New";
-                rssmikle_title="off";
-                rssmikle_title_sentence="Wall Street Journal: U.S. Business";
-                rssmikle_title_link="";
-                rssmikle_title_bgcolor="#ffffff";
-                rssmikle_title_color="#ffffff";
-                rssmikle_title_bgimage="http://";
-                rssmikle_item_bgcolor="#eeeeee";
-                rssmikle_item_bgimage="http://";
-                rssmikle_item_title_length="55";
-                rssmikle_item_title_color="#1abc9c";
-                rssmikle_item_border_bottom="on";
-                rssmikle_item_description="off";
-                rssmikle_item_description_length="150";
-                rssmikle_item_description_color="#666666";
-                rssmikle_item_date="gl1";
-                rssmikle_timezone="Etc/GMT";
-                datetime_format="%b %e, %Y %l:%M:%S %p";
-                rssmikle_item_description_tag="off";
-                rssmikle_item_podcast="off";
-                //-->
-              </script>
-              <script type="text/javascript" src="http://widget.feed.mikle.com/js/rssmikle.js"></script>
-              <div style="font-size:10px; text-align:center; width:390;">
-                <a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;">RSS Feed Widget</a>
-                <!--Please display the above link in your web page according to Terms of Service.-->
+          <div class="col-lg-4 col-md-4">
+            <div class="row">
+              <div class="section-head">
+                <header class="col col-sm-12 centered">
+                  <h2 style="color: rgb(238, 238, 238);">Live Market Data</h2>
+                  <hr/>
+                </header>
               </div>
-            <!-- end feedwind code -->
+            </div>
+            <div class="row">  
+              <div class="stock-widget">
+                <script src="//www.gmodules.com/ig/ifr?url=http://edulifeline.com/includes/stocks_widget/widget.xml&amp;synd=open&amp;w=249&amp;h=320&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js"></script>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="row">
+              <div class="section-head">
+                <header class="col col-sm-12 centered">
+                  <h2>Business News from <a href="http://online.wsj.com/" title="The Wall Street Journal">WSJ</a></h2>
+                  <hr>
+                </header>
+              </div>
+            </div>
+            <div class="row">
+              <div class="wsj-widget">
+                <!-- start feedwind code -->
+                  <script type="text/javascript">
+                    <!--
+                    rssmikle_url="http://online.wsj.com/xml/rss/3_7014.xml";
+                    rssmikle_frame_width="280";
+                    rssmikle_frame_height="303";
+                    rssmikle_target="_blank";
+                    rssmikle_font="'Open Sans', sans-serif"; ;
+                    rssmikle_font_size="14";
+                    rssmikle_border="on";
+                    responsive="off";
+                    rssmikle_css_url="";
+                    text_align="left";
+                    corner="off";
+                    autoscroll="off";
+                    scrolldirection="up";
+                    scrollstep="3";
+                    mcspeed="20";
+                    sort="New";
+                    rssmikle_title="off";
+                    rssmikle_title_sentence="Wall Street Journal: U.S. Business";
+                    rssmikle_title_link="";
+                    rssmikle_title_bgcolor="#ffffff";
+                    rssmikle_title_color="#ffffff";
+                    rssmikle_title_bgimage="http://";
+                    rssmikle_item_bgcolor="#eeeeee";
+                    rssmikle_item_bgimage="http://";
+                    rssmikle_item_title_length="55";
+                    rssmikle_item_title_color="#1abc9c";
+                    rssmikle_item_border_bottom="on";
+                    rssmikle_item_description="off";
+                    rssmikle_item_description_length="150";
+                    rssmikle_item_description_color="#666666";
+                    rssmikle_item_date="gl1";
+                    rssmikle_timezone="Etc/GMT";
+                    datetime_format="%b %e, %Y %l:%M:%S %p";
+                    rssmikle_item_description_tag="off";
+                    rssmikle_item_podcast="off";
+                    //-->
+                  </script>
+                  <script type="text/javascript" src="http://widget.feed.mikle.com/js/rssmikle.js"></script>
+                  <div style="font-size:10px; text-align:center; width:390;">
+                    <a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;">RSS Feed Widget</a>
+                    <!--Please display the above link in your web page according to Terms of Service.-->
+                  </div>
+                <!-- end feedwind code -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="row">
+              <div class="section-head">
+                <header class="col col-sm-12 centered">
+                  <h2>Contact Us</h2>
+                  <hr>
+                </header>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <address>
+                  <h4>SYNERGY FINANCIAL, LLC</h4>
+                  <p><a href="tel:5204255718" title="Call us at Synergy Financial">(520) 425-5718</a><br>
+                    <a href="mailto:info@financialsynergy.biz" title="Email us at Synergy Financial">info@financialsynergy.biz</a></p>
+                  <p>2601 N. Campbell Ave. Suite #201<br>
+                    Tucson, AZ 85719</p>
+                </address>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      
-      <div class="col-lg-4 col-md-4">
-        <div class="row">
-          <div class="section-head">
-            <header class="col col-sm-12 centered">
-              <h2>Contact Us</h2>
-              <hr>
-            </header>
-          </div>
+    </section>
+
+    <footer>
+    <section class="container footer-section">
+        <div class="col-lg-6 col-xs-12"><p>&copy; 2014 <a href="{% url 'home' %}" title="Synergy Financial | Financial Services for Businesses and Individuals in Tucson, AZ">Synergy Financial, LLC</a>. All rights reserved. Designed by <a href="http://rabbitholestud.io" title="Rabbit Hole Studio | Forward-Thinking Web Design in Tucson, AZ">Rabbit Hole Studio</a>.</p></div>
+        <div class="col-lg-6 footer-menu">
+          <ul class="nav nav-pills">
+            {% include 'menus/nav-marketing.html' %}
+          </ul>
         </div>
+    </section>
+    <section class="ss-style-doublediagonal" data-type="background" data-speed="10"></section>
+    </footer>
 
-        <div class="row">
-          <div class="col-xs-12">
-            <address>
-              <h4>SYNERGY FINANCIAL, LLC</h4>
-              <p><a href="tel:5204255718" title="Call us at Synergy Financial">(520) 425-5718</a><br>
-                <a href="mailto:info@financialsynergy.biz" title="Email us at Synergy Financial">info@financialsynergy.biz</a></p>
-              <p>2601 N. Campbell Ave. Suite #201<br>
-                Tucson, AZ 85719</p>
-            </address>
-          </div>
-        </div>
-      </div>
-    </div>
+    <script>
+      smoothScroll.init({
+          speed: 500, // Integer. How fast to complete the scroll in milliseconds
+          easing: 'easeInOutQuart', // Easing pattern to use
+          updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+          offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+          callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
+          callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
+      });
+    </script>
 
-  </div>
-</section>
-
-<footer>
-<section class="container footer-section">
-    <div class="col-lg-6 col-xs-12"><p>&copy; 2014 <a href="{% url 'home' %}" title="Synergy Financial | Financial Services for Businesses and Individuals in Tucson, AZ">Synergy Financial, LLC</a>. All rights reserved. Designed by <a href="http://rabbitholestud.io" title="Rabbit Hole Studio | Forward-Thinking Web Design in Tucson, AZ">Rabbit Hole Studio</a>.</p></div>
-    <div class="col-lg-6 footer-menu">
-      <ul class="nav nav-pills">
-        <li><a href="{% url 'home' %}" title="Synergy Financial | Financial Services for Businesses and Individuals in Tucson, AZ">Home</a></li>
-        <li><a href="{% url 'about' %}" title="About | Synergy Financial">About</a></li>
-        <li><a href="{% url 'personal' %}" title="Personal Services | Synergy Financial">Personal</a></li>
-        <li><a href="{% url 'business' %}" title="Business Services | Synergy Financial">Business</a></li>
-        <li><a href="{% url 'professionals' %}" title="Professionals | Synergy Financial">Professionals</a></li>
-        <li><a href="{% url 'clients' %}" title="Client Center | Synergy Financial" target="_blank">Client Center</a></li>
-      </ul>
-    </div>
-</section>
-<section class="ss-style-doublediagonal" data-type="background" data-speed="10"></section>
-</footer>
-
-<script>
-  smoothScroll.init({
-      speed: 500, // Integer. How fast to complete the scroll in milliseconds
-      easing: 'easeInOutQuart', // Easing pattern to use
-      updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
-      offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
-      callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
-      callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
-  });
-</script>
-
-<div class="md-overlay"></div>
-<div class="jquery-media-detect"></div>
+    <div class="md-overlay"></div>
+    <div class="jquery-media-detect"></div>
 
     <!-- Le javascript
     ================================================== -->

@@ -1,0 +1,711 @@
+/* ---------------------------------------------- */
+/* ------- CUSTOM STYLES (THEME OVERRIDE) ------- */
+/* ---------------------------------------------- */
+
+/* ------- General Styles ------- */
+
+body { color: #555555; }
+a, .btn {
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+.section { padding: 80px 0; }
+.section-head { margin-bottom: 20px; }
+.section-head header.centered section p { font-weight: 100; }
+.section-head p.descriptionText { color: #555; }
+img.full-width { width: 100%; }
+.title {
+  font-family: 'EB Garamond', sans-serif;
+}
+h2.services-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+  font-size: 48px;
+}
+section.profile_team,
+section.insurance,
+section.investment,
+section.succession,
+section.risk-mgmt,
+section.benefits,
+section.biz-consulting,
+section.partnerships,
+section.client-login,
+section.referral {
+  margin-bottom: 0;
+  padding: 50px 0;
+}
+h1.section-title {
+  margin-top: 0;
+  font-size: 36px;
+}
+@media (min-width: 768px) {
+  .section-head { margin-bottom: 40px; }
+  h2.services-title {
+    margin-bottom: 50px;
+    font-size: 80px;
+  }
+  section.profile_team,
+  section.insurance,
+  section.investment,
+  section.succession,
+  section.risk-mgmt,
+  section.benefits,
+  section.biz-consulting,
+  section.partnerships,
+  section.client-login,
+  section.referral { padding: 80px 0; }
+  h1.section-title { font-size: 52px; }
+}
+
+/* ---- Typography --- */
+
+.text-white { color: #fff; }
+
+/* ---- Buttons --- */
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #ab051f;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active { background-color: #98051c; }
+.btn-info {
+  color: #ffffff;
+  background-color: #00529b;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active { background-color: #00427c; }
+
+/* Vertical Slider Buttons */
+h2.vs_title { padding-top: 10px; }
+p.vs_description { line-height: 5px; }
+
+/* ------- Nav Menu ------- */
+
+.navbar-brand img {
+  max-width: 270px;
+  padding: 6px 0;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.services-nav.navbar-default .navbar-nav > li > a:hover { background-color: #efefef; }
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav { float: right; }
+  #mynavbar {
+    width: auto;
+    float: right;
+  }
+  #mynavbar .left-cell { padding-top: 16px; }
+  .navbar-default .navbar-nav > li > a:hover { background-color: transparent; }
+  .navbar-brand img {
+    max-width: 247px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-default { padding: 0 5%; }
+  #mynavbar .left-cell { padding-top: 20px; }
+  .navbar-brand img {
+    max-width: 360px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar-brand img {
+    max-width: 473px;
+    padding: 0;
+  }
+}
+
+/* ------- Welcome Block ------- */
+
+.slider-main {
+  margin-bottom: 0;
+  background: url(../images/parallax/sonoran-sunset.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+.dark-overlay {
+  background-color: rgba(0,0,0,0.25);
+  padding: 100px 0px 50px;
+}
+.company-title-1 {
+  margin: 45px 0 0;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.company-title-2 {
+  margin: 0;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.tagline {
+  margin: 50px 0 30px;
+}
+.slider-main .btn {
+  margin-top: 30px;
+  padding: 6px 18px;
+}
+@media (min-width: 768px) {
+  .dark-overlay { padding: 120px 0px 100px; }
+  .company-title-1 { font-size: 68px; }
+  .company-title-2 { font-size: 48px; }
+}
+
+/* ------- Services Block ------- */
+
+.grid-icon-container { padding: 50px 0px 0px; }
+.grid-icon-container h4 { margin-top: 0; }
+.grid-icon-container p { margin-bottom: 30px; }
+.grid-icon-container span img {
+  max-width: 260px;
+  border: 1px solid #666666;
+}
+.grid-icon-container .grid-icon span {
+  padding: 10px;
+  border-radius: 0;
+}
+.grid-icon-container .grid-icon span:hover img { border: 1px solid #ab051f; }
+#my_xss_magic { margin-bottom: 80px; }
+@media (min-width: 768px) {
+  .grid-icon-container { padding: 80px 0px 0px; }
+  .grid-icon-container h4 { margin-top: 16px; }
+}
+@media (min-width: 992px) {
+  .grid-icon-container p { margin-bottom: 16px; }
+}
+
+/* ------- Partners Block ------- */
+
+.partner-companies .section-head { margin-bottom: 20px; }
+.companies img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* ------- Consultation Form Block ------- */
+
+.consultation {
+  background: url(../images/parallax/office.jpg) no-repeat center center;
+  background-size: cover;
+}
+.blue-overlay { background-color: rgba(0,82,155,0.6); }
+.consultation .title { margin-top: 0; }
+.consultation label { font-weight: 300; }
+
+/* ------- About Block ------- */
+
+.about-main {
+  margin-bottom: 0;
+  padding: 62px 0 30px;
+  background-color: #ecf0f1;
+}
+.about-main img.full-width { margin-bottom: 15px;}
+.about-main p { line-height: 28px;}
+.about-main h1 {
+  font-size: 72px;
+  margin-bottom: 30px;
+}
+.about-main h2 { font-size: 28px;}
+@media (min-width: 768px) {
+  .about-main { padding: 0 0 80px; }
+  .about-main img.full-width { margin-bottom: 60px; }
+  .about-main h2 { font-size: 34px; }
+}
+
+/* ------- Our Team Block ------- */
+
+.profile_team .section-head p { line-height: 24px; }
+.profile_team .profile {
+  max-width: none;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.profile_team .profile p {
+  display: block;
+  margin-top: 5px;
+  font-size: 11px;
+  line-height: 18px;
+}
+.profile_team .profile h3 { margin: 0; }
+.profile_team .profile .profile-heading {
+  font-size: 22px;
+  line-height: 24px;
+}
+.profile_team .profile .profile-subheading {
+    margin-top: 15px;
+    display: block;
+    line-height: 20px;
+}
+@media (min-width: 768px) {
+  .profile_team h2 { font-size: 52px; }
+  .profile_team .profile .profile-heading {
+    font-size: 22px;
+    line-height: 1.1;
+  }
+}
+@media (min-width: 992px) {
+  .profile_team .profile { margin-bottom: 40px; }
+  .profile_team .profile p { display: none; }
+}
+@media (min-width: 1200px) {
+  .profile_team .profile { margin-bottom: 40px; }
+  .profile_team .profile p { display: block; }
+  .profile_team .profile .profile-heading { font-size: 20px; }
+  .profile_team .profile .profile-subheading { font-size: 14px; }
+}
+
+/* ------- Personal Welcome Block ------- */
+
+.services-main {
+  margin-bottom: 0;
+  background-size: cover;
+  text-align: center;
+}
+.choose { display: none; }
+.services-main.personal {
+  background: url(../images/parallax/family.jpg) no-repeat center center;
+}
+.services-main p, .services-main h1, .services-main h2, .services-main h5 { color: white; }
+.services-main p {
+  margin-bottom: 0;
+  line-height: 28px;
+}
+.services-main h1 {
+  margin-top: 0;
+  margin-bottom: 0px;
+  letter-spacing: 15px;
+  font-size: 120px;
+}
+.services-main h5 { margin: 80px 0 -5px; }
+.services-main i {
+  color: #fff;
+  font-size: 50px;
+}
+.services-main .dark-overlay { padding-bottom: 50px; }
+@media (min-width: 768px) {
+  .choose { display: block; }
+  .services-main .dark-overlay { padding-bottom: 0; }
+}
+
+
+/* ------- Services Nav Menu ------- */
+
+section.services-nav {
+  margin-bottom: 0;
+  display: none;
+}
+.services-nav {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(25,25,25,.25);
+  box-shadow: 0px 0px 10px 0px rgba(25,25,25,.25);
+}
+.services-nav li { list-style: none; }
+.services-nav li a {
+  color: #2a2929;
+  text-transform: uppercase;
+  float: left;
+  padding: 20px 40px;
+  border-left: 1px solid #dcdcdc;
+}
+.services-nav li a.last-nav { border-right: 1px solid #dcdcdc; }
+.services-nav .navbar { margin-bottom: 0; }
+.services-nav.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  margin-bottom: -10px;
+}
+.services-nav.navbar .navbar-collapse { text-align: center; }
+@media (min-width: 768px) {
+  section.services-nav { display: block; }
+}
+
+/* ------- Insurance Block ------- */
+
+.insurance { text-align: center; }
+.insurance p { line-height: 28px; }
+.insurance h1 { margin-top: 0; }
+.insurance h2 {
+  margin-top: 30px;
+  font-size: 28px;
+}
+@media (min-width: 768px) {
+  .insurance { text-align: left; }
+  .insurance h2 {
+    margin-top: 40px;
+    font-size: 34px;
+  }
+}
+
+/* ------- Investments Block ------- */
+
+.investment { background-color: #ecf0f1; }
+.investment h3 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.investment .cn_content p {
+  line-height: 20px;
+  font-size: 12px;
+}
+.investment header { margin-bottom: 30px; }
+.investment .cn_item { text-align: center; }
+@media (min-width: 768px) {
+  .investment header {mmargin-bottom: 40px; }
+  .investment h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .investment .cn_content p {
+    line-height: 28px;
+    font-size: 16px;
+  }
+  .investment .cn_item { text-align: left; }
+}
+@media (min-width: 992px) {
+  .investment header { margin-bottom: 50px; }
+}
+
+/* ------- Succession Block ------- */
+
+.succession { text-align: center;}
+.succession p { line-height: 28px;}
+.succession h3 { margin-top: 5px;}
+.succession-tabs { margin: 5px 0 0;}
+.succession .nav-tabs.nav-justified {
+  background-color: #bdc3c7;
+  -webkit-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  background-clip: padding-box;
+}
+.succession .nav-tabs.nav-justified > li > a {
+  border: none;
+  background-color: #bdc3c7;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.succession .nav-tabs.nav-justified > .active {
+  background-color: #ffffff;
+  border: 1px solid #bdc3c7;
+  -webkit-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  background-clip: padding-box;
+  border-bottom: 0;
+}
+.succession .nav-tabs.nav-justified > .active > a {
+  border-bottom: 1px solid #ffffff;
+  background-color: #ffffff;
+  color: #999999;
+}
+.succession .nav-tabs.nav-justified > .active > a, .succession .nav-tabs.nav-justified > .active > a:hover, .succession .nav-tabs.nav-justified > .succession .active > a:focus { border: none; }
+.succession-tabs .tab-pane {
+  border-left: 1px solid #bdc3c7;
+  border-bottom: 1px solid #bdc3c7;
+  border-right: 1px solid #bdc3c7;
+  padding: 20px;
+  -webkit-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  background-clip: padding-box;
+}
+@media (min-width: 768px) {
+  .succession { text-align: left; }
+  .succession h3 { margin-top: 20px; }
+  .succession-tabs { margin: 40px 0 0; }
+}
+
+/* ------- Consulting CTA Block ------- */
+
+.consulting-cta {
+  padding: 50px 0;
+  margin-bottom: 0;
+  background-color: #ab051f;
+  text-align: center;
+}
+.consulting-cta h2 {
+  margin-top: 0;
+  color: #fff;
+  font-size: 32px;
+}
+.consulting-cta p {
+  color: #fff;
+  line-height: 28px;
+}
+.consulting-cta .section-head p.descriptionText { color: #fff; }
+.consulting-cta .btn { margin-top: 20px; }
+@media (min-width: 768px) {
+  .consulting-cta { padding: 50px 0; }
+  .consulting-cta h2 { font-size: 44px; }
+  .consulting-cta .btn { margin-top: 40px; }
+}
+@media (min-width: 992px) {
+  .consulting-cta {
+    padding: 80px 0;
+    text-align: left;
+  }
+  .consulting-cta .btn { margin-top: 45px; }
+}
+
+/* ------- Business Welcome Block ------- */
+
+.services-main.business { background: url(../images/parallax/meeting.jpg) no-repeat center center; }
+.services-main.business .dark-overlay { background-color: rgba(0,0,0,0.35); }
+
+/* ------- Risk Management Block ------- */
+
+.risk-mgmt { text-align: center; }
+.risk-mgmt p { line-height: 28px; }
+.risk-mgmt h1 { margin-top: 0; }
+.risk-mgmt h2 {
+  margin-top: 30px;
+  font-size: 28px;
+}
+.risk-mgmt .section-head { margin-bottom: -10px; }
+.risk-icon-container {
+  padding-top: 0;
+  position: relative;
+}
+.risk-icon-container .risk-icon h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.risk-icon-container .risk-icon div p {
+  text-align: center;
+  font-size: 14px;
+  color: #999999;
+}
+.risk-icon-container .risk-icon {
+  text-align: center;
+  color: #666666;
+}
+.risk-icon-container .risk-icon span {
+  text-align: center;
+  font-size: 3.5em;
+  color: #666666;
+  border: 1px solid #666666;
+  padding: 3px 20px;
+  display: inline-block;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  background-clip: padding-box;
+  position: relative;
+  margin: 20px 0 15px;
+  background-color: transparent;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.risk-icon-container .risk-icon span:before {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #666666;
+  border-width: 11px;
+  margin-left: -11px;
+}
+.risk-icon-container .risk-icon span:after, .risk-icon-container .risk-icon span:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
+}
+@media (min-width: 768px) {
+  .risk-mgmt { text-align: left; }
+  .risk-icon-container { padding-top: 20px; }
+  .risk-mgmt h2 {
+    margin-top: 40px;
+    font-size: 34px;
+  }
+  .risk-mgmt .section-head { margin-bottom: 20px; }
+  .risk-icon-container .risk-icon span { margin: 20px 0 30px; }
+}
+
+/* ------- Employee Benefits Block ------- */
+
+.benefits {
+  background-color: #ecf0f1;
+  text-align: center;
+}
+.benefits .section-head { margin-bottom: -20px; }
+.benefits h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+.benefits p { line-height: 28px; }
+@media (min-width: 768px) {
+  .benefits { text-align: left; }
+  .benefits .section-head { margin-bottom: 20px; }
+  .benefits h2 {
+    margin-top: 40px;
+    margin-bottom: 16px;
+    font-size: 30px;
+  }
+}
+
+
+/* ------- Business Consulting Block ------- */
+
+.biz-consulting h3 { margin-top: 0; }
+.biz-consulting header { margin-bottom: 80px; }
+
+/* ------- Professionals Welcome Block ------- */
+
+.services-main.professionals { background: url(../images/parallax/calculator.jpg) no-repeat center center; }
+.services-main.professionals .dark-overlay {
+  background-color: rgba(0,0,0,0.35);
+  padding: 110px 0 50px;
+}
+.professionals h2.services-title { font-size: 38px; }
+@media (min-width: 768px) {
+  .professionals h2.services-title { font-size: 80px; }
+  .services-main.professionals .dark-overlay { padding: 150px 0 80px; }
+}
+
+/* ------- Service Commitment Block ------- */
+
+.commitment {
+  padding: 50px 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.commitment h1 {
+  margin-top: 0;
+  font-size: 52px;
+}
+.commitment h2 { margin-top: 10px; }
+.commitment p {
+  line-height: 28px;
+  margin-bottom: 0;
+}
+.commitment header { margin-bottom: 80px; }
+@media (min-width: 992px) {
+  .commitment {
+    padding: 110px 0;
+    text-align: right;
+  }
+  .commitment p { margin-bottom: 16px; }
+}
+
+/* ------- Synergy Partnerships Block ------- */
+
+.partnerships {
+  background-color: #ecf0f1;
+  text-align: center;
+}
+.partnerships .section-head { margin-bottom: -25px; }
+.partnerships p { line-height: 28px; }
+.partnerships h3 { font-size: 24px; }
+@media (min-width: 768px) {
+  .partnerships h3 { font-size: 28px; }
+  .partnerships .section-head { margin-bottom: 20px; }
+}
+@media (min-width: 992px) {
+  .partnerships { text-align: left; }
+}
+
+/* ------- Partner Comment Block ------- */
+
+.partner-comment {
+  padding: 40px 0;
+  margin-bottom: 0;
+  background-color: #ab051f;
+  text-align: center;
+}
+.partner-comment h2 {
+  margin: 0 0 6px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 300;
+  text-transform: none;
+}
+@media (min-width: 768px) {
+  .partner-comment h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+/* ------- Client Center Welcome Block ------- */
+
+.services-main.client-center { background: url(../images/parallax/pathway.jpg) no-repeat center center; }
+.services-main.client-center .dark-overlay { padding: 120px 0 60px; }
+.client-center h2.services-title { font-size: 38px; }
+@media (min-width: 768px) {
+  .client-center h2.services-title { font-size: 80px; }
+  .services-main.client-center .dark-overlay { padding: 150px 0 80px; }
+}
+
+
+/* ------- Client Login Block ------- */
+
+.client-login { text-align: left; }
+.client-login p { line-height: 28px; }
+.client-login header { margin-bottom: 48px; }
+.client-login .btn { margin-top: 30px; }
+@media (min-width: 992px) {
+  .client-login .btn { margin-top: 0; }
+}
+
+/* ------- Refer a Friend Block ------- */
+
+.referral {
+  background-color: #ecf0f1;
+  text-align: center;
+}
+.referral .section-head { margin-bottom: -30px; }
+.referral p { line-height: 28px; }
+.referral h2 { margin-top: 40px; }
+.referral i {
+  font-size: 80px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .referral .section-head { margin-bottom: 20px; }
+  .referral i { font-size: 90px; }
+}
+
+/* ------- Footer Block ------- */
+
+footer {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.bottom_section {
+    padding: 0 0 80px;
+    text-align: center;
+}
+.bottom_section p { line-height: 24px; }
+.bottom_section h4 { color: #fff; }
+.bottom_section h2 { font-size: 22px; }
+.stock-widget { padding-left: 10%; }
+@media (min-width: 768px) {
+  footer { padding-bottom: 0; }
+  .stock-widget { padding-left: 251px; }
+  .bottom_section { padding: 30px 0 35px; }
+  .bottom_section h2 { font-size: 24px; }
+}
+@media (min-width: 992px) {
+  .stock-widget { padding-left: 35px; }
+  .wsj-widget { padding-left: 22px; }
+  .bottom_section { text-align: left; }
+  .bottom_section h2 { font-size: 22px; }
+}
+@media (min-width: 1200px) {
+  footer { text-align: left; }
+  .stock-widget { padding-left: 75px; }
+  .wsj-widget { padding-left: 60px; }
+  .bottom_section h2 { font-size: 24px; }
+}

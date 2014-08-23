@@ -3,65 +3,27 @@
 
 {% block content %}
 <section class="slider-main" data-type="background" data-speed="3">
-	<div class="dark-overlay">
+	<div class="dark-overlay text-white">
 		<div class= "container">
-			<h1>Synergy</h1>
-			<h2>Financial</h2>
-
+			<h1 class="company-title-1 title">AZ Medicare</h1>
+			<h2 class="company-title-2 title">Helpers</h2>
 			<div class="col-sm-10 col-sm-offset-1">
-				<h4>Strategic Planning for Your Needs</h4>
-				<p>Synergy Financial is a Tucson-based company that offers financial services across Arizona and California. Our mission is to give individuals and businesses in our community the education and financial guidance that they need to prepare for all of life's personal and professional challenges. Click below to schedule your free needs analysis today &#8594;</p>
+				<h3 class="tagline title">Curabitur ligula orci dignissim vitae tincidunt</h3>
+				<p>Nullam vehicula odio tortor. Ut vel ultricies libero, eget congue lorem. Sed tincidunt nunc quis mauris pretium, et facilisis libero bibendum. Mauris venenatis nunc id laoreet auctor. Nunc hendrerit lobortis libero. Duis et mi egestas, eleifend enim vel, laoreet mi. Proin congue maximus lorem vitae feugiat. Nam sollicitudin vestibulum elit, sed rutrum ex suscipit.</p>
 			</div>
-
-			<a data-scroll href="#consultation" title="Request a free needs analysis with Synergy Financial"><button class="btn btn-large btn-default">Schedule a <strong>Free</strong> Needs Analysis</button></a>
+			<a class="btn btn-large btn-info" data-scroll href="#consultation" title="Request a free needs analysis with Synergy Financial">Get Answers to Your Medicare Questions</a>
 		</div>
 	</div>	
 </section>
-<div class="services grid-icon-container scroll-target">
-	<section class="container grid-icon">
-		<div class="row">
-			<div class="col-sm-6 col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600}">
-				<a href="{% url 'personal' %}" title="Personal Services | Synergy Financial">
-					<span>
-						<img src="{% static 'images/personal-services.jpg' %}" title="Personal Services" alt="Synergy Financial's personal services include life insurance, investing, and succession planning" />
-					</span>
-				</a>
-				<h4>Personal Services</h4>
-			</div>
-			<div class="col-sm-6 col-md-4 col-md-offset-0" data-uk-scrollspy="{cls:'uk-animation-fade', delay:900}">
-				<a href="{% url 'business' %}" title="Business Services | Synergy Financial">
-					<span>
-						<img src="{% static 'images/business-services.jpg' %}" title="Business Services" alt="Synergy Financial's business services include life consulting, employee beneitfs, and risk management"/>
-					</span>
-				</a>
-				<h4>Business Services</h4>
-			</div>
-			<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1300}">
-				<a href="{% url 'professionals' %}" title="Professionals | Synergy Financial">
-					<span>
-						<img src="{% static 'images/financial-professionals.jpg' %}" title="Financial Professionals" alt="Synergy Financial's business partners include brokers, consultants, and third party administrators"/>
-					</span>
-				</a>
-				<h4>Financial Professionals</h4>
-			</div>
-		</div>
-	</section>
-	<svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
-		<path d="M0 0 L50 100 L100 0 Z" />
-	</svg>
-</div><!-- Grid Icon -->
 
-<section class="partner-companies">
+<section class="partner-companies section">
 	<div class="container">
 		<div class="row section-head">
-			<header class="col col-sm-12 centered">
-				<section>
-					<h2>Competetive options for all your needs</h2>
-				</section>
+			<header class="col-sm-12 centered">
+				<h2 class="title">Choose the Plan That Best Fits Your Needs</h2>
 				<hr>
 			</header>
 		</div>
-		
 		<div class="companies row">
 			<div class="col-xs-6 col-sm-4 col-md-2">
 				<img class="grow" src="{% static 'images/partners/genworth.jpg' %}" title="Genworth" alt="Genworth is a trusted partner of Synergy Financial"/>
@@ -82,7 +44,6 @@
 				<img class="grow" src="{% static 'images/partners/transamerica.jpg' %}" title="Transamerica" alt="Transamerica is a trusted partner of Synergy Financial"/>
 			</div>
 		</div>
-		
 		<div class="companies row">
 			<div class="col-xs-6 col-sm-4 col-md-2">
 				<img class="grow" src="{% static 'images/partners/mutual-of-omaha.jpg' %}" title="Mutual of Omaha"/ alt="Mutual of Omaha is a trusted partner of Synergy Financial">
@@ -105,6 +66,7 @@
 		</div>
 	</div>
 </section><!-- Vertical Slider -->
+
     {% block messages %}
     <div class="container">
       {% if messages %}
@@ -118,132 +80,62 @@
     </div>
     {% endblock messages %}
 
-<section id="consultation" class="consultation" data-type="background" data-speed="3">
-	<div class="blue-overlay">
+<section id="consultation" class="consultation text-white" data-type="background" data-speed="3">
+	<div class="blue-overlay section">
 		<div class="container">
 			<div class="row">
 				<div class="section-head">
-					<header class="col col-sm-12 centered">
-						<section>
-							<h2>Your <strong>Free</strong> Needs Analysis Request</h2>
-						</section>
+					<header class="col-sm-12 centered">
+						<h1 class="title">Medicare Answers from Medicare Professionals</h1>
 						<hr>
 					</header>
 				</div>
 			</div>
-			
 			<div class="row">
 				<form role="form" style="opacity: 0.85;" action="/" method="POST">
 					{% csrf_token %}
-				  <div class="form-group">
-				  	<div class="col-sm-6 col-md-4 col-md-offset-2">
-					    <label for="InputFirstName">First Name</label>
-					    <input type="text" class="form-control" id="InputFirstName" placeholder="First" name="first_name">
-					</div>
+				  <div class="form-group col-sm-6 col-md-4 col-md-offset-2">
+						<input type="text" class="form-control" id="InputFirstName" placeholder="First Name" name="first_name">
 				  </div>
-				  <div class="form-group">
-				  	<div class="col-sm-6 col-md-4">
-					    <label for="InputLastName">Last Name</label>
-					    <input type="text" class="form-control" id="Input Last Name" placeholder="Last" name="last_name">
-					</div>
+				  <div class="form-group col-sm-6 col-md-4">
+						<input type="text" class="form-control" id="Input Last Name" placeholder="Last Name" name="last_name">
 				  </div>
-				  <div class="form-group">
-				  	<div class="col-md-8 col-md-offset-2">
-					    <label for="InputPhone">Phone</label>
-					    <input type="phone" class="form-control" id="InputPhone" placeholder="Phone Number" name="phone">
-					</div>
+				  <div class="form-group col-md-8 col-md-offset-2">
+						<input type="phone" class="form-control" id="InputPhone" placeholder="Phone Number" name="phone">
 				  </div>
-				  <div class="form-group">
-				  	<div class="col-md-8 col-md-offset-2">
-					    <label for="InputEmail">Email</label>
-					    <input type="email" class="form-control" id="InputEmail" placeholder="Email Address" name="email">
-					</div>
+				  <div class="form-group col-md-8 col-md-offset-2">
+						<input type="email" class="form-control" id="InputEmail" placeholder="Email Address" name="email">
 				  </div>
-				  <div class="form-group">
-				  	<div class="col-sm-6 col-md-4 col-md-offset-2">
-				  		<label for="Action">I'd like to learn more about...</label>
+				  <div class="form-group col-sm-6 col-md-4 col-md-offset-2">
+				  	<label for="Action">Contact me about...</label>
 						<select id="Action" class="form-control" name="learn">
 						  <option>Select Option</option>
-						  <option>Personal Services</option>
-						  <option>Business Services</option>
-						  <option>Opportunities for Financial Professionals</option>
+						  <option>Medicare Advantage Plans</option>
+						  <option>Medicare Supplement Insurance</option>
+						  <option>Prescription Drug Plans</option>
 						</select>
-					</div>
 				  </div>
-				  <div class="form-group">
-				  	<div class="col-sm-6 col-md-4">
-				  		<label for="Topics">How do you take your coffee?</label>
+				  <div class="form-group col-sm-6 col-md-4">
+				  	<label for="Topics">Additional Interests</label>
 						<select id="Topics" class="form-control" name="topic">
-						  <option>Black</option>
-						  <option>Cream</option>
-						  <option>Cream & Sugar</option>
-						  <option>Just tea, please!</option>
+							<option>Select Option</option>
+						  <option>Additional No Cost Benefits</option>
+						  <option>Medicare Part A & B</option>
+						  <option>Dental, Vision and Hearing Benefits</option>
+						  <option>Medicare Plans for those on ACCCHS</option>
+						  <option>Disability</option>
+						  <option>Other</option>
 						</select>
-					</div>
 				  </div>
-				  <div class="form-group">
-				  	<div class="col-md-8 col-md-offset-2">
-					    <label>Send a Message</label>
-					    <textarea class="form-control" rows="3" placeholder="Start writing here..." name="message"></textarea>
-					</div>
+				  <div class="form-group col-md-8 col-md-offset-2">
+						<textarea class="form-control" rows="3" placeholder="Send us a message..." name="message"></textarea>
 				  </div>
-				  <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+				  <div class=" form-group col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
 				  	<input type="submit" class="btn btn-default btn-large btn-block" value="Submit" name="submit">
 				  </div>
 				</form>
 			</div>
-			
 		</div>
 	</div>
 </section>
-
-<section class="referral" style="padding: 25px 0 65px;">
-	<div class= "container">
-		
-		<div class="col-xs-6 col-sm-3">
-			<i class="icon-facebook-squared"></i>
-			<!-- Facebook Like/Share Buttons -->
-				<div class="fb-like" data-href="http://www.financialsynergy.biz" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-			<!--/ Facebook Like/Share Buttons -->
-		</div>
-	
-		<div class="col-xs-6 col-sm-3">
-			<i class="icon-twitter"></i>
-			<!-- Twitter Share Button -->
-				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.financialsynergy.biz" data-hashtags="FinancialSynergy">Tweet</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-					</script>
-			<!--/ Twitter Share Button -->
-		</div>
-
-		<div class="col-xs-6 col-sm-3">
-			<i class="icon-linkedin-squared"></i>
-			<!-- LinkedIn Share Button -->
-				<script src="//platform.linkedin.com/in.js" type="text/javascript">
-				  lang: en_US
-				</script>
-				<script type="IN/Share" data-url="http://www.financialsynergy.biz" data-counter="right"></script>
-			<!--/ LinkedIn Share Button -->
-		</div>
-
-		<div class="col-xs-6 col-sm-3">
-			<i class="icon-gplus-squared" data-href="http://www.financialsynergy.biz"></i>
-			<!-- Google Plus +1 Button -->
-				<div class="g-plusone"></div>
-			<!--/ Google Plus +1 Button -->
-			<!-- Google Plus Share Button -->
-				<div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://www.financialsynergy.biz"></div>
-					<script type="text/javascript">
-					  (function() {
-					    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-					    po.src = 'https://apis.google.com/js/platform.js';
-					    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-					  })();
-					</script>
-			<!--/ Google Plus Share Button -->
-		</div>
-
-	</div>	
-</section>
-
 {% endblock content %}
