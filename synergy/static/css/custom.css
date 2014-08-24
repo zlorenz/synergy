@@ -4,19 +4,13 @@
 
 /* ------- General Styles ------- */
 
-body { color: #555555; }
+body { color: #333; }
 a, .btn {
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
 }
 .section { padding: 80px 0; }
-.section-head { margin-bottom: 20px; }
-.section-head header.centered section p { font-weight: 100; }
-.section-head p.descriptionText { color: #555; }
 img.full-width { width: 100%; }
-.title {
-  font-family: 'EB Garamond', sans-serif;
-}
 h2.services-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -36,12 +30,7 @@ section.referral {
   margin-bottom: 0;
   padding: 50px 0;
 }
-h1.section-title {
-  margin-top: 0;
-  font-size: 36px;
-}
 @media (min-width: 768px) {
-  .section-head { margin-bottom: 40px; }
   h2.services-title {
     margin-bottom: 50px;
     font-size: 80px;
@@ -56,12 +45,38 @@ h1.section-title {
   section.partnerships,
   section.client-login,
   section.referral { padding: 80px 0; }
-  h1.section-title { font-size: 52px; }
 }
+/* Background Overlay Classes */
+.dark-overlay { background-color: rgba(0,0,0,0.4); }
 
 /* ---- Typography --- */
 
+/*Links*/
+a { color: #ab051f; }
+a:hover { color: #820000; }
+/*Section Headers*/
+.title {
+  margin-top: 0;
+  font-family: 'EB Garamond', sans-serif;
+  font-variant: small-caps;
+}
+.section-head hr {
+  margin: 20px 0 40px;
+  border: none;
+  height: 1px;
+  /* Gradient Background */ 
+    background: -moz-linear-gradient(left, rgba(30,87,153,0) 0%, rgba(221,221,221,1) 25%, rgba(221,221,221,1) 75%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(30,87,153,0)), color-stop(25%,rgba(221,221,221,1)), color-stop(75%,rgba(221,221,221,1)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(221,221,221,1) 25%,rgba(221,221,221,1) 75%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(221,221,221,1) 25%,rgba(221,221,221,1) 75%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(221,221,221,1) 25%,rgba(221,221,221,1) 75%,rgba(125,185,232,0) 100%); /* IE10+ */
+    background: linear-gradient(to right, rgba(30,87,153,0) 0%,rgba(221,221,221,1) 25%,rgba(221,221,221,1) 75%,rgba(125,185,232,0) 100%); /* W3C */
+}
+/*Color Classes*/
 .text-white { color: #fff; }
+/*Alignment Classes*/
+.text-right { text-align: right; }
+.text-center { text-align: center; }
 
 /* ---- Buttons --- */
 
@@ -79,54 +94,51 @@ h1.section-title {
 .btn-info:hover,
 .btn-info:focus,
 .btn-info:active { background-color: #00427c; }
-
 /* Vertical Slider Buttons */
 h2.vs_title { padding-top: 10px; }
 p.vs_description { line-height: 5px; }
 
 /* ------- Nav Menu ------- */
 
-.navbar-brand img {
-  max-width: 270px;
-  padding: 6px 0;
+.navbar-default {
+  background-color: #fff;
+  border: none;
 }
-.navbar-default .navbar-nav > li > a:hover,
-.services-nav.navbar-default .navbar-nav > li > a:hover { background-color: #efefef; }
+.navbar-default #mynavbar .left-cell { padding-top: 0; }
+.navbar-default .navbar-nav > li > a:hover { background-color: #f1f1f1; }
+.navbar-default .navbar-brand img {
+  max-width: 270px;
+  padding: 6px 0 0;
+}
 @media (min-width: 768px) {
-  .navbar-default .navbar-nav { float: right; }
-  #mynavbar {
+  .navbar-default .navbar-nav > li > a { padding: 18px 20px; }
+  .navbar-default #mynavbar {
     width: auto;
     float: right;
   }
-  #mynavbar .left-cell { padding-top: 16px; }
-  .navbar-default .navbar-nav > li > a:hover { background-color: transparent; }
-  .navbar-brand img {
-    max-width: 247px;
-  }
+  .navbar-default .navbar-brand img { max-width: 247px; }
 }
 @media (min-width: 992px) {
+  .navbar-default .navbar-nav > li > a { padding: 20px; }
   .navbar-default { padding: 0 5%; }
-  #mynavbar .left-cell { padding-top: 20px; }
-  .navbar-brand img {
-    max-width: 360px;
-  }
+  .navbar-default .navbar-brand img { max-width: 360px; }
 }
 @media (min-width: 1200px) {
-  .navbar-brand img {
-    max-width: 473px;
+  .navbar-default .navbar-brand img {
+    max-width: 463px;
     padding: 0;
   }
 }
 
 /* ------- Welcome Block ------- */
 
-.slider-main {
+.welcome {
   margin-bottom: 0;
   background: url(../images/parallax/sonoran-sunset.jpg) no-repeat center center;
   background-size: cover;
   text-align: center;
 }
-.dark-overlay {
+.welcome .dark-overlay {
   background-color: rgba(0,0,0,0.25);
   padding: 100px 0px 50px;
 }
@@ -145,12 +157,12 @@ p.vs_description { line-height: 5px; }
 .tagline {
   margin: 50px 0 30px;
 }
-.slider-main .btn {
+.welcome .btn {
   margin-top: 30px;
   padding: 6px 18px;
 }
 @media (min-width: 768px) {
-  .dark-overlay { padding: 120px 0px 100px; }
+  .welcome .dark-overlay { padding: 120px 0px 100px; }
   .company-title-1 { font-size: 68px; }
   .company-title-2 { font-size: 48px; }
 }
@@ -192,9 +204,12 @@ p.vs_description { line-height: 5px; }
   background: url(../images/parallax/office.jpg) no-repeat center center;
   background-size: cover;
 }
-.blue-overlay { background-color: rgba(0,82,155,0.6); }
 .consultation .title { margin-top: 0; }
 .consultation label { font-weight: 300; }
+.consultation-form input,
+.consultation-form select,
+.consultation-form textarea { opacity: 0.92; }
+.consultation-form input.btn { opacity: 1; }
 
 /* ------- About Block ------- */
 
@@ -258,18 +273,21 @@ p.vs_description { line-height: 5px; }
   .profile_team .profile .profile-subheading { font-size: 14px; }
 }
 
-/* ------- Personal Welcome Block ------- */
+/* ------- Request Info Welcome Block ------- */
 
 .services-main {
   margin-bottom: 0;
   background-size: cover;
   text-align: center;
 }
-.choose { display: none; }
-.services-main.personal {
-  background: url(../images/parallax/family.jpg) no-repeat center center;
+.services-main .title {
+  margin-top: 160px;
+  font-size: 52px;
+  text-transform: uppercase;
 }
-.services-main p, .services-main h1, .services-main h2, .services-main h5 { color: white; }
+.choose { display: none; }
+.services-main.request-welcome { background: url(../images/parallax/family.jpg) no-repeat center center; }
+.services-main.request-welcome .title { font-size: 38px; }
 .services-main p {
   margin-bottom: 0;
   line-height: 28px;
@@ -641,13 +659,7 @@ section.services-nav {
 /* ------- Client Center Welcome Block ------- */
 
 .services-main.client-center { background: url(../images/parallax/pathway.jpg) no-repeat center center; }
-.services-main.client-center .dark-overlay { padding: 120px 0 60px; }
-.client-center h2.services-title { font-size: 38px; }
-@media (min-width: 768px) {
-  .client-center h2.services-title { font-size: 80px; }
-  .services-main.client-center .dark-overlay { padding: 150px 0 80px; }
-}
-
+.services-main.client-center .dark-overlay { padding-bottom: 70px; }
 
 /* ------- Client Login Block ------- */
 
@@ -677,35 +689,37 @@ section.services-nav {
   .referral i { font-size: 90px; }
 }
 
-/* ------- Footer Block ------- */
+/* ------- Contact Footer ------- */
 
-footer {
-  padding-bottom: 50px;
-  text-align: center;
+.footer-contact {
+    padding: 70px 0 90px;
+    background-color: #0f2541;
+    box-shadow: 0 0 14px rgba(0,0,0,0.7);
 }
-.bottom_section {
-    padding: 0 0 80px;
-    text-align: center;
+.contact-info {
+  font-size: 24px;
+  font-weight: 300;
 }
-.bottom_section p { line-height: 24px; }
-.bottom_section h4 { color: #fff; }
-.bottom_section h2 { font-size: 22px; }
-.stock-widget { padding-left: 10%; }
-@media (min-width: 768px) {
-  footer { padding-bottom: 0; }
-  .stock-widget { padding-left: 251px; }
-  .bottom_section { padding: 30px 0 35px; }
-  .bottom_section h2 { font-size: 24px; }
+.contact-info i {
+  padding-right: 15px;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+/* ------- Copyright Footer ------- */
+
+.footer-copyright {
+  padding: 10px 0;
+  font-size: 14px;
+  background-color: #061a2e;
+}
+.footer-copyright .nav-pills > li > a { padding: 20px 15px; }
+.footer-copyright .nav > li > a:hover,
+.footer-copyright .nav > li > a:focus { background-color: transparent; }
+.copyright {
+  margin: 0;
+  padding: 20px 0;
 }
 @media (min-width: 992px) {
-  .stock-widget { padding-left: 35px; }
-  .wsj-widget { padding-left: 22px; }
-  .bottom_section { text-align: left; }
-  .bottom_section h2 { font-size: 22px; }
-}
-@media (min-width: 1200px) {
-  footer { text-align: left; }
-  .stock-widget { padding-left: 75px; }
-  .wsj-widget { padding-left: 60px; }
-  .bottom_section h2 { font-size: 24px; }
+  .footer-copyright { padding: 10px 5%; }
 }

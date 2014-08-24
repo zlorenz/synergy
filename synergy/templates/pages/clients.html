@@ -1,36 +1,39 @@
 {% extends "base.html" %}
 {% load staticfiles i18n %}
 
-{% block title %}Client Center | Synergy Financial{% endblock title %}
+{% block title %}Client Center | AZ Medicare Helpers{% endblock title %}
 {% block description %} {% endblock description %}
 
 {% block content %}
-<section class="services-main client-center" data-type="background" data-speed="3">
+
+<!-- CLIENT CENTER WELCOME
+================================================== -->
+<section class="services-main client-center text-white" data-type="background" data-speed="3">
 	<div class="dark-overlay">
 		<div class= "container">
-			<h2 class="services-title">Client Center</h2>
-
+			<h2 class="title">Client Center</h2>
 			<div class="col-sm-10 col-sm-offset-1">
 				<p style="margin: 20px 0 40px; font-size: 20px;">Thank you for choosing Synergy Financial as your trusted sidekick on the pathway to success!</p>
 			</div>
 		</div>
 	</div>	
 </section>
+<!-- END CLIENT CENTER WELCOME
+================================================== -->
 
+<!-- CLIENT LOGIN
+================================================== -->
 <section class="client-login">
 	<div class="container">
 		<div class="row">
 			<div class="section-head">
-				<header class="col col-sm-12 centered">
-					<section>
-						<h1 class="section-title">Client Login</h1>
-					</section>
+				<header class="col-sm-12 centered">
+					<h1 class="title">Client Login</h1>
 					<p class="descriptionText">Choose your company below to login access your account information.</p>
 					<hr>
 				</header>
 			</div>
 		</div>
-
 		<form name="clientlogin">
 			<div class="col-md-5 col-md-offset-1">
 				<select name="companies" class="form-control" required>
@@ -61,35 +64,34 @@
 						//-->
 					</script>
 			</div>
-
 			<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-1">
 				<button type="button" name="test" onClick="go()" class="btn btn-primary btn-lg btn-block">Login</button>
 			</div>
 		</form>
 	</div>
 </section>
+<!-- END CLIENT LOGIN
+================================================== -->
 
+<!-- REFER A FRIEND
+================================================== -->
 <section class="referral">
 	<div class= "container">
 		<div class="row">
 			<div class="section-head">
-				<header class="col col-sm-12 centered">
-					<section>
-						<h1 class="section-title">Refer a Friend</h1>
-					</section>
+				<header class="col-sm-12 centered">
+					<h1 class="title">Refer a Friend</h1>
 					<p class="descriptionText">Ensure that the ones you love and care for the most are receiving the best service and planning for their financial future! Like us on social media and use our <strong><a href="{% url 'home' %}#consultation">Free Needs Analysis Request</a></strong> to let them know you care.</p>
 					<hr>
 				</header>
 			</div>
 		</div>
-		
 		<div class="col-xs-6 col-sm-3">
 			<i class="icon-facebook-squared"></i>
 			<!-- Facebook Like/Share Buttons -->
 				<div class="fb-like" data-href="http://www.financialsynergy.biz" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 			<!--/ Facebook Like/Share Buttons -->
 		</div>
-	
 		<div class="col-xs-6 col-sm-3">
 			<i class="icon-twitter"></i>
 			<!-- Twitter Share Button -->
@@ -98,7 +100,6 @@
 					</script>
 			<!--/ Twitter Share Button -->
 		</div>
-
 		<div class="col-xs-6 col-sm-3">
 			<i class="icon-linkedin-squared"></i>
 			<!-- LinkedIn Share Button -->
@@ -108,7 +109,6 @@
 				<script type="IN/Share" data-url="http://www.financialsynergy.biz" data-counter="right"></script>
 			<!--/ LinkedIn Share Button -->
 		</div>
-
 		<div class="col-xs-6 col-sm-3">
 			<i class="icon-gplus-squared"></i>
 			<!-- Google Plus +1 Button -->
@@ -125,8 +125,9 @@
 					</script>
 			<!--/ Google Plus Share Button -->
 		</div>
-
 	</div>	
 </section>
+<!-- END REFER A FRIEND
+================================================== -->
 
 {% endblock content %}

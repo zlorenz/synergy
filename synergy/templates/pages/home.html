@@ -2,20 +2,27 @@
 {% load staticfiles i18n %}
 
 {% block content %}
-<section class="slider-main" data-type="background" data-speed="3">
+
+<!-- WELCOME
+================================================== -->
+<section class="welcome" data-type="background" data-speed="3">
 	<div class="dark-overlay text-white">
 		<div class= "container">
 			<h1 class="company-title-1 title">AZ Medicare</h1>
 			<h2 class="company-title-2 title">Helpers</h2>
 			<div class="col-sm-10 col-sm-offset-1">
-				<h3 class="tagline title">Curabitur ligula orci dignissim vitae tincidunt</h3>
+				<h3 class="tagline title">Curabitur Ligula Orci Dignissim Vitae Tincidunt</h3>
 				<p>Nullam vehicula odio tortor. Ut vel ultricies libero, eget congue lorem. Sed tincidunt nunc quis mauris pretium, et facilisis libero bibendum. Mauris venenatis nunc id laoreet auctor. Nunc hendrerit lobortis libero. Duis et mi egestas, eleifend enim vel, laoreet mi. Proin congue maximus lorem vitae feugiat. Nam sollicitudin vestibulum elit, sed rutrum ex suscipit.</p>
 			</div>
 			<a class="btn btn-large btn-info" data-scroll href="#consultation" title="Request a free needs analysis with Synergy Financial">Get Answers to Your Medicare Questions</a>
 		</div>
 	</div>	
 </section>
+<!-- END WELCOME
+================================================== -->
 
+<!-- AFFILIATE COMPANIES
+================================================== -->
 <section class="partner-companies section">
 	<div class="container">
 		<div class="row section-head">
@@ -65,47 +72,51 @@
 			</div>
 		</div>
 	</div>
-</section><!-- Vertical Slider -->
+</section>
+<!-- END AFFILIATE COMPANIES
+================================================== -->
 
-    {% block messages %}
-    <div class="container">
-      {% if messages %}
-          {% for message in messages %}
-              <div class="alert {% if message.tags %}alert-{{ message.tags }}"{% endif %}>
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                {{ message }}
-              </div>
-          {% endfor %}
-      {% endif %}
-    </div>
-    {% endblock messages %}
 
+<!-- CONSULTATION FORM
+================================================== -->
+{% block messages %}
+<div class="container">
+  {% if messages %}
+    {% for message in messages %}
+      <div class="alert {% if message.tags %}alert-{{ message.tags }}"{% endif %}>
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        {{ message }}
+      </div><!--/ .alert-->
+    {% endfor %}
+  {% endif %}
+</div><!--/ .container-->
+{% endblock messages %}
 <section id="consultation" class="consultation text-white" data-type="background" data-speed="3">
-	<div class="blue-overlay section">
+	<div class="dark-overlay section">
 		<div class="container">
 			<div class="row">
 				<div class="section-head">
 					<header class="col-sm-12 centered">
 						<h1 class="title">Medicare Answers from Medicare Professionals</h1>
-						<hr>
+						<hr><!--/ separator-->
 					</header>
-				</div>
-			</div>
+				</div><!--/ .section-head-->
+			</div><!--/ .row-->
 			<div class="row">
-				<form role="form" style="opacity: 0.85;" action="/" method="POST">
+				<form class="consultation-form" role="form" action="/" method="POST">
 					{% csrf_token %}
 				  <div class="form-group col-sm-6 col-md-4 col-md-offset-2">
 						<input type="text" class="form-control" id="InputFirstName" placeholder="First Name" name="first_name">
-				  </div>
+				  </div><!--/ .form-group-->
 				  <div class="form-group col-sm-6 col-md-4">
 						<input type="text" class="form-control" id="Input Last Name" placeholder="Last Name" name="last_name">
-				  </div>
+				  </div><!--/ .form-group-->
 				  <div class="form-group col-md-8 col-md-offset-2">
 						<input type="phone" class="form-control" id="InputPhone" placeholder="Phone Number" name="phone">
-				  </div>
+				  </div><!--/ .form-group-->
 				  <div class="form-group col-md-8 col-md-offset-2">
 						<input type="email" class="form-control" id="InputEmail" placeholder="Email Address" name="email">
-				  </div>
+				  </div><!--/ .form-group-->
 				  <div class="form-group col-sm-6 col-md-4 col-md-offset-2">
 				  	<label for="Action">Contact me about...</label>
 						<select id="Action" class="form-control" name="learn">
@@ -114,7 +125,7 @@
 						  <option>Medicare Supplement Insurance</option>
 						  <option>Prescription Drug Plans</option>
 						</select>
-				  </div>
+				  </div><!--/ .form-group-->
 				  <div class="form-group col-sm-6 col-md-4">
 				  	<label for="Topics">Additional Interests</label>
 						<select id="Topics" class="form-control" name="topic">
@@ -126,16 +137,19 @@
 						  <option>Disability</option>
 						  <option>Other</option>
 						</select>
-				  </div>
+				  </div><!--/ .form-group-->
 				  <div class="form-group col-md-8 col-md-offset-2">
 						<textarea class="form-control" rows="3" placeholder="Send us a message..." name="message"></textarea>
-				  </div>
+				  </div><!--/ .form-group-->
 				  <div class=" form-group col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-				  	<input type="submit" class="btn btn-default btn-large btn-block" value="Submit" name="submit">
-				  </div>
+				  	<input type="submit" class="btn btn-primary btn-large btn-block" value="Submit" name="submit">
+				  </div><!--/ .form-group-->
 				</form>
-			</div>
-		</div>
-	</div>
+			</div><!--/ .row-->
+		</div><!--/ .container-->
+	</div><!--/ .dark-overlay-->
 </section>
+<!-- END CONSULTATION FORM
+================================================== -->
+
 {% endblock content %}

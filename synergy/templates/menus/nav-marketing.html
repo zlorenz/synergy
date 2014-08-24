@@ -1,13 +1,5 @@
 {% load staticfiles i18n %}
-<li><a href="{% url 'home' %}" title="Synergy Financial | Financial Services for Businesses and Individuals in Tucson, AZ">Home</a></li>
-<li><a href="{% url 'about' %}" title="About | Synergy Financial">About</a></li>
-<li class="dropdown">
-  <a href="" class="dropdown-toggle" data-toggle="dropdown">Request Info</a>
-  <ul class="dropdown-menu">
-    <li><h5 class="menuTitle">Request Info</h5></li>
-    <li><a href="{% url 'personal' %}" title="Personal Services | Synergy Financial">Personal</a></li>
-    <li><a href="{% url 'business' %}" title="Business Services | Synergy Financial">Business</a></li>
-    <li><a href="{% url 'professionals' %}" title="Professionals | Synergy Financial">Professionals</a></li>
-  </ul>
-</li>
-<li><a href="{% url 'clients' %}" title="Client Center | Synergy Financial" target="_blank">Client Center</a></li>
+<li><a href="{% url 'home' %}" title="AZ Medicare Helpers">Home</a></li>
+<li><a href="{% url 'about' %}" title="About | AZ Medicare Helpers">About</a></li>
+<li><a href="{% url 'request-info' %}" title="Request Information | AZ Medicare Helpers">Request Info</a></li>
+<li><a href="{% url 'clients' %}" title="Client Center | AZ Medicare Helpers">Client Center</a></li>
