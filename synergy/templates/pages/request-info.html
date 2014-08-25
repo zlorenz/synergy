@@ -13,8 +13,8 @@
 		<div class= "container">
 			<h2 class="title">Have a Medicare Professional Contact You</h2>
 			<div class="choose col-xs-12">
-				<h5>Choose one of the options below to learn more</h5>
-				<i class="icon-down-circle"></i>
+				<h5>Just fill out the form below</h5>
+				<a data-scroll href="#consultation" title=""><i class="icon-down-circle"></i></a>
 			</div>
 		</div>
 	</div>	
@@ -22,122 +22,77 @@
 <!-- END REQUEST INFO WELCOME
 ================================================== -->
 
-<section class="services-nav">
-	<nav class="services-nav navbar navbar-default" role="navigation">
-	  <div class="collapse navbar-collapse navbar-ex1-collapse">
-	    <ul class="nav navbar-nav">
-	      <li><a data-scroll href="#insurance" title="Life Insurance services from Synergy Financial">Life Insurance</a></li>
-	      <li><a data-scroll class="last-nav" href="#investment" title="Personal Investment services from Synergy Financial">Investments</a></li>
-	    </ul>
-	  </div>
-	</nav>
+<!-- CONSULTATION FORM
+================================================== -->
+{% block messages %}
+<div class="container">
+  {% if messages %}
+    {% for message in messages %}
+      <div class="alert {% if message.tags %}alert-{{ message.tags }}"{% endif %}>
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        {{ message }}
+      </div><!--/ .alert-->
+    {% endfor %}
+  {% endif %}
+</div><!--/ .container-->
+{% endblock messages %}
+<section id="consultation" class="consultation section" style="background: #f1f1f1;">
+		<div class="container">
+			<div class="row">
+				<div class="section-head">
+					<header class="col-sm-12 centered">
+						<h1 class="title">Medicare Answers from Medicare Professionals</h1>
+						<hr><!--/ separator-->
+					</header>
+				</div><!--/ .section-head-->
+			</div><!--/ .row-->
+			<div class="row">
+				<form class="consultation-form" role="form" action="/" method="POST">
+					{% csrf_token %}
+				  <div class="form-group col-sm-6 col-md-4 col-md-offset-2">
+						<input type="text" class="form-control" id="InputFirstName" placeholder="First Name" name="first_name">
+				  </div><!--/ .form-group-->
+				  <div class="form-group col-sm-6 col-md-4">
+						<input type="text" class="form-control" id="Input Last Name" placeholder="Last Name" name="last_name">
+				  </div><!--/ .form-group-->
+				  <div class="form-group col-md-8 col-md-offset-2">
+						<input type="phone" class="form-control" id="InputPhone" placeholder="Phone Number" name="phone">
+				  </div><!--/ .form-group-->
+				  <div class="form-group col-md-8 col-md-offset-2">
+						<input type="email" class="form-control" id="InputEmail" placeholder="Email Address" name="email">
+				  </div><!--/ .form-group-->
+				  <div class="form-group col-sm-6 col-md-4 col-md-offset-2">
+				  	<label for="Action">Contact me about...</label>
+						<select id="Action" class="form-control" name="learn">
+						  <option>Select Option</option>
+						  <option>Medicare Advantage Plans</option>
+						  <option>Medicare Supplement Insurance</option>
+						  <option>Prescription Drug Plans</option>
+						</select>
+				  </div><!--/ .form-group-->
+				  <div class="form-group col-sm-6 col-md-4">
+				  	<label for="Topics">Additional Interests</label>
+						<select id="Topics" class="form-control" name="topic">
+							<option>Select Option</option>
+						  <option>Additional No Cost Benefits</option>
+						  <option>Medicare Part A & B</option>
+						  <option>Dental, Vision and Hearing Benefits</option>
+						  <option>Medicare Plans for those on ACCCHS</option>
+						  <option>Disability</option>
+						  <option>Other</option>
+						</select>
+				  </div><!--/ .form-group-->
+				  <div class="form-group col-md-8 col-md-offset-2">
+						<textarea class="form-control" rows="3" placeholder="Send us a message..." name="message"></textarea>
+				  </div><!--/ .form-group-->
+				  <div class=" form-group col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+				  	<input type="submit" class="btn btn-primary btn-large btn-block" value="Submit" name="submit">
+				  </div><!--/ .form-group-->
+				</form>
+			</div><!--/ .row-->
+		</div><!--/ .container-->
 </section>
-
-<section id="insurance" class="insurance">
-	<div class= "container">
-		<div class="row">
-			<div class="section-head">
-				<header class="col-sm-12 centered">
-					<h1 class="title">Life Insurance</h1>
-					<hr>
-				</header>
-			</div>
-		</div>
-		<div class="col-sm-8 col-sm-offset-2" style="text-align: center;">
-			<h2 style="margin-top: 20px;">Whole Life</h2>
-			<p>Also known as ordinary life insurance, <strong>Whole Life</strong> is a permanent life insurance policy that covers an individual until his or her death while accumulating a cash value within the policy.</p>
-		</div>
-		<div class="col-sm-6">
-			<h2>Term Life</h2>
-			<p><strong>Term Life</strong> insurance is a temporary life insurance policy that covers an individual for a specific number of years (generally 10, 20 or 30 years) and then coverage ends.</p>
-		</div>
-		<div class="col-sm-6">
-			<h2>Universal Life</h2>
-			<p style="margin-bottom: 0;">Also known as adjustable life insurance, <strong>Universal Life</strong> is a life insurance policy that offers the low cost features of Term Life insurance with the cash value concept of Whole Life insurance. <strong>Universal Life</strong> insurance may also offer more flexible premium options than Ordinary or Whole Life insurance.</p>
-		</div>
-	</div>	
-</section>
-
-<section class="investment" id="investment">
-	<div class="container">
-		<div class="row">
-			<div class="section-head">
-				<header class="col-sm-12 centered">
-					<h1 class="title">Investments</h1>
-					<hr>
-				</header>
-			</div>
-		</div>
-
-		<div class="cn_wrapper row">
-			<div id="cn_list" class="cn_list col col-xs-4" data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
-				<div class="cn_page" style="display:block;">
-					<div class="cn_item selected">
-						<div class="row">
-							<div class="col col-sm-2 vs_icon">
-								<i class="icon-graduation-cap"></i>
-							</div>
-							<div class="col col-sm-10 vs_text">
-								<h2 class="vs_title">Education</h2>
-								<p class="vs_description">__________</p>
-							</div>
-						</div>
-					</div>
-					<div class="cn_item">
-						<div class="row">
-							<div class="col col-sm-2 vs_icon">
-								<i class="icon-money-1"></i>
-							</div>
-							<div class="col col-sm-10 vs_text">
-								<h2 class="vs_title">Retirement</h2>
-								<p class="vs_description">__________</p>
-							</div>
-						</div>
-					</div>
-					<div class="cn_item">
-						<div class="row">
-							<div class="col col-sm-2 vs_icon">
-								<i class="icon-money"></i>
-							</div>
-							<div class="col col-sm-10 vs_text">
-								<h2 class="vs_title">Succession</h2>
-								<p class="vs_description">__________</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="cn_preview" class="cn_preview col col-xs-8">
-				<div class="cn_content" style="top:0;" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:300}">
-					<div class="col-md-6">
-						<h3>Education</h4>
-						<p>Will your children elect to apply at an accredited public school, private or technical institute? What will it cost when they get there? Learn how you can start planning for the rising cost of tuition and compare the options of saving now, waiting to pay out of pocket and/or taking out loans.</p>
-					</div>
-					<div class="col-md-6">
-						<img class="img-responsive" src="{% static 'images/vertical-slider/education.jpg' %}" title="College Financing Services" alt="College Financing services for individuals from Synergy Financial"/>
-					</div>
-				</div>
-				<div class="cn_content">
-					<div class="col-md-6">
-						<h3>Retirement</h4>
-						<p>You have worked hard your whole life towards the moment you get to retire. Learn about ways to make sure you are ready to retire at the lifestyle you want without outliving your money.</p>
-					</div>
-					<div class="col-md-6">
-						<img class="img-responsive" src="{% static 'images/vertical-slider/retirement.jpg' %}" title="Retirement Planning Services" alt="Retirement Planning services for individuals from Synergy Financial"/>
-					</div>
-				</div>
-				<div class="cn_content">
-					<div class="col-md-6">
-						<h3>Succession</h4>
-						<p>How will you continue making decisions after you pass or become incapacitated? Who will manage your hard earned assets? What family legacy will you continue or create for future generations to build upon?</p>
-					</div>
-					<div class="col-md-6">
-						<img class="img-responsive" src="{% static 'images/vertical-slider/succession.jpg' %}" title="Succession Planning" alt="Succession Planning services for individuals from Synergy Financial"/>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+<!-- END CONSULTATION FORM
+================================================== -->
 
 {% endblock content %}

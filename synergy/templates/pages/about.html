@@ -5,21 +5,29 @@
 {% block description %} {% endblock description %}
 
 {% block content %}
-<section class="about-main">
+<section class="about-main bg-gray-soft">
 	<img class="full-width" src="{% static 'images/grand-canyon.jpg' %}" title="Grand Canyon, Arizona" alt="Tucson, Arizona is the home of Synergy Financial" />
 	<div class= "container">
-		<div class="col-sm-6">
-			<h2>The Company</h2>
-			<p>Synergy Financial, LLC is a holistic financial service firm.  It was founded for the purpose of providing a meaningful impact in the lives of hard working individuals by arming them with the information and financial tools they need to reach the highest point of their personal and professional aspirations.</p>
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<h2 class="title">Who We Are</h2>
+				<p>Proin pharetra massa odio, id viverra ipsum commodo nec. Morbi laoreet ultricies leo, et mollis ante pharetra eu. Nulla facilisi. Praesent non leo sed mauris commodo ornare vitae eu felis. Duis ipsum eros, fringilla at nisi vitae, feugiat efficitur magna. Quisque tempor nisi eget semper consectetur. Vivamus ut interdum neque, at vulputate sem. Duis quis magna nibh. Cras dapibus ante ac congue laoreet. Etiam euismod semper aliquam.</p>
+			</div>
 		</div>
-		<div class="col-sm-6">
-			<h2>Our Mission</h2>
-			<p>Our mission is to give individuals and businesses in our community the education and financial guidance that they need to prepare for all of life's personal and professional challenges.</p>
+		<div class="section-head col-xs-10 col-xs-offset-1">
+			<hr>
+		</div>
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<h2 class="title">What We Offer</h2>
+				<p>Sed interdum mauris id maximus vehicula. Sed aliquam leo eu diam auctor, at pretium leo venenatis. Sed augue sapien, lobortis quis ipsum eu, pharetra vehicula nibh. Mauris sed nulla urna. Morbi at mi ac turpis rhoncus tincidunt eu ut arcu. Etiam molestie semper egestas.</p>
+				<p>Curabitur hendrerit purus eget eros tristique suscipit. Curabitur et luctus quam. Etiam consectetur dui et ornare mollis. Proin venenatis non magna condimentum pharetra. Praesent nec nibh quis lectus volutpat sollicitudin. Maecenas augue orci, ullamcorper eget ullamcorper ac, convallis vel lectus. Quisque facilisis congue ex, sed euismod mi fringilla.</p>
+			</div>
 		</div>
 	</div>	
 </section>
 
-<section class="profile_team">
+<section class="profile_team section">
 	<div class="container">
 		<div class="row">
 			<div class="section-head">
@@ -30,52 +38,38 @@
 			</div>	
 		</div>
 		<div class="row">
-			<!--<div class="profile col-sm-6" data-uk-scrollspy="{cls:'uk-animation-fade'}">-->
-			<div class="profile col-sm-6 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-0" data-uk-scrollspy="{cls:'uk-animation-fade'}">
-				<figure>
-					<div class="top-image">
-						<img src="{% static 'images/team/juan-pantoja.jpg' %}" class="img-responsive" title="Juan Carlos Pantoja" alt="Juan C. Pantoja, Managing Director at Synergy Financial"/>
-					</div>
-					<figcaption>
-						<h3><span class="profile-heading">JUAN C. PANTOJA</span></h3>
-						<span class="profile-subheading">Managing Director</span>
-						<div class="figcap"></div>
-					</figcaption>
-				</figure>
-			</div>	
-			<!--<div class="profile col-sm-6" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600}">-->
-			<div class="profile col-sm-6 col-md-4 col-lg-3 col-lg-offset-0" data-uk-scrollspy="{cls:'uk-animation-fade', delay:600}">
-				<figure>
-					<div class="top-image">
-						<img src="{% static 'images/team/paul-perez.jpg' %}" class="img-responsive" title="Paul C. Perez" alt="Paul C. Perez, Financial Representative at Synergy Financial"/>
-					</div>
-					<figcaption>
-						<h3><span class="profile-heading">PAUL C. PEREZ</span></h3>
-						<span class="profile-subheading">Financial Representative</span>
-						<div class="figcap"></div>
-					</figcaption>
-				</figure>
-			</div>
-			<div class="profile col-sm-6 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-0" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1200}">
-				<figure>
-					<div class="top-image">
-						<img src="http://www.clipartbest.com/cliparts/M9i/pxy/M9ipxy7cE.jpeg" class="img-responsive" title="Britney Churchill" alt="Britney Churchill, Marketing Director at Synergy Financial"/>
-					</div>
-					<figcaption>
-						<h3><span class="profile-heading">Britney Churchill</span></h3>
-						<span class="profile-subheading">Marketing Director</span>
-						<div class="figcap"></div>
-					</figcaption>
-				</figure>
-			</div>
-			<div class="profile col-sm-6 col-md-4 col-lg-3 col-lg-offset-0" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1800}">
+			<div class="profile col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1800}">
 				<figure>
 					<div class="top-image">
 						<img src="http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png" class="img-responsive" title="Tony Sharpe" alt="Tony Sharpe, Operations Specialist at Synergy Financial"/>
 					</div>
 					<figcaption>
-						<h3><span class="profile-heading">Tony Sharpe</span></h3>
-						<span class="profile-subheading">Consulting Director</span>
+						<h3 class="title"><span class="profile-heading">Trevor Cameron</span></h3>
+						<span class="profile-subheading">Owner</span>
+						<div class="figcap"></div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="profile col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1800}">
+				<figure>
+					<div class="top-image">
+						<img src="http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png" class="img-responsive" title="Tony Sharpe" alt="Tony Sharpe, Operations Specialist at Synergy Financial"/>
+					</div>
+					<figcaption>
+						<h3 class="title"><span class="profile-heading">John Doe</span></h3>
+						<span class="profile-subheading">Representative</span>
+						<div class="figcap"></div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="profile col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1800}">
+				<figure>
+					<div class="top-image">
+						<img src="http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png" class="img-responsive" title="Tony Sharpe" alt="Tony Sharpe, Operations Specialist at Synergy Financial"/>
+					</div>
+					<figcaption>
+						<h3 class="title"><span class="profile-heading">Jane Doe</span></h3>
+						<span class="profile-subheading">Representative</span>
 						<div class="figcap"></div>
 					</figcaption>
 				</figure>

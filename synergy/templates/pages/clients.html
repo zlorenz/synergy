@@ -13,7 +13,7 @@
 		<div class= "container">
 			<h2 class="title">Client Center</h2>
 			<div class="col-sm-10 col-sm-offset-1">
-				<p style="margin: 20px 0 40px; font-size: 20px;">Thank you for choosing Synergy Financial as your trusted sidekick on the pathway to success!</p>
+				<h4>Thank you for choosing AZ Medicare Helpers as your trusted sidekick on the pathway to success!</h4>
 			</div>
 		</div>
 	</div>	
@@ -21,113 +21,122 @@
 <!-- END CLIENT CENTER WELCOME
 ================================================== -->
 
-<!-- CLIENT LOGIN
-================================================== -->
-<section class="client-login">
-	<div class="container">
-		<div class="row">
-			<div class="section-head">
-				<header class="col-sm-12 centered">
-					<h1 class="title">Client Login</h1>
-					<p class="descriptionText">Choose your company below to login access your account information.</p>
-					<hr>
-				</header>
-			</div>
-		</div>
-		<form name="clientlogin">
-			<div class="col-md-5 col-md-offset-1">
-				<select name="companies" class="form-control" required>
-					<option>Choose Company</option>
-					<option value="https://www.lgamerica.com/csloginbann.htm">Banner Life</option>
-					<option value="https://client.schwab.com/Login/SignOn/CustomerCenterLogin.aspx">Charles Schwab</option>
-					<option value="https://sec.fidelitylife.com/pb2/esig">Fidelity Life</option>
-					<option value="https://www.genworth.com/login.html">Genworth</option>
-					<option value="http://ing.us/account-login">ING</option>
-					<option value="http://www.massmutual.com/">MassMutual</option>
-					<option value="https://online.metlife.com/edge/web/public/login">MetLife</option>
-					<option value="https://agent.mutualtrust.com/Profile/Login.aspx">MTL Insurance Company</option>
-					<option value="http://www.mutualofomaha.com/">Mutual of Omaha</option>
-					<option value="https://www.vsc3.newyorklife.com/VSCRegWebApp/login">New York Life</option>
-					<option value="http://www.nationwide.com/account-access.jsp">Nationwide</option>
-					<option value="https://www.mutualfunds.pacificlife.com/authenticate/plf_login.html">Pacific Life</option>
-					<option value="https://auth.principal.com/oaam_server/pfgLoginPage.jsp">Principal Financial Group</option>
-					<option value="http://www.prudential.com/globallogin?quadr=topright&name=allloginoptions">Prudential</option>
-					<option value="http://www.transamerica.com/individual/login">Transamerica</option>
-				</select>
-					<script type="text/javascript">
-						<!--
-						function go(){
-						location=
-						document.clientlogin.companies.
-						options[document.clientlogin.companies.selectedIndex].value
-						}
-						//-->
-					</script>
-			</div>
-			<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-1">
-				<button type="button" name="test" onClick="go()" class="btn btn-primary btn-lg btn-block">Login</button>
-			</div>
-		</form>
-	</div>
-</section>
-<!-- END CLIENT LOGIN
-================================================== -->
-
 <!-- REFER A FRIEND
 ================================================== -->
-<section class="referral">
+<section class="consultation section" style="background: #f1f1f1;">
 	<div class= "container">
 		<div class="row">
 			<div class="section-head">
 				<header class="col-sm-12 centered">
 					<h1 class="title">Refer a Friend</h1>
-					<p class="descriptionText">Ensure that the ones you love and care for the most are receiving the best service and planning for their financial future! Like us on social media and use our <strong><a href="{% url 'home' %}#consultation">Free Needs Analysis Request</a></strong> to let them know you care.</p>
+					<p class="descriptionText">If you have a friend that would benefit from our services, please fill out the form below.</p>
 					<hr>
 				</header>
 			</div>
 		</div>
-		<div class="col-xs-6 col-sm-3">
-			<i class="icon-facebook-squared"></i>
-			<!-- Facebook Like/Share Buttons -->
-				<div class="fb-like" data-href="http://www.financialsynergy.biz" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-			<!--/ Facebook Like/Share Buttons -->
-		</div>
-		<div class="col-xs-6 col-sm-3">
-			<i class="icon-twitter"></i>
-			<!-- Twitter Share Button -->
-				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.financialsynergy.biz" data-text="Synergy Financial | Financial Services for Businesses and Individuals in Tucson, AZ" data-hashtags="FinancialSynergy">Tweet</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-					</script>
-			<!--/ Twitter Share Button -->
-		</div>
-		<div class="col-xs-6 col-sm-3">
-			<i class="icon-linkedin-squared"></i>
-			<!-- LinkedIn Share Button -->
-				<script src="//platform.linkedin.com/in.js" type="text/javascript">
-				  lang: en_US
-				</script>
-				<script type="IN/Share" data-url="http://www.financialsynergy.biz" data-counter="right"></script>
-			<!--/ LinkedIn Share Button -->
-		</div>
-		<div class="col-xs-6 col-sm-3">
-			<i class="icon-gplus-squared"></i>
-			<!-- Google Plus +1 Button -->
-				<div class="g-plusone" data-href="http://www.financialsynergy.biz"></div>
-			<!--/ Google Plus +1 Button -->
-			<!-- Google Plus Share Button -->
-				<div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://www.financialsynergy.biz"></div>
-					<script type="text/javascript">
-					  (function() {
-					    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-					    po.src = 'https://apis.google.com/js/platform.js';
-					    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-					  })();
-					</script>
-			<!--/ Google Plus Share Button -->
+		<div class="row">
+			<form role="form" action="/" method="POST">
+				{% csrf_token %}
+			  <div class="form-group col-sm-6 col-md-3 col-md-offset-2">
+					<input type="text" class="form-control" id="InputName" placeholder="Your Name" name="name">
+			  </div><!--/ .form-group-->
+			  <div class="form-group col-sm-6 col-md-5">
+					<input type="email" class="form-control" id="InputEmail" placeholder="Your Email" name="email">
+			  </div><!--/ .form-group-->
+			  <div class="form-group col-sm-6 col-md-4 col-md-offset-2">
+					<input type="text" class="form-control" id="InputReferralName" placeholder="Referral Name" name="referral_name">
+			  </div><!--/ .form-group-->
+			  <div class="form-group col-sm-6 col-md-4">
+					<input type="phone" class="form-control" id="InputReferralPhone" placeholder="Referral Phone Number" name="referral_phone">
+			  </div><!--/ .form-group-->
+			  <div class="form-group col-md-8 col-md-offset-2">
+					<input type="email" class="form-control" id="InputReferralEmail" placeholder="Referral Email" name="referral_email">
+			  </div><!--/ .form-group-->
+			  <div class="form-group col-md-8 col-md-offset-2">
+					<textarea class="form-control" rows="3" placeholder="&#8220;I saw this webpage with Medicare information and I thought that you would be interested!&#8221;" name="message"></textarea>
+			  </div><!--/ .form-group-->
+			  <div class=" form-group col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+			  	<input type="submit" class="btn btn-primary btn-large btn-block" value="Submit" name="submit">
+			  </div><!--/ .form-group-->
+			</form>
 		</div>
 	</div>	
 </section>
 <!-- END REFER A FRIEND
+================================================== -->
+
+<!-- CLIENT LOGIN
+================================================== -->
+<section class="consultation section" style="background: #fff;">
+	<div class="container">
+		<div class="row">
+			<div class="section-head">
+				<header class="col-sm-12 centered">
+					<h1 class="title">Client Help Center</h1>
+					<p class="descriptionText">Praesent pulvinar velit non libero blandit, id auctor lorem pulvinar.</p>
+					<hr>
+				</header>
+			</div>
+		</div>
+		<div class="row">
+			<form role="form" action="/" method="POST">
+				{% csrf_token %}
+			  <div class="form-group col-sm-6 col-md-4 col-md-offset-2">
+					<input type="text" class="form-control" id="InputFirstName" placeholder="First Name" name="first_name">
+			  </div><!--/ .form-group-->
+			  <div class="form-group col-sm-6 col-md-4">
+					<input type="text" class="form-control" id="Input Last Name" placeholder="Last Name" name="last_name">
+			  </div><!--/ .form-group-->
+			  <div class="form-group col-sm-6 col-md-3 col-md-offset-2">
+					<input type="phone" class="form-control" id="InputPhone" placeholder="Phone Number" name="phone">
+			  </div><!--/ .form-group-->
+			  <div class="form-group col-md-5">
+					<input type="email" class="form-control" id="InputEmail" placeholder="Email Address" name="email">
+			  </div><!--/ .form-group-->
+			  <div class="form-group col-sm-6 col-md-4 col-md-offset-2">
+					<select id="ContactPreference" class="form-control" name="contact_preference">
+				    <option value="">Preferred Contact Method</option>
+				    <option value="phone">Phone</option>
+				    <option value="email">Email</option>
+				    <option value="none">No Preference</option>
+					</select>
+			  </div><!--/ .form-group-->
+			  <div class="form-group col-sm-6 col-md-4">
+					<select id="Agent" class="form-control" name="agent">
+				    <option value="">Who's your agent?</option>
+				    <option value="">Option 1</option>
+				    <option value="">Option 2</option>
+				    <option value="">Option 3</option>
+				    <option value="unsure">I don't know</option>
+					</select>
+			  </div><!--/ .form-group-->
+			  <div class="form-group col-sm-6 col-md-4 col-md-offset-2">
+					<select id="Company" class="form-control" name="company">
+				    <option value="">What company are you with?</option>
+				    <option value="">Option 1</option>
+				    <option value="">Option 2</option>
+				    <option value="">Option 3</option>
+					</select>
+			  </div><!--/ .form-group-->
+			  <div class="form-group col-sm-6 col-md-4">
+					<select id="Product" class="form-control" name="product">
+				    <option value="">What product do you have?</option>
+				    <option value="">Option 1</option>
+				    <option value="">Option 2</option>
+				    <option value="">Option 3</option>
+					</select>
+			  </div><!--/ .form-group-->
+			  <div class="form-group col-md-8 col-md-offset-2">
+					<textarea class="form-control" rows="3" placeholder="Describe the issue that you need help with..." name="message"></textarea>
+			  </div><!--/ .form-group-->
+			  <div class=" form-group col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+			  	<input type="submit" class="btn btn-primary btn-large btn-block" value="Submit" name="submit">
+			  </div><!--/ .form-group-->
+			</form>
+		</div>
+	</div>
+</section>
+<!-- END CLIENT LOGIN
 ================================================== -->
 
 {% endblock content %}

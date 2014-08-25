@@ -2,59 +2,31 @@
 /* ------- CUSTOM STYLES (THEME OVERRIDE) ------- */
 /* ---------------------------------------------- */
 
-/* ------- General Styles ------- */
+/* General Styles ------- */
+/* ---------------------- */
+
+img.full-width { width: 100%; }
+.section { padding: 80px 0; }
+/* --- Background Color --- */
+.bg-gray-soft { background-color: #f1f1f1;}
+.dark-overlay { background-color: rgba(0,0,0,0.4); }
+/* --- Transitions --- */
+a, .btn {
+  -webkit-transition: background-color .25s ease-in-out, color .25s ease-in-out, border .25s ease-in-out, box-shadow .25s ease-in-out; /* Chrome,Safari4+ */
+  -moz-transition: background-color .25s ease-in-out, color .25s ease-in-out, border .25s ease-in-out, box-shadow .25s ease-in-out; /* FF3.6+ */
+  -o-transition: background-color .25s ease-in-out, color .25s ease-in-out, border .25s ease-in-out, box-shadow .25s ease-in-out; /* Opera 11.10+ */
+  -ms-transition: background-color .25s ease-in-out, color .25s ease-in-out, border .25s ease-in-out, box-shadow .25s ease-in-out; /* IE10+ */
+  transition: background-color .25s ease-in-out, color .25s ease-in-out, border .25s ease-in-out, box-shadow .25s ease-in-out; /* W3C */
+}
+
+/* Typography ----------- */
+/* ---------------------- */
 
 body { color: #333; }
-a, .btn {
-  -webkit-transition: all .25s ease;
-  transition: all .25s ease;
-}
-.section { padding: 80px 0; }
-img.full-width { width: 100%; }
-h2.services-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  letter-spacing: 5px;
-  font-size: 48px;
-}
-section.profile_team,
-section.insurance,
-section.investment,
-section.succession,
-section.risk-mgmt,
-section.benefits,
-section.biz-consulting,
-section.partnerships,
-section.client-login,
-section.referral {
-  margin-bottom: 0;
-  padding: 50px 0;
-}
-@media (min-width: 768px) {
-  h2.services-title {
-    margin-bottom: 50px;
-    font-size: 80px;
-  }
-  section.profile_team,
-  section.insurance,
-  section.investment,
-  section.succession,
-  section.risk-mgmt,
-  section.benefits,
-  section.biz-consulting,
-  section.partnerships,
-  section.client-login,
-  section.referral { padding: 80px 0; }
-}
-/* Background Overlay Classes */
-.dark-overlay { background-color: rgba(0,0,0,0.4); }
-
-/* ---- Typography --- */
-
-/*Links*/
+/* --- Links --- */
 a { color: #ab051f; }
 a:hover { color: #820000; }
-/*Section Headers*/
+/* --- Section Headers --- */
 .title {
   margin-top: 0;
   font-family: 'EB Garamond', sans-serif;
@@ -64,21 +36,22 @@ a:hover { color: #820000; }
   margin: 20px 0 40px;
   border: none;
   height: 1px;
-  /* Gradient Background */ 
-    background: -moz-linear-gradient(left, rgba(30,87,153,0) 0%, rgba(221,221,221,1) 25%, rgba(221,221,221,1) 75%, rgba(125,185,232,0) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(30,87,153,0)), color-stop(25%,rgba(221,221,221,1)), color-stop(75%,rgba(221,221,221,1)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+  /* Gradient Background */
     background: -webkit-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(221,221,221,1) 25%,rgba(221,221,221,1) 75%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(30,87,153,0)), color-stop(25%,rgba(221,221,221,1)), color-stop(75%,rgba(221,221,221,1)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+    background: -moz-linear-gradient(left, rgba(30,87,153,0) 0%, rgba(221,221,221,1) 25%, rgba(221,221,221,1) 75%, rgba(125,185,232,0) 100%); /* FF3.6+ */
     background: -o-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(221,221,221,1) 25%,rgba(221,221,221,1) 75%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(221,221,221,1) 25%,rgba(221,221,221,1) 75%,rgba(125,185,232,0) 100%); /* IE10+ */
     background: linear-gradient(to right, rgba(30,87,153,0) 0%,rgba(221,221,221,1) 25%,rgba(221,221,221,1) 75%,rgba(125,185,232,0) 100%); /* W3C */
 }
-/*Color Classes*/
+/* --- Text Color --- */
 .text-white { color: #fff; }
-/*Alignment Classes*/
+/* --- Text Alignment --- */
 .text-right { text-align: right; }
 .text-center { text-align: center; }
 
-/* ---- Buttons --- */
+/* Buttons -------------- */
+/* ---------------------- */
 
 .btn-primary {
   color: #ffffff;
@@ -98,7 +71,13 @@ a:hover { color: #820000; }
 h2.vs_title { padding-top: 10px; }
 p.vs_description { line-height: 5px; }
 
-/* ------- Nav Menu ------- */
+/* Forms ---------------- */
+/* ---------------------- */
+
+
+
+/* Nav Menu ------------- */
+/* ---------------------- */
 
 .navbar-default {
   background-color: #fff;
@@ -213,23 +192,10 @@ p.vs_description { line-height: 5px; }
 
 /* ------- About Block ------- */
 
-.about-main {
-  margin-bottom: 0;
-  padding: 62px 0 30px;
-  background-color: #ecf0f1;
-}
-.about-main img.full-width { margin-bottom: 15px;}
+.about-main { padding-bottom: 80px; }
+.about-main img.full-width { margin-bottom: 80px;}
 .about-main p { line-height: 28px;}
-.about-main h1 {
-  font-size: 72px;
-  margin-bottom: 30px;
-}
-.about-main h2 { font-size: 28px;}
-@media (min-width: 768px) {
-  .about-main { padding: 0 0 80px; }
-  .about-main img.full-width { margin-bottom: 60px; }
-  .about-main h2 { font-size: 34px; }
-}
+.about-main .section-head hr { margin: 30px 0 10px; }
 
 /* ------- Our Team Block ------- */
 
@@ -239,6 +205,7 @@ p.vs_description { line-height: 5px; }
   margin-top: 10px;
   margin-bottom: 15px;
 }
+.profile_team .profile figcaption { background-color: #0f2541; }
 .profile_team .profile p {
   display: block;
   margin-top: 5px;
@@ -254,6 +221,7 @@ p.vs_description { line-height: 5px; }
     margin-top: 15px;
     display: block;
     line-height: 20px;
+    font-weight: 400;
 }
 @media (min-width: 768px) {
   .profile_team h2 { font-size: 52px; }
@@ -270,7 +238,7 @@ p.vs_description { line-height: 5px; }
   .profile_team .profile { margin-bottom: 40px; }
   .profile_team .profile p { display: block; }
   .profile_team .profile .profile-heading { font-size: 20px; }
-  .profile_team .profile .profile-subheading { font-size: 14px; }
+  .profile_team .profile .profile-subheading { font-size: 16px; }
 }
 
 /* ------- Request Info Welcome Block ------- */
@@ -285,7 +253,6 @@ p.vs_description { line-height: 5px; }
   font-size: 52px;
   text-transform: uppercase;
 }
-.choose { display: none; }
 .services-main.request-welcome { background: url(../images/parallax/family.jpg) no-repeat center center; }
 .services-main.request-welcome .title { font-size: 38px; }
 .services-main p {
@@ -298,14 +265,21 @@ p.vs_description { line-height: 5px; }
   letter-spacing: 15px;
   font-size: 120px;
 }
-.services-main h5 { margin: 80px 0 -5px; }
+.choose h5 { margin: 100px 0 -5px; }
 .services-main i {
   color: #fff;
   font-size: 50px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.6);
+  /* Transitions */
+    -webkit-transition: text-shadow .2s ease-in-out; /* Chrome,Safari4+ */
+    -moz-transition: text-shadow .2s ease-in-out; /* FF3.6+ */
+    -o-transition: text-shadow .2s ease-in-out; /* Opera 11.10+ */
+    -ms-transition: text-shadow .2s ease-in-out; /* IE10+ */
+    transition: text-shadow .2s ease-in-out; /* W3C */
 }
+.services-main i:hover { text-shadow: 0 0 15px rgba(0,0,0,0.9); }
 .services-main .dark-overlay { padding-bottom: 50px; }
 @media (min-width: 768px) {
-  .choose { display: block; }
   .services-main .dark-overlay { padding-bottom: 0; }
 }
 
@@ -359,7 +333,6 @@ section.services-nav {
 
 /* ------- Investments Block ------- */
 
-.investment { background-color: #ecf0f1; }
 .investment h3 {
   font-size: 24px;
   margin-top: 0;
@@ -659,7 +632,11 @@ section.services-nav {
 /* ------- Client Center Welcome Block ------- */
 
 .services-main.client-center { background: url(../images/parallax/pathway.jpg) no-repeat center center; }
-.services-main.client-center .dark-overlay { padding-bottom: 70px; }
+.services-main.client-center .title { margin-top: 0; }
+.services-main.client-center .dark-overlay {
+  padding: 175px 0 110px;
+  background-color: rgba(0,0,0,0.25);
+}
 
 /* ------- Client Login Block ------- */
 
@@ -673,10 +650,6 @@ section.services-nav {
 
 /* ------- Refer a Friend Block ------- */
 
-.referral {
-  background-color: #ecf0f1;
-  text-align: center;
-}
 .referral .section-head { margin-bottom: -30px; }
 .referral p { line-height: 28px; }
 .referral h2 { margin-top: 40px; }
