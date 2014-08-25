@@ -197,6 +197,7 @@ p.vs_description { line-height: 5px; }
 .about-main p { line-height: 28px;}
 .about-main .section-head hr { margin: 30px 0 10px; }
 
+
 /* ------- Our Team Block ------- */
 
 .profile_team .section-head p { line-height: 24px; }
@@ -249,7 +250,6 @@ p.vs_description { line-height: 5px; }
   text-align: center;
 }
 .services-main .title {
-  margin-top: 160px;
   font-size: 52px;
   text-transform: uppercase;
 }
@@ -278,10 +278,7 @@ p.vs_description { line-height: 5px; }
     transition: text-shadow .2s ease-in-out; /* W3C */
 }
 .services-main i:hover { text-shadow: 0 0 15px rgba(0,0,0,0.9); }
-.services-main .dark-overlay { padding-bottom: 50px; }
-@media (min-width: 768px) {
-  .services-main .dark-overlay { padding-bottom: 0; }
-}
+.services-main .dark-overlay { padding: 160px 0 0; }
 
 
 /* ------- Services Nav Menu ------- */
@@ -638,30 +635,6 @@ section.services-nav {
   background-color: rgba(0,0,0,0.25);
 }
 
-/* ------- Client Login Block ------- */
-
-.client-login { text-align: left; }
-.client-login p { line-height: 28px; }
-.client-login header { margin-bottom: 48px; }
-.client-login .btn { margin-top: 30px; }
-@media (min-width: 992px) {
-  .client-login .btn { margin-top: 0; }
-}
-
-/* ------- Refer a Friend Block ------- */
-
-.referral .section-head { margin-bottom: -30px; }
-.referral p { line-height: 28px; }
-.referral h2 { margin-top: 40px; }
-.referral i {
-  font-size: 80px;
-  display: block;
-}
-@media (min-width: 768px) {
-  .referral .section-head { margin-bottom: 20px; }
-  .referral i { font-size: 90px; }
-}
-
 /* ------- Contact Footer ------- */
 
 .footer-contact {
@@ -674,9 +647,30 @@ section.services-nav {
   font-weight: 300;
 }
 .contact-info i {
-  padding-right: 15px;
+  margin-top: 20px;
+  padding-right: 0;
+  display: block;
   font-size: 30px;
   vertical-align: middle;
+}
+@media (min-width: 768px) {
+  .contact-info i {
+    margin-top: 0;
+    padding-right: 15px;
+    display: inline-block;
+  }
+}
+@media (min-width: 992px) {
+  .contact-info i {
+    padding-right: 0;
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-info i {
+    padding-right: 15px;
+    display: inline-block;
+  }
 }
 
 /* ------- Copyright Footer ------- */
@@ -685,6 +679,7 @@ section.services-nav {
   padding: 10px 0;
   font-size: 14px;
   background-color: #061a2e;
+  text-align: center;
 }
 .footer-copyright .nav-pills > li > a { padding: 20px 15px; }
 .footer-copyright .nav > li > a:hover,
@@ -694,5 +689,8 @@ section.services-nav {
   padding: 20px 0;
 }
 @media (min-width: 992px) {
-  .footer-copyright { padding: 10px 5%; }
+  .footer-copyright {
+    padding: 10px 5%;
+    text-align: left;
+  }
 }
