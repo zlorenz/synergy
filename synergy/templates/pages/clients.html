@@ -14,9 +14,9 @@
 			<h2 class="title">Client Center</h2>
 			<div class="col-sm-10 col-sm-offset-1">
 				<h4>Thank you for choosing AZ Medicare Helpers as your trusted sidekick on the pathway to success!</h4>
-			</div>
-		</div>
-	</div>	
+			</div><!--/ .col-sm-10-->
+		</div><!--/ .container-->
+	</div><!--/ .dark-overlay-->
 </section>
 <!-- END CLIENT CENTER WELCOME
 ================================================== -->
@@ -24,16 +24,16 @@
 <!-- REFER A FRIEND
 ================================================== -->
 <section class="consultation section" style="background: #f1f1f1;">
-	<div class= "container">
+	<div class="container">
 		<div class="row">
 			<div class="section-head">
 				<header class="col-sm-12 centered">
 					<h1 class="title">Refer a Friend</h1>
 					<p class="descriptionText">If you have a friend that would benefit from our services, please fill out the form below.</p>
-					<hr>
+					<hr><!-- separator-->
 				</header>
-			</div>
-		</div>
+			</div><!--/ .section-head-->
+		</div><!--/ .row-->
 		<div class="row">
 			<form role="form" action="/" method="POST">
 				{% csrf_token %}
@@ -59,8 +59,8 @@
 			  	<input type="submit" class="btn btn-primary btn-large btn-block" value="Submit" name="submit">
 			  </div><!--/ .form-group-->
 			</form>
-		</div>
-	</div>	
+		</div><!--/ .row-->
+	</div><!--/ .container-->
 </section>
 <!-- END REFER A FRIEND
 ================================================== -->
@@ -74,10 +74,10 @@
 				<header class="col-sm-12 centered">
 					<h1 class="title">Client Help Center</h1>
 					<p class="descriptionText">Praesent pulvinar velit non libero blandit, id auctor lorem pulvinar.</p>
-					<hr>
+					<hr><!-- separator-->
 				</header>
-			</div>
-		</div>
+			</div><!--/ .section-head-->
+		</div><!--/ .row-->
 		<div class="row">
 			<form role="form" action="/" method="POST">
 				{% csrf_token %}
@@ -133,8 +133,8 @@
 			  	<input type="submit" class="btn btn-primary btn-large btn-block" value="Submit" name="submit">
 			  </div><!--/ .form-group-->
 			</form>
-		</div>
-	</div>
+		</div><!--/ .row-->
+	</div><!--/ .container-->
 </section>
 <!-- END CLIENT LOGIN
 ================================================== -->
