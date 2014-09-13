@@ -86,7 +86,7 @@ p.vs_description { line-height: 5px; }
 .navbar-default #mynavbar .left-cell { padding-top: 0; }
 .navbar-default .navbar-nav > li > a:hover { background-color: #f1f1f1; }
 .navbar-default .navbar-brand img {
-  max-width: 270px;
+  max-width: 250px;
   padding: 6px 0 0;
 }
 @media (min-width: 768px) {
