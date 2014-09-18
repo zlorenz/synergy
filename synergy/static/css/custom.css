@@ -74,7 +74,10 @@ p.vs_description { line-height: 5px; }
 /* Forms ---------------- */
 /* ---------------------- */
 
-
+.disclaimer {
+  font-size: 14px;
+  line-height: 20px;
+}
 
 /* Nav Menu ------------- */
 /* ---------------------- */
@@ -89,6 +92,12 @@ p.vs_description { line-height: 5px; }
   max-width: 250px;
   padding: 6px 0 0;
 }
+.navbar-default .navbar-toggle {
+  padding: 5px 7px;
+  font-size: 24px;
+  color: #95a5a6;
+}
+.navbar-default .navbar-toggle span.fa { display: block; }
 @media (min-width: 768px) {
   .navbar-default .navbar-nav > li > a { padding: 18px 20px; }
   .navbar-default #mynavbar {
@@ -121,6 +130,28 @@ p.vs_description { line-height: 5px; }
   background-color: rgba(0,0,0,0.25);
   padding: 100px 0px 50px;
 }
+.spanish-button {
+  position: absolute;
+  top: 85px;
+  left: 0px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.4);
+  /* Transitions */
+    -webkit-transition: box-shadow .25s ease-in-out; /* Chrome,Safari4+ */
+    -moz-transition: box-shadow .25s ease-in-out; /* FF3.6+ */
+    -o-transition: box-shadow .25s ease-in-out; /* Opera 11.10+ */
+    -ms-transition: box-shadow .25s ease-in-out; /* IE10+ */
+    transition: box-shadow .25s ease-in-out; /* W3C */
+}
+.spanish-button:hover {
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+.spanish-button a { font-weight: 500; }
+.spanish-button a:hover { color: #ab051f; }
 .company-title-1 {
   margin: 45px 0 0;
   font-size: 40px;
@@ -141,6 +172,7 @@ p.vs_description { line-height: 5px; }
   padding: 6px 18px;
 }
 @media (min-width: 768px) {
+  .spanish-button { top: 95px; }
   .welcome .dark-overlay { padding: 120px 0px 100px; }
   .company-title-1 { font-size: 68px; }
   .company-title-2 { font-size: 48px; }
@@ -253,7 +285,14 @@ p.vs_description { line-height: 5px; }
   font-size: 52px;
   text-transform: uppercase;
 }
-.services-main.request-welcome { background: url(../images/parallax/family.jpg) no-repeat center center; }
+.services-main .subtitle {
+  line-height: 32px;
+  margin-bottom: 50px;
+}
+.services-main.request-welcome {
+  background: url(../images/parallax/happy-senior-couple.jpg) no-repeat center center;
+  background-size: cover;
+}
 .services-main.request-welcome .title { font-size: 38px; }
 .services-main p {
   margin-bottom: 0;
@@ -438,7 +477,10 @@ section.services-nav {
 
 /* ------- Business Welcome Block ------- */
 
-.services-main.business { background: url(../images/parallax/meeting.jpg) no-repeat center center; }
+.services-main.business {
+  background: url(../images/parallax/meeting.jpg) no-repeat center center;
+  background-size: cover;
+}
 .services-main.business .dark-overlay { background-color: rgba(0,0,0,0.35); }
 
 /* ------- Risk Management Block ------- */
@@ -550,7 +592,10 @@ section.services-nav {
 
 /* ------- Professionals Welcome Block ------- */
 
-.services-main.professionals { background: url(../images/parallax/calculator.jpg) no-repeat center center; }
+.services-main.professionals {
+  background: url(../images/parallax/calculator.jpg) no-repeat center center;
+  background-size: cover;
+}
 .services-main.professionals .dark-overlay {
   background-color: rgba(0,0,0,0.35);
   padding: 110px 0 50px;
@@ -628,12 +673,16 @@ section.services-nav {
 
 /* ------- Client Center Welcome Block ------- */
 
-.services-main.client-center { background: url(../images/parallax/pathway.jpg) no-repeat center center; }
+.services-main.client-center {
+  background: url(../images/parallax/pathway.jpg) no-repeat center center;
+  background-size: cover;
+}
 .services-main.client-center .title { margin-top: 0; }
 .services-main.client-center .dark-overlay {
   padding: 175px 0 110px;
   background-color: rgba(0,0,0,0.25);
 }
+.checkbox-disclaimer { line-height: 24px; }
 
 /* ------- Contact Footer ------- */
 

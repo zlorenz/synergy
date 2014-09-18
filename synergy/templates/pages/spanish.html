@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+{% load staticfiles i18n %}
+
+{% block title %}Arizona Medicare Helpers | Espa&ntilde;ol{% endblock title %}
+
+{% block content %}
+
+<!-- WELCOME
+================================================== -->
+<section class="welcome" data-type="background" data-speed="3">
+	<div class="dark-overlay text-white">
+		<div class= "container">
+			<div class="spanish-button">
+				<a href="{% url 'home' %}">English</a>
+			</div>
+			<h1 class="company-title-1 title">AZ Medicare</h1>
+			<h2 class="company-title-2 title">Helpers</h2>
+			<div class="col-sm-10 col-sm-offset-1">
+				<h3 class="tagline title">Proporcionar respuestas simples a sus preguntas sobre Medicare</h3>
+				<p>En Arizona Medicare Helpers entendemos la naturaleza compleja que escoger un seguro de Medicare puede ser confuso e incluso a veces, abrumador. A menudo, la búsqueda de respuestas a preguntas sencillas de Medicare pueden crear más frustración. Es por eso que tenemos un equipo de profesionales dedicados para ayudarle a entender y sentir mayor confianza al tomar sus decisiones de Medicare.</p>
+			</div><!--/ .col-sm-10-->
+			<a class="btn btn-large btn-info" data-scroll href="#consultation" title="Request a free needs analysis with Synergy Financial">Obtenga respuestas y claridad a todas sus preguntas acerca de Medicare</a>
+		</div><!--/ .container-->
+	</div><!--/ .dark-overlay-->
+</section>
+<!-- END WELCOME
+================================================== -->
+
+<!-- ABOUT AZ MEDICARE
+================================================== -->
+<section class="about-main bg-gray-soft" style="padding-top: 80px;">
+	<div class= "container">
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<h2 class="title">&iquest;Quiénes somos?</h2>
+				<p>Arizona Medicare Helpers es un grupo de profesionales dedicados a ayudar a las personas a entender sus opciones de Medicare y a tomar mejores decisiones para decidir cual es el plan de Medicare que más le acomoda. A diferencia de muchos agentes que venden automóviles, vivienda, seguros de  vida, de salud y planes de  seguro de Medicare, nuestros agentes están dedicados exclusivamente a los planes relacionados con Medicare. Nosotros no trabajamos para CMS o Medicare sino que trabajamos para nuestros clientes, representando a una variedad de compañías de planes de seguros de Medicare para asegurarnos de encontrar mejor plan para usted!</p>
+			</div><!--/ .col-sm-10-->
+		</div><!--/ .row-->
+		<div class="section-head col-xs-10 col-xs-offset-1">
+			<hr><!-- separator-->
+		</div><!--/ .section-head-->
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<h2 class="title">Lo que ofrecemos</h2>
+				<p>Nuestro compromiso con usted es triple:</p>
+				<ol>
+					<li>Ofrecemos respuestas simples a sus preguntas sobre Medicare.</li>
+					<li>Ofrecemos orientación e inscripción con experiencia para los residentes de Arizona elegibles de Medicare. Utilizamos nuestra experiencia combinada para eliminar las molestias y los dolores de cabeza durante el proceso de elección entre Medicare Advantage, Suplemento, y planes de medicinas.</li>
+					<li>Ofrecemos apoyo y servicio al cliente dedicado a nuestros valiosos clientes. Entendemos que Medicare es confuso y estamos a su disposición como un recurso para darle la paz y la tranquilidad que usted se merece.</li>
+				</ol>
+			</div><!--/ .col-sm-10-->
+		</div><!--/ .row-->
+	</div><!--/ .container-->
+</section>
+<!-- END ABOUT AZ MEDICARE
+================================================== -->
+
+<!-- CONSULTATION FORM
+================================================== -->
+{% block messages %}
+<div class="container">
+  {% if messages %}
+    {% for message in messages %}
+      <div class="alert {% if message.tags %}alert-{{ message.tags }}"{% endif %}>
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        {{ message }}
+      </div><!--/ .alert-->
+    {% endfor %}
+  {% endif %}
+</div><!--/ .container-->
+{% endblock messages %}
+<section id="consultation" class="consultation text-white" data-type="background" data-speed="3">
+	<div class="dark-overlay section">
+		<div class="container">
+			<div class="row">
+				<div class="section-head">
+					<header class="col-sm-12 centered">
+						<h1 class="title">Respuestas de Medicare de Profesionales de Medicare</h1>
+						<hr><!--/ separator-->
+					</header>
+				</div><!--/ .section-head-->
+			</div><!--/ .row-->
+			<div class="row">
+				<form class="consultation-form" role="form" action="/" method="POST">
+					{% csrf_token %}
+				  <div class="form-group col-sm-6 col-md-4 col-md-offset-2">
+						<input type="text" class="form-control" id="InputFirstName" placeholder="Nombre" name="first_name">
+				  </div><!--/ .form-group-->
+				  <div class="form-group col-sm-6 col-md-4">
+						<input type="text" class="form-control" id="Input Last Name" placeholder="Apellido" name="last_name">
+				  </div><!--/ .form-group-->
+				  <div class="form-group col-md-8 col-md-offset-2">
+						<input type="phone" class="form-control" id="InputPhone" placeholder="Número de teléfono" name="phone">
+				  </div><!--/ .form-group-->
+				  <div class="form-group col-md-8 col-md-offset-2">
+						<input type="email" class="form-control" id="InputEmail" placeholder="Correo electrónico" name="email">
+				  </div><!--/ .form-group-->
+				  <div class="form-group col-sm-6 col-md-4 col-md-offset-2">
+				  	<label for="Action">Quisiera más información sobre...</label>
+						<select id="Action" class="form-control" name="learn">
+						  <option>Seleccione una Opción</option>
+						  <option>Planes Medicare Advantage</option>
+						  <option>Seguro Suplementario de Medicare</option>
+						  <option>Planes de Medicamentos Recetados</option>
+						</select>
+				  </div><!--/ .form-group-->
+				  <div class="form-group col-sm-6 col-md-4">
+				  	<label for="Topics">Intereses adicionales...</label>
+						<select id="Topics" class="form-control" name="topic">
+							<option>Seleccione una Opción</option>
+						  <option>Beneficios Adicionales Sin Costos</option>
+						  <option>Parte A y B de Medicare</option>
+						  <option>Dental, Visión, y Beneficios de Audición</option>
+						  <option>Planes de Medicare para los de AHCCCS</option>
+						  <option>Discapacidad</option>
+						  <option>Otros</option>
+						</select>
+				  </div><!--/ .form-group-->
+				  <div class="form-group col-md-8 col-md-offset-2">
+						<textarea class="form-control" rows="3" placeholder="Envíenos un mensaje..." name="message"></textarea>
+				  </div><!--/ .form-group-->
+				  <div class="col-md-8 col-md-offset-2">
+				  	<p class="disclaimer">*Como resultado de completar esta forma, hay posibilidad que un agente de ventas lo contacte por correo, telefono o correo electronico para hablar sobre planes de Medicare Advantage, Planes de Medicamentos o aseguransa de Medicare Supplement.</p>
+				  </div><!--/ .col-md-8-->
+				  <div class=" form-group col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+				  	<input type="submit" class="btn btn-primary btn-large btn-block" value="Enviar" name="submit">
+				  </div><!--/ .form-group-->
+				</form>
+			</div><!--/ .row-->
+		</div><!--/ .container-->
+	</div><!--/ .dark-overlay-->
+</section>
+<!-- END CONSULTATION FORM
+================================================== -->
+{% endblock content %}
+
+{% block footer %}
+	<!-- CONTACT FOOTER
+	================================================== -->
+	<section class="footer-contact text-white">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-md-8 col-md-offset-2">
+	        <div class="section-head">
+	          <header class="col-sm-12 centered">
+	            <h2 class="title">Contáctenos</h2>
+	            <hr><!-- separator-->
+	          </header>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="row text-center">
+	      <div class="col-md-4 col-md-offset-2">
+	        <a class="contact-info" href="tel:5202227997"><i class="fa fa-mobile"></i>(520) 222-7997</a>
+	      </div>
+	      <div class="col-md-4">
+	        <a class="contact-info" href="mailto:info@azmedicarehelpers.com"><i class="fa fa-envelope-o"></i>info@azmedicarehelpers.com</a>
+	      </div>
+	    </div><!--/ .row-->
+	  </div><!--/ .container-->
+	</section>
+	<!-- END CONTACT FOOTER
+	================================================== -->    
+
+	<!-- COPYRIGHT FOOTER
+	================================================== -->
+	<footer class="footer-copyright text-white">
+	  <div class="col-md-6">
+	    <p class="copyright">Copyright &copy; 2014 <a href="{% url 'home' %}">AZ Medicare Helpers</a>. Reservados Todos los Derechos.</p>
+	  </div><!--/ .col-md-6-->
+	  <div class="col-sm-6 col-sm-offset-3 col-md-offset-0">
+	    <ul class="nav nav-pills pull-right">
+	      {% include 'menus/nav-marketing.html' %}
+	    </ul><!--/ .nav-->
+	  </div><!--/ .col-sm-6-->
+	  <div class="clearfix"></div>
+	</footer><!--/ .copyright-->
+	<!-- END COPYRIGHT FOOTER
+	================================================== -->
+{% endblock footer %}

@@ -23,6 +23,9 @@ urlpatterns = patterns('',
     url(r'^clients/$',
         TemplateView.as_view(template_name='pages/clients.html'),
         name="clients"),
+    url(r'^spanish/$',
+        TemplateView.as_view(template_name='pages/spanish.html'),
+        name="spanish"),
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),

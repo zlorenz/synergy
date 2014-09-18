@@ -40,8 +40,8 @@
       <!-- Hover.css -->
       <link rel="stylesheet" href="{% static 'css/hover-min.css' %}">
 
-      <!-- Font Awesomt -->
-      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <!-- Font Awesome -->
+      <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
       <!-- Google Fonts -->
       <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,400italic,900,500italic' rel='stylesheet' type='text/css'>
@@ -81,9 +81,7 @@
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
           <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bars"></span>
-          <span class="icon-bars"></span>
-          <span class="icon-bars"></span>
+          <span class="fa fa-chevron-circle-down"></span>
         </button>
         <a class="navbar-brand" href="{% url 'home' %}" title="Synergy Financial | Financial Services for Businesses and Individuals in Tucson, AZ"><img src="{% static 'images/az-medicare-helpers-logo.png' %}" alt="Synergy Financial company logo"></a>
       </div>
@@ -104,48 +102,50 @@
     <h1>Content goes here!</h1>
     {% endblock content %}
 
-    <!-- CONTACT FOOTER
-    ================================================== -->
-    <section class="footer-contact text-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <div class="section-head">
-              <header class="col-sm-12 centered">
-                <h2 class="title">Contact Us</h2>
-                <hr><!-- separator-->
-              </header>
+    {% block footer %}
+      <!-- CONTACT FOOTER
+      ================================================== -->
+      <section class="footer-contact text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="section-head">
+                <header class="col-sm-12 centered">
+                  <h2 class="title">Contact Us</h2>
+                  <hr><!-- separator-->
+                </header>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4 col-md-offset-2">
-            <a class="contact-info" href="tel:5202227997"><i class="fa fa-mobile"></i>(520) 222-7997</a>
-          </div>
-          <div class="col-md-4">
-            <a class="contact-info" href="mailto:info@azmedicarehelpers.com"><i class="fa fa-envelope-o"></i>info@azmedicarehelpers.com</a>
-          </div>
-        </div><!--/ .row-->
-      </div><!--/ .container-->
-    </section>
-    <!-- END CONTACT FOOTER
-    ================================================== -->    
+          <div class="row text-center">
+            <div class="col-md-4 col-md-offset-2">
+              <a class="contact-info" href="tel:5202227997"><i class="fa fa-mobile"></i>(520) 222-7997</a>
+            </div>
+            <div class="col-md-4">
+              <a class="contact-info" href="mailto:info@azmedicarehelpers.com"><i class="fa fa-envelope-o"></i>info@azmedicarehelpers.com</a>
+            </div>
+          </div><!--/ .row-->
+        </div><!--/ .container-->
+      </section>
+      <!-- END CONTACT FOOTER
+      ================================================== -->    
 
-    <!-- COPYRIGHT FOOTER
-    ================================================== -->
-    <footer class="footer-copyright text-white">
-      <div class="col-md-6">
-        <p class="copyright">Copyright &copy; 2014 <a href="{% url 'home' %}">AZ Medicare Helpers</a>. All rights reserved.</p>
-      </div><!--/ .col-md-6-->
-      <div class="col-sm-6 col-sm-offset-3 col-md-offset-0">
-        <ul class="nav nav-pills pull-right">
-          {% include 'menus/nav-marketing.html' %}
-        </ul><!--/ .nav-->
-      </div><!--/ .col-sm-6-->
-      <div class="clearfix"></div>
-    </footer><!--/ .copyright-->
+      <!-- COPYRIGHT FOOTER
+      ================================================== -->
+      <footer class="footer-copyright text-white">
+        <div class="col-md-6">
+          <p class="copyright">Copyright &copy; 2014 <a href="{% url 'home' %}">AZ Medicare Helpers</a>. All rights reserved.</p>
+        </div><!--/ .col-md-6-->
+        <div class="col-sm-6 col-sm-offset-3 col-md-offset-0">
+          <ul class="nav nav-pills pull-right">
+            {% include 'menus/nav-marketing.html' %}
+          </ul><!--/ .nav-->
+        </div><!--/ .col-sm-6-->
+        <div class="clearfix"></div>
+      </footer><!--/ .copyright-->
     <!-- END COPYRIGHT FOOTER
     ================================================== -->
+    {% endblock footer %}
 
     <script>
       smoothScroll.init({

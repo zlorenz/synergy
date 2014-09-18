@@ -8,11 +8,14 @@
 <section class="welcome" data-type="background" data-speed="3">
 	<div class="dark-overlay text-white">
 		<div class= "container">
+			<div class="spanish-button">
+				<a href="{% url 'spanish' %}">Traducción Español</a>
+			</div>
 			<h1 class="company-title-1 title">AZ Medicare</h1>
 			<h2 class="company-title-2 title">Helpers</h2>
 			<div class="col-sm-10 col-sm-offset-1">
-				<h3 class="tagline title">Curabitur Ligula Orci Dignissim Vitae Tincidunt</h3>
-				<p>Nullam vehicula odio tortor. Ut vel ultricies libero, eget congue lorem. Sed tincidunt nunc quis mauris pretium, et facilisis libero bibendum. Mauris venenatis nunc id laoreet auctor. Nunc hendrerit lobortis libero. Duis et mi egestas, eleifend enim vel, laoreet mi. Proin congue maximus lorem vitae feugiat. Nam sollicitudin vestibulum elit, sed rutrum ex suscipit.</p>
+				<h3 class="tagline title">Providing Simple Answers to Your Medicare Questions</h3>
+				<p>At Arizona Medicare Helpers we understand that the complex nature of Medicare Insurance can feel confusing and even overwhelming at times. Often searching for answers to simple Medicare questions can create more frustration than it seems to be worth. That is why we have a dedicated team of professionals committed to helping you understand and feel confident in your Medicare decisions.</p>
 			</div><!--/ .col-sm-10-->
 			<a class="btn btn-large btn-info" data-scroll href="#consultation" title="Request a free needs analysis with Synergy Financial">Get Answers to Your Medicare Questions</a>
 		</div><!--/ .container-->
@@ -117,7 +120,7 @@
 						<input type="email" class="form-control" id="InputEmail" placeholder="Email Address" name="email">
 				  </div><!--/ .form-group-->
 				  <div class="form-group col-sm-6 col-md-4 col-md-offset-2">
-				  	<label for="Action">Contact me about...</label>
+				  	<label for="Action">Contact Me About...</label>
 						<select id="Action" class="form-control" name="learn">
 						  <option>Select Option</option>
 						  <option>Medicare Advantage Plans</option>
@@ -126,7 +129,7 @@
 						</select>
 				  </div><!--/ .form-group-->
 				  <div class="form-group col-sm-6 col-md-4">
-				  	<label for="Topics">Additional Interests</label>
+				  	<label for="Topics">Additional Interests...</label>
 						<select id="Topics" class="form-control" name="topic">
 							<option>Select Option</option>
 						  <option>Additional No Cost Benefits</option>
@@ -140,6 +143,9 @@
 				  <div class="form-group col-md-8 col-md-offset-2">
 						<textarea class="form-control" rows="3" placeholder="Send us a message..." name="message"></textarea>
 				  </div><!--/ .form-group-->
+				  <div class="col-md-8 col-md-offset-2">
+				  	<p class="disclaimer">*As a result of completing this form, a sales agent may mail, call or email you to discuss Medicare Advantage, Prescription Drug Plans or Medicare Supplement Insurance.</p>
+				  </div><!--/ .col-md-8-->
 				  <div class=" form-group col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
 				  	<input type="submit" class="btn btn-primary btn-large btn-block" value="Submit" name="submit">
 				  </div><!--/ .form-group-->
