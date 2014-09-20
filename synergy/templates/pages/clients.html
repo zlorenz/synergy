@@ -36,7 +36,7 @@
 			</div><!--/ .section-head-->
 		</div><!--/ .row-->
 		<div class="row">
-			<form role="form" action="/" method="POST">
+			<form role="form" action="." method="POST">
 				{% csrf_token %}
 			  <div class="form-group col-sm-6 col-md-3 col-md-offset-2">
 					<input type="text" class="form-control" id="InputName" placeholder="Your Name" name="name">
@@ -54,7 +54,7 @@
 					<input type="email" class="form-control" id="InputReferralEmail" placeholder="Referral Email" name="referral_email">
 			  </div><!--/ .form-group-->
 			  <div class="form-group col-md-8 col-md-offset-2">
-					<textarea class="form-control" rows="3" placeholder="&#8220;I saw this webpage with Medicare information and I thought that you would be interested!&#8221;" name="message"></textarea>
+					<textarea class="form-control" rows="3" placeholder="&#8220;I saw this webpage with Medicare information and I thought that you would be interested!&#8221;" name="message">I saw this website with information on optional Medicare insurance information and I thought that you would be interested.</textarea>
 			  </div><!--/ .form-group-->
 			  <div class="form-group col-md-8 col-md-offset-2">
 			    <label class="checkbox-disclaimer">
