@@ -233,6 +233,7 @@ p.vs_description { line-height: 5px; }
 }
 .services-main.about-header .title { font-size: 44px; }
 .services-main.about-header .choose { padding-bottom: 280px; }
+.services-main.about-header .choose i { margin-top: 15px; }
 .about-main { padding: 80px 0; }
 .about-main img.full-width { margin-bottom: 80px;}
 .about-main p { line-height: 28px;}
@@ -302,8 +303,8 @@ p.vs_description { line-height: 5px; }
 .services-main.request-welcome .dark-overlay { padding: 120px 0 0; }
 .services-main.request-welcome { background: url(../images/parallax/happy-senior-couple.jpg) no-repeat center center; }
 .services-main.request-welcome .title { font-size: 42px; }
-.request-welcome .choose { padding-top: 100px; }
-.choose h5 { margin-bottom: -7px; }
+.services-main.request-welcome .choose { padding-top: 100px; }
+.services-main.request-welcome .choose i { margin-bottom: 18px; }
 .services-main i {
   color: #fff;
   font-size: 50px;
@@ -320,7 +321,7 @@ p.vs_description { line-height: 5px; }
   .services-main .title { font-size: 64px; }
   .services-main.request-welcome .dark-overlay { padding: 160px 0 0; }
   .services-main.request-welcome .title { font-size: 44px; }
-  .request-welcome .choose { padding-top: 280px; }
+  .services-main.request-welcome .choose { padding-top: 280px; }
 }
 @media (min-width: 992px) {
   .services-main.request-welcome .title { font-size: 52px; }
