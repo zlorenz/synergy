@@ -104,7 +104,7 @@ p.vs_description { line-height: 5px; }
     width: auto;
     float: right;
   }
-  .navbar-default .navbar-brand img { max-width: 247px; }
+  .navbar-default .navbar-brand img { max-width: 243px; }
 }
 @media (min-width: 992px) {
   .navbar-default .navbar-nav > li > a { padding: 20px; }
@@ -126,9 +126,13 @@ p.vs_description { line-height: 5px; }
   background-size: cover;
   text-align: center;
 }
+.welcome.spanish { background: url(../images/parallax/senior-latino-couple.jpg) no-repeat center center; }
 .welcome .dark-overlay {
   background-color: rgba(0,0,0,0.25);
   padding: 100px 0px 50px;
+}
+.welcome.spanish .dark-overlay {
+  background-color: rgba(0,0,0,0.4);
 }
 .spanish-button {
   position: absolute;
@@ -153,7 +157,7 @@ p.vs_description { line-height: 5px; }
 .spanish-button a { font-weight: 500; }
 .spanish-button a:hover { color: #ab051f; }
 .company-title-1 {
-  margin: 45px 0 0;
+  margin: 50px 0 0;
   font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -164,12 +168,10 @@ p.vs_description { line-height: 5px; }
   text-transform: uppercase;
   letter-spacing: 6px;
 }
-.tagline {
-  margin: 50px 0 30px;
-}
-.welcome .btn {
-  margin-top: 30px;
-  padding: 6px 18px;
+.tagline { margin: 50px 0 30px; }
+.welcome .description {
+  margin-bottom: 30px;
+  line-height: 24px;
 }
 @media (min-width: 768px) {
   .spanish-button { top: 95px; }
@@ -224,10 +226,25 @@ p.vs_description { line-height: 5px; }
 
 /* ------- About Block ------- */
 
-.about-main { padding-bottom: 80px; }
+.services-main.about-header { background: url(../images/parallax/grand-canyon.jpg) no-repeat center center; }
+.services-main.about-header .dark-overlay {
+  padding: 120px 0 0;
+  background-color: rgba(0,0,0,0.18);
+}
+.services-main.about-header .title { font-size: 44px; }
+.services-main.about-header .choose { padding-bottom: 280px; }
+.about-main { padding: 80px 0; }
 .about-main img.full-width { margin-bottom: 80px;}
 .about-main p { line-height: 28px;}
 .about-main .section-head hr { margin: 30px 0 10px; }
+@media (min-width: 768px) {
+  .services-main.about-header .title { font-size: 56px; }
+  .services-main.about-header .dark-overlay { padding: 160px 0 0; }
+}
+@media (min-width: 992px) {
+  .services-main.about-header .title { font-size: 64px; }
+  .services-main.about-header .choose { padding-bottom: 280px; }
+}
 
 
 /* ------- Our Team Block ------- */
@@ -280,31 +297,13 @@ p.vs_description { line-height: 5px; }
   margin-bottom: 0;
   background-size: cover;
   text-align: center;
-}
-.services-main .title {
-  font-size: 52px;
-  text-transform: uppercase;
-}
-.services-main .subtitle {
-  line-height: 32px;
-  margin-bottom: 50px;
-}
-.services-main.request-welcome {
-  background: url(../images/parallax/happy-senior-couple.jpg) no-repeat center center;
   background-size: cover;
 }
-.services-main.request-welcome .title { font-size: 38px; }
-.services-main p {
-  margin-bottom: 0;
-  line-height: 28px;
-}
-.services-main h1 {
-  margin-top: 0;
-  margin-bottom: 0px;
-  letter-spacing: 15px;
-  font-size: 120px;
-}
-.choose h5 { margin: 100px 0 -5px; }
+.services-main.request-welcome .dark-overlay { padding: 120px 0 0; }
+.services-main.request-welcome { background: url(../images/parallax/happy-senior-couple.jpg) no-repeat center center; }
+.services-main.request-welcome .title { font-size: 42px; }
+.request-welcome .choose { padding-top: 100px; }
+.choose h5 { margin-bottom: -7px; }
 .services-main i {
   color: #fff;
   font-size: 50px;
@@ -317,7 +316,15 @@ p.vs_description { line-height: 5px; }
     transition: text-shadow .2s ease-in-out; /* W3C */
 }
 .services-main i:hover { text-shadow: 0 0 15px rgba(0,0,0,0.9); }
-.services-main .dark-overlay { padding: 160px 0 0; }
+@media (min-width: 768px) {
+  .services-main .title { font-size: 64px; }
+  .services-main.request-welcome .dark-overlay { padding: 160px 0 0; }
+  .services-main.request-welcome .title { font-size: 44px; }
+  .request-welcome .choose { padding-top: 280px; }
+}
+@media (min-width: 992px) {
+  .services-main.request-welcome .title { font-size: 52px; }
+}
 
 
 /* ------- Services Nav Menu ------- */
@@ -475,163 +482,7 @@ section.services-nav {
   .consulting-cta .btn { margin-top: 45px; }
 }
 
-/* ------- Business Welcome Block ------- */
-
-.services-main.business {
-  background: url(../images/parallax/meeting.jpg) no-repeat center center;
-  background-size: cover;
-}
-.services-main.business .dark-overlay { background-color: rgba(0,0,0,0.35); }
-
-/* ------- Risk Management Block ------- */
-
-.risk-mgmt { text-align: center; }
-.risk-mgmt p { line-height: 28px; }
-.risk-mgmt h1 { margin-top: 0; }
-.risk-mgmt h2 {
-  margin-top: 30px;
-  font-size: 28px;
-}
-.risk-mgmt .section-head { margin-bottom: -10px; }
-.risk-icon-container {
-  padding-top: 0;
-  position: relative;
-}
-.risk-icon-container .risk-icon h4 {
-  font-size: 16px;
-  font-weight: 600;
-}
-.risk-icon-container .risk-icon div p {
-  text-align: center;
-  font-size: 14px;
-  color: #999999;
-}
-.risk-icon-container .risk-icon {
-  text-align: center;
-  color: #666666;
-}
-.risk-icon-container .risk-icon span {
-  text-align: center;
-  font-size: 3.5em;
-  color: #666666;
-  border: 1px solid #666666;
-  padding: 3px 20px;
-  display: inline-block;
-  -webkit-border-radius: 60px;
-  border-radius: 60px;
-  background-clip: padding-box;
-  position: relative;
-  margin: 20px 0 15px;
-  background-color: transparent;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  transition: all 0.4s;
-}
-.risk-icon-container .risk-icon span:before {
-  border-color: rgba(255, 255, 255, 0);
-  border-top-color: #666666;
-  border-width: 11px;
-  margin-left: -11px;
-}
-.risk-icon-container .risk-icon span:after, .risk-icon-container .risk-icon span:before {
-  top: 100%;
-  left: 50%;
-  border: solid transparent;
-  content: "";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  transition: all 0.4s;
-}
-@media (min-width: 768px) {
-  .risk-mgmt { text-align: left; }
-  .risk-icon-container { padding-top: 20px; }
-  .risk-mgmt h2 {
-    margin-top: 40px;
-    font-size: 34px;
-  }
-  .risk-mgmt .section-head { margin-bottom: 20px; }
-  .risk-icon-container .risk-icon span { margin: 20px 0 30px; }
-}
-
-/* ------- Employee Benefits Block ------- */
-
-.benefits {
-  background-color: #ecf0f1;
-  text-align: center;
-}
-.benefits .section-head { margin-bottom: -20px; }
-.benefits h2 {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: 26px;
-}
-.benefits p { line-height: 28px; }
-@media (min-width: 768px) {
-  .benefits { text-align: left; }
-  .benefits .section-head { margin-bottom: 20px; }
-  .benefits h2 {
-    margin-top: 40px;
-    margin-bottom: 16px;
-    font-size: 30px;
-  }
-}
-
-
-/* ------- Business Consulting Block ------- */
-
-.biz-consulting h3 { margin-top: 0; }
-.biz-consulting header { margin-bottom: 80px; }
-
-/* ------- Professionals Welcome Block ------- */
-
-.services-main.professionals {
-  background: url(../images/parallax/calculator.jpg) no-repeat center center;
-  background-size: cover;
-}
-.services-main.professionals .dark-overlay {
-  background-color: rgba(0,0,0,0.35);
-  padding: 110px 0 50px;
-}
-.professionals h2.services-title { font-size: 38px; }
-@media (min-width: 768px) {
-  .professionals h2.services-title { font-size: 80px; }
-  .services-main.professionals .dark-overlay { padding: 150px 0 80px; }
-}
-
-/* ------- Service Commitment Block ------- */
-
-.commitment {
-  padding: 50px 0;
-  margin-bottom: 0;
-  text-align: center;
-}
-.commitment h1 {
-  margin-top: 0;
-  font-size: 52px;
-}
-.commitment h2 { margin-top: 10px; }
-.commitment p {
-  line-height: 28px;
-  margin-bottom: 0;
-}
-.commitment header { margin-bottom: 80px; }
-@media (min-width: 992px) {
-  .commitment {
-    padding: 110px 0;
-    text-align: right;
-  }
-  .commitment p { margin-bottom: 16px; }
-}
-
-/* ------- Synergy Partnerships Block ------- */
+/* ------- Partnerships Block ------- */
 
 .partnerships {
   background-color: #ecf0f1;
@@ -673,16 +524,28 @@ section.services-nav {
 
 /* ------- Client Center Welcome Block ------- */
 
-.services-main.client-center {
-  background: url(../images/parallax/pathway.jpg) no-repeat center center;
-  background-size: cover;
-}
-.services-main.client-center .title { margin-top: 0; }
+.services-main.client-center { background: url(../images/parallax/pathway.jpg) no-repeat center center; }
 .services-main.client-center .dark-overlay {
-  padding: 175px 0 110px;
+  padding: 120px 0 80px;
   background-color: rgba(0,0,0,0.25);
 }
+.services-main.client-center .title {
+  font-size: 56px;
+  padding-bottom: 10px;
+}
+.services-main.client-center .subtitle {
+  line-height: 32px;
+  margin-bottom: 45px;
+}
 .checkbox-disclaimer { line-height: 24px; }
+@media (min-width: 768px) {
+  .services-main.client-center .dark-overlay { padding: 160px 0 140px; }
+  .services-main.client-center .title { font-size: 64px; }
+  .services-main.client-center .subtitle { margin-bottom: 80px; }
+}
+@media (min-width: 992px) {
+
+}
 
 /* ------- Contact Footer ------- */
 
