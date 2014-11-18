@@ -33,8 +33,10 @@
 
       <!-- Krypton Theme CSS -->
       <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" media="screen">
-      <link href="{% static 'css/fontello.css' %}" rel="stylesheet" media="screen">
       <link href="{% static 'css/mystyle.css' %}" rel="stylesheet" media="screen">
+
+      <!-- Font Awesome Icons -->
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
       <!-- Hover.css CSS -->
       <link rel="stylesheet" href="{% static 'css/hover-min.css' %}">
@@ -92,7 +94,6 @@
                   <li><h5 class="menuTitle">Services</h5></li>
                   <li><a href="{% url 'personal' %}" title="Personal Services | Synergy Financial">Personal</a></li>
                   <li><a href="{% url 'business' %}" title="Business Services | Synergy Financial">Business</a></li>
-                  <li><a href="{% url 'professionals' %}" title="Professionals | Synergy Financial">Professionals</a></li>
                 </ul>
               </li>
               <li><a href="{% url 'clients' %}" title="Client Center | Synergy Financial" target="_blank">Client Center</a></li>
@@ -222,14 +223,13 @@
 
 <footer>
 <section class="container footer-section">
-    <div class="col-lg-6 col-xs-12"><p>&copy; 2014 <a href="{% url 'home' %}" title="Synergy Financial | Financial Services for Businesses and Individuals in Tucson, AZ">Synergy Financial, LLC</a>. All rights reserved. Designed by <a href="http://rabbitholestud.io" title="Rabbit Hole Studio | Forward-Thinking Web Design in Tucson, AZ">Rabbit Hole Studio</a>.</p></div>
+    <div class="col-lg-6 col-xs-12"><p>&copy; 2014 <a href="{% url 'home' %}" title="Synergy Financial | Financial Services for Businesses and Individuals in Tucson, AZ">Synergy Financial, LLC</a>. All rights reserved. Developed by <a href="http://rabbitholestud.io" title="Rabbit Hole Studio | Forward-Thinking Web Design in Tucson, AZ">Rabbit Hole Studio</a>.</p></div>
     <div class="col-lg-6 footer-menu">
       <ul class="nav nav-pills">
         <li><a href="{% url 'home' %}" title="Synergy Financial | Financial Services for Businesses and Individuals in Tucson, AZ">Home</a></li>
         <li><a href="{% url 'about' %}" title="About | Synergy Financial">About</a></li>
         <li><a href="{% url 'personal' %}" title="Personal Services | Synergy Financial">Personal</a></li>
         <li><a href="{% url 'business' %}" title="Business Services | Synergy Financial">Business</a></li>
-        <li><a href="{% url 'professionals' %}" title="Professionals | Synergy Financial">Professionals</a></li>
         <li><a href="{% url 'clients' %}" title="Client Center | Synergy Financial" target="_blank">Client Center</a></li>
       </ul>
     </div>

@@ -7,12 +7,10 @@
 		<div class= "container">
 			<h1>Synergy</h1>
 			<h2>Financial</h2>
-
 			<div class="col-sm-10 col-sm-offset-1">
 				<h4>Strategic Planning for Your Needs</h4>
 				<p>Synergy Financial is a Tucson-based company that offers financial services across Arizona and California. Our mission is to give individuals and businesses in our community the education and financial guidance that they need to prepare for all of life's personal and professional challenges. Click below to schedule your free needs analysis today &#8594;</p>
 			</div>
-
 			<a data-scroll href="#consultation" title="Request a free needs analysis with Synergy Financial"><button class="btn btn-large btn-default">Schedule a <strong>Free</strong> Needs Analysis</button></a>
 		</div>
 	</div>	
@@ -37,7 +35,7 @@
 				<h4>Business Services</h4>
 			</div>
 			<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1300}">
-				<a href="{% url 'professionals' %}" title="Professionals | Synergy Financial">
+				<a href="{% url 'about' %}#partnerships" title="Financial Professionals | Synergy Financial">
 					<span>
 						<img src="{% static 'images/financial-professionals.jpg' %}" title="Financial Professionals" alt="Synergy Financial's business partners include brokers, consultants, and third party administrators"/>
 					</span>
@@ -197,27 +195,24 @@
 	</div>
 </section>
 
-<section class="referral" style="padding: 25px 0 65px;">
+<section class="referral">
 	<div class= "container">
-		
 		<div class="col-xs-6 col-sm-3">
-			<i class="icon-facebook-squared"></i>
+			<i class="fa fa-facebook-square"></i>
 			<!-- Facebook Like/Share Buttons -->
 				<div class="fb-like" data-href="http://www.financialsynergy.biz" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 			<!--/ Facebook Like/Share Buttons -->
 		</div>
-	
 		<div class="col-xs-6 col-sm-3">
-			<i class="icon-twitter"></i>
+			<i class="fa fa-twitter-square"></i>
 			<!-- Twitter Share Button -->
 				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.financialsynergy.biz" data-hashtags="FinancialSynergy">Tweet</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 					</script>
 			<!--/ Twitter Share Button -->
 		</div>
-
 		<div class="col-xs-6 col-sm-3">
-			<i class="icon-linkedin-squared"></i>
+			<i class="fa fa-linkedin-square"></i>
 			<!-- LinkedIn Share Button -->
 				<script src="//platform.linkedin.com/in.js" type="text/javascript">
 				  lang: en_US
@@ -225,9 +220,8 @@
 				<script type="IN/Share" data-url="http://www.financialsynergy.biz" data-counter="right"></script>
 			<!--/ LinkedIn Share Button -->
 		</div>
-
 		<div class="col-xs-6 col-sm-3">
-			<i class="icon-gplus-squared" data-href="http://www.financialsynergy.biz"></i>
+			<i class="fa fa-google-plus-square" data-href="http://www.financialsynergy.biz"></i>
 			<!-- Google Plus +1 Button -->
 				<div class="g-plusone"></div>
 			<!--/ Google Plus +1 Button -->
@@ -242,8 +236,6 @@
 					</script>
 			<!--/ Google Plus Share Button -->
 		</div>
-
 	</div>	
 </section>
-
 {% endblock content %}

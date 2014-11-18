@@ -9305,6 +9305,9 @@ h1.section-title {
     margin-bottom: 50px;
     font-size: 80px;
   }
+  h2.services-title.business {
+    margin: 30px 0 140px;
+  }
 
   section.profile_team,
   section.insurance,
@@ -9377,7 +9380,7 @@ p.vs_description {
 
 .slider-main {
   margin-bottom: 0;
-  background: url(../images/parallax/golf-course.jpg) no-repeat center center;
+  background: url(../images/parallax/saguaro-sunset.jpg) no-repeat center center;
   background-size: cover;
   text-align: center;
 }
@@ -9416,14 +9419,8 @@ p.vs_description {
 
 .slider-main .btn-default {
   margin-top: 30px;
-  color: #1abc9c;
-  background-color: transparent;
-  border: 2px solid #1abc9c;
   padding: 6px 18px;
   text-shadow: none;
-}
-.slider-main .btn-default:hover {
-  background-color: rgba(26, 188, 156, 0.3);
 }
 
 @media (min-width: 768px) {
@@ -9712,6 +9709,7 @@ section.consultation {
   .services-main i {
     color: #fff;
     font-size: 50px;
+    line-height: 1.6em;
   }
 
 .services-main .dark-overlay {
@@ -10024,6 +10022,8 @@ section.services-nav {
   text-align: center;
   font-size: 3.5em;
   color: #666666;
+  width: 120px;
+  height: 120px;
   border: 1px solid #666666;
   padding: 3px 20px;
   display: inline-block;
@@ -10238,7 +10238,7 @@ section.services-nav {
 .partner-comment h2 {
   margin: 0 0 6px;
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 32px;
   font-weight: 300;
   text-transform: none;
@@ -10246,7 +10246,7 @@ section.services-nav {
 
 @media (min-width: 768px) {
   .partner-comment h2 {
-    font-size: 28px;
+    font-size: 22px;
     line-height: 36px;
   }
 }
@@ -10254,7 +10254,7 @@ section.services-nav {
 /* ------- Client Center Welcome Block ------- */
 
 .services-main.client-center {
-  background: url(../images/parallax/pathway.jpg) no-repeat center center;
+  background: url(../images/parallax/golf-course.jpg) no-repeat center center; 
 }
 
 .services-main.client-center .dark-overlay {
@@ -10306,31 +10306,17 @@ section.services-nav {
   background-color: #ecf0f1;
   text-align: center;
 }
-
-.referral .section-head {
-  margin-bottom: -30px;
-}
-
-.referral p {
-  line-height: 28px;
-}
-.referral h2 {
-  margin-top: 40px;
-}
-
+.referral .section-head { margin-bottom: -30px; }
+.referral p { line-height: 28px; }
+.referral h2 { margin-top: 40px; }
+.referral hr { margin-bottom: 50px; }
 .referral i {
   font-size: 80px;
   display: block;
 }
-
 @media (min-width: 768px) {
-  .referral .section-head {
-    margin-bottom: 20px;
-  }
-
-  .referral i {
-    font-size: 90px;
-  }
+  .referral .section-head { margin-bottom: 20px; }
+  .referral i { font-size: 90px; }
 }
 
 /* ------- Footer Block ------- */
